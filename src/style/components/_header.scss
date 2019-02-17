@@ -5,7 +5,7 @@
 .header__first {
   color: #fff;
   background: $gradient;
-  padding: rem(10 0 14);
+  padding: rem(10 0 12);
   @include font(13, 600);
   margin-bottom: rem(18);
   .container {
@@ -15,21 +15,24 @@
 
 .header__second {
   font-size: rem(14);
-  margin-bottom: rem(34);
+  margin-bottom: rem(32);
   .container {
-    @include flexbox(center, space-between);
+    @include flexbox(center, flex-start);
   }
 }
 
 .header__logo {
   max-width: rem(162);
+  margin-right: rem(43);
 }
 
 .header__site-descr {
-  max-width: rem(220);
+  max-width: rem(214);
+  margin-right: rem(78);
   h1 {
     font-size: rem(14);
     color: $black;
+    letter-spacing: 0;
   }
 }
 
@@ -37,8 +40,13 @@
   @include flexbox(center, space-between);
 }
 
+.header__container {
+  @include flexbox(flex-start, space-between);
+}
+
 .header__contact {
   text-align: right;
+  line-height: 1.5;
   &:not(:last-child) {
     margin-right: rem(50);
   }
@@ -47,7 +55,8 @@
 .header__subtitle {
   color: $second-gray;
   @include font(14, 500);
-  margin-bottom: rem(8);
+  line-height: normal;
+  margin-bottom: rem(4);
 }
 
 .header__link {

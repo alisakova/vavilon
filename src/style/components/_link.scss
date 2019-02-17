@@ -1,0 +1,8 @@
+.link {
+  border-bottom: $border-orange;
+  transition: border-bottom-color 250ms;
+  padding-bottom: 2px;
+  &:hover, &:focus {
+    border-bottom-color: transparent;
+  }
+}

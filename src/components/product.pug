@@ -1,0 +1,15 @@
+mixin product(item)
+  .product
+    .product__title= item.title
+    .product__container
+      .product__img
+        img(src= item.img, alt= item.title)
+      .product__characteristics
+        for characteristic in item.characteristics
+          .product__characteristic
+            .product__characteristic-amount= characteristic.amount
+            .product__characteristic-name= characteristic.text
+    .product__footer
+      .product__price= item.price
+      a(href="").product__link Подробнее
+    .product__badge.badge(class = "badge_" + item.badge)= item.badgeText

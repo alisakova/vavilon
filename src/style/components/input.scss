@@ -1,0 +1,23 @@
+input {
+  border: 1px solid $gray;
+  border-radius: $global-radius;
+  box-shadow: none;
+  padding: rem(8 30 8 16);
+  color: $main-color;
+  line-height: 1.73;
+  -webkit-appearance: none;
+  height: rem(45);
+  @include font(15, 500);
+  font-family: $main-font;
+  background: #fff;
+  @include input-placeholder {
+    color: $gray;
+    opacity: 0.5;
+    transition: opacity 250ms;
+  }
+  &:focus {
+    @include input-placeholder {
+      opacity: 0;
+    }
+  }
+}

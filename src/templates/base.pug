@@ -9,13 +9,15 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, height=device-height")
     title Вавилон
     link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600", rel="stylesheet")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    block links
     link(rel="stylesheet", href="css/main.css")
+    
       
   block variables
   body
     include ../components/header
     main
       block content
-    block footer
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    include ../components/footer
     script(src="js/main.min.js")    

@@ -1,0 +1,36 @@
+.companies {
+  padding-bottom: rem(123);
+}
+
+.companies-slider {
+  padding: rem(0 90);
+  &__slide {
+    img {
+      margin: 0 auto;
+    }
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-arrow {
+    font-size: 0;
+    background: {
+      color: #fff;
+      image: url("../img/arrow-slider.svg");
+      repeat: no-repeat;
+      position: center center;
+    }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include sizes(22, 40);
+  }
+  .slick-prev {
+    transform: translateY(-50%) scale(-1);
+    left: 0;
+  }
+  .slick-next {
+    right: 0;
+  }
+}

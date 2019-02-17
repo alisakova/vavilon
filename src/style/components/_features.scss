@@ -1,0 +1,36 @@
+.features {
+  background: $light-gray;
+  box-shadow: inset rem(0 0 34) rgba(0, 0, 0, 0.05);
+  padding: rem(71 0 50);
+}
+
+.features__title {
+  margin-bottom: rem(86);
+  text-align: center;
+}
+
+.features__container {
+  @include flexbox(stretch, space-between);
+  flex-wrap: wrap;
+}
+
+.features__item {
+  // width: 50%;
+  width: 100%;
+  max-width: rem(590);
+  padding: rem(0 40);
+  // max-width: rem(520);
+  @include flexbox(center, flex-start);
+  margin-bottom: rem(45);
+}
+
+.features__icon {
+  max-width: rem(70);
+  min-width: rem(70);
+  margin-right: rem(35);
+}
+
+.features__text {
+  @include font(16, 600);
+  line-height: 1.43;
+}

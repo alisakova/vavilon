@@ -1,0 +1,31 @@
+-
+  var topProduct = {
+    "title": "Комплект Coffeemar G546 + MVM D-720",
+    "badge": "hit",
+    "badgeText": "Хит!",
+    "price": "248 784 ₽",
+    "img": "img/top-product.png",
+    "characteristics": [
+      {
+        "amount": "700",
+        "text": "порций"
+      },
+      {
+        "amount": "20",
+        "text": "видов напитков"
+      },
+      {
+        "amount": "6",
+        "text": "ингредиентов"
+      },
+    ]
+  }
+
+include ../product
+section.top
+  .container
+    h2.top__title Топ продаж
+    .top__container
+      -for (var i=0; i<3; i++)
+        .col.col_3-items
+          +product(topProduct)

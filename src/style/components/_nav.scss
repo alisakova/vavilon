@@ -2,11 +2,25 @@
   &_second {
     width: 100%;
     font-weight: 600;
-    padding-bottom: rem(15);
+    padding-bottom: rem(12);
     .nav__item {
       &:not(:last-child) {
         margin-right: 0;
       }
+    }
+  }
+  &_footer {
+    font-size: rem(13);
+    .nav__item {
+      &:not(:last-child) {
+        margin: {
+          right: 0;
+          bottom: rem(13);
+        }
+      }
+    }
+    & + .nav_footer {
+      margin-top: auto;
     }
   }
 }
@@ -16,10 +30,24 @@
   &_space-between {
     justify-content: space-between;
   }
+  &_block {
+    display: block;
+  }
 }
 
 .nav__item {
   &:not(:last-child) {
     margin-right: rem(45);
   }
+}
+
+.nav__link {
+  &_margin-top-auto {
+    margin-top: auto;
+  }
+}
+
+.nav__copyright {
+  color: $gray;
+  @include font(13, 500);
 }

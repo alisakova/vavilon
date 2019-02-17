@@ -5,8 +5,15 @@ $main-color: #44220F;
 $black: #333333;
 $gray: #BDBDBD;
 $second-gray: #828282;
+$light-gray: #FAFAFA;
 $orange: #F59E27;
+$light-orange: #FEFAF4;
 $gradient: linear-gradient(267.49deg, $orange -0.1%, #FC5829 100.12%);
+$gradient-violet: linear-gradient(90.3deg, #8E63C4 -1.06%, #3B156B 104.22%);
+$gradient-green: linear-gradient(89.56deg, #27AE60 0.17%, #35EA81 101.08%);
+$gradient-orange-badge: linear-gradient(267.49deg, #FC5829 -0.1%, $orange 100.12%);
 
 $border-orange: 1px solid $orange;
 $border-transparent: 1px solid transparent;
+
+$global-radius: rem(10);

@@ -1,0 +1,20 @@
+.slick-dots {
+  @include flexbox(center, flex-start);
+  li {
+    button {
+      border-radius: 50%;
+      @include sizes(10, 10);
+      font-size: 0;
+      background: $main-color;
+      opacity: 0.2;
+    }
+    &:not(:last-child) {
+      margin-right: rem(12);
+    }
+    &.slick-active {
+      button {
+        opacity: 1;
+      }
+    }
+  }
+}

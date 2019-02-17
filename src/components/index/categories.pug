@@ -1,0 +1,24 @@
+-
+  var categories = [
+    {
+      "link": "",
+      "text": "Торговые автоматы"
+    },
+    {
+      "link": "",
+      "text": "Кофе и ингредиенты"
+    },
+    {
+      "link": "",
+      "text": "Снеки"
+    }
+  ]
+section.categories
+  .container
+    .categories__list
+      each item, index in categories
+        a(href= item.link).categories__item
+          .categories__img
+            img(src="img/categories/category-" + index + ".svg", alt= item.text)
+          .categories__link= item.text
+      

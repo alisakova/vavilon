@@ -1,0 +1,38 @@
+-
+  var logos = [
+    {
+      "text": "Jofemar Corporation",
+      "img": "logo-0.png",
+    },
+    {
+      "text": "Deorsola",
+      "img": "logo-1.png",
+    },
+    {
+      "text": "Satro",
+      "img": "logo-2.png",
+    },
+    {
+      "text": "Caffe Veloce",
+      "img": "logo-3.png",
+    },
+    {
+      "text": "VendLine",
+      "img": "logo-4.png",
+    },
+    {
+      "text": "VendLine",
+      "img": "logo-4.png",
+    },
+    {
+      "text": "VendLine",
+      "img": "logo-4.png",
+    }
+  ]
+
+section.companies
+  .container
+    .companies-slider
+      each item in logos
+        .companies-slider__slide
+          img(src="img/logos/" + item.img, alt= item.text)

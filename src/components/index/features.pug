@@ -1,0 +1,16 @@
+-
+  var features = [
+    "Эксклюзивные цены на вендинговые автоматы марки Jofemar в России.",
+    "Гарантийное сервисное обслуживание.",
+    "Быстрая доставка автоматов. Склады готовой продукции в Москве, Калининграде. Дилерские склады в других крупных городах.",
+    "Запасные части и ингредиенты всегда в наличии на складе."
+  ]
+section.features
+  .container
+    h2.features__title Преимущества работы с ГК «Вавилон-Вендинг»
+    .features__container
+      each item, index in features
+        .features__item
+          .features__icon
+            img(src="img/features/feature-" + index + ".svg", alt= item)
+          p.features__text= item

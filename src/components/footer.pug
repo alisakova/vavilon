@@ -1,0 +1,162 @@
+-
+  var footerLinks = [
+    {
+      "title": "Торговые автоматы",
+      "links": [
+        {
+          "text": "Напольные кофейные автоматы",
+          "link": ""
+        },
+        {
+          "text": "Настольные кофейные автоматы",
+          "link": ""
+        },
+        {
+          "text": "Снековые автоматы",
+          "link": ""
+        },
+        {
+          "text": "Автоматы для напитков",
+          "link": ""
+        },
+        {
+          "text": "Автоматы для мелкой продукции",
+          "link": ""
+        },
+        {
+          "text": "Автоматы для продуктов",
+          "link": ""
+        },
+        {
+          "text": "Разработано в Cody Art, 2019",
+          "copyright": true,
+        }
+      ]
+    },
+    {
+      "title": "Кофе и ингредиенты",
+      "container": true,
+      "addClass": "footer__col_flex",
+      "links": [
+        {
+          "text": "Ингредиенты",
+          "link": ""
+        },
+        {
+          "text": "Кофе",
+          "link": ""
+        },
+        {
+          "text": "Стаканчики и размешиватели",
+          "link": ""
+        },
+        {
+          "text": "Наполнение для снековых автоматов",
+          "link": ""
+        },
+        {
+          "text": "Политика конфиденциальности",
+          "link": "",
+        }
+      ]
+    },
+    {
+      "title": "Компания",
+      "links": [
+        {
+          "text": "Дилеры",
+          "link": ""
+        },
+        {
+          "text": "Партнеры",
+          "link": ""
+        },
+        {
+          "text": "Сервисные центры",
+          "link": ""
+        },
+        {
+          "text": "Условия работы",
+          "link": ""
+        },
+        {
+          "text": "Новости",
+          "link": ""
+        },
+        {
+          "text": "Отзывы",
+          "link": ""
+        },
+        {
+          "text": "Контакты",
+          "link": ""
+        }
+      ]
+    },
+  ];
+  var networks = [
+    {
+      "link": "",
+      "icon": "instagram",
+      "alt": "Instagram"
+    },
+    {
+      "link": "",
+      "icon": "facebook",
+      "alt": "Facebook"
+    },
+    {
+      "link": "",
+      "icon": "vkontakte",
+      "alt": "Вконтакте"
+    },
+    {
+      "link": "",
+      "icon": "youtube",
+      "alt": "Youtube"
+    }
+  ]
+
+footer.footer
+  .container
+    each item in footerLinks
+      .footer__col(class= item.addClass)
+        .footer__title= item.title
+        if item.container
+          .footer__container
+            nav.nav.nav_footer
+              ul.nav__list.nav__list_block
+                each link, index in item.links
+                  if index !== 4
+                    li.nav__item
+                      a(href= link.link).nav__link.link= link.text
+            nav.nav.nav_footer
+              ul.nav__list.nav__list_block
+                li.nav__item
+                  a(href= item.links[4].link).nav__link.link= item.links[4].text
+        else
+          nav.nav.nav_footer
+            ul.nav__list.nav__list_block
+              for link in item.links
+                li.nav__item
+                  if link.copyright
+                    .nav__copyright= link.text
+                  else
+                    a(href= link.link).nav__link.link= link.text
+    .footer__col
+      .footer__info
+        .footer__logo
+          img(src="img/logo-gray.png", alt="Вавилон Вендинг")
+        .footer__address
+          | © 2007-2019, ГК «Вавилон-вендинг»
+          | г. Москва, г. Люберцы, ул. Электрификации 4
+      .footer__contacts
+        a(href="tel:88007003443").footer__link 8 800 700-34-43
+        span.footer__separator
+        a(href="tel:89680192212").footer__link 8 968 019-22-12
+      .footer__time Время работы: ПН. — ПТ.: с 9:00 до 18:00 (мск)
+      a(href="mailto:sale@vavilon-vending.ru").footer__link.footer__link_block.link sale@vavilon-vending.ru
+      .footer__socials
+        each item in networks
+          a(href= item.link).footer__social-link
+            img(src="img/networks/" + item.icon + ".svg", alt= item.alt)

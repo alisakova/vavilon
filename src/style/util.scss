@@ -1,4 +1,4 @@
-$rem-base: $main-fz !default;
+$rem-base: 15px !default;
 
 @function strip-unit($num) {
   @return $num / ($num * 0 + 1);

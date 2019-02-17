@@ -36,7 +36,7 @@ var path = {
   },
   watch: {
     //За чем наблюдать
-    html: ["src/templates/*.pug", "src/components/*.pug", "src/pages/*.pug"],
+    html: ["src/templates/*.pug", "src/components/*.pug", "src/components/**/*.pug", "src/pages/*.pug"],
     js: "src/js/*.js",
     style: "src/style/**/*.scss",
     img: "src/img/**/*.*"
@@ -101,7 +101,10 @@ gulp.task("style:build", function() {
     .src(path.src.style)
     // .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
-    .pipe(prefixer())
+    .pipe(prefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(cssmin())
     // .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
@@ -123,7 +126,7 @@ gulp.task("files:build", function() {
 
 //следить за изменениями
 gulp.task("watch", function() {
-  watch(["src/templates/*.pug", "src/components/*.pug", "src/pages/*.pug"], function(event, cb) {
+  watch(["src/templates/*.pug", "src/components/*.pug", "src/components/**/*.pug", "src/pages/*.pug"], function(event, cb) {
     gulp.start("html:build");
   });
   watch([path.watch.style], function(event, cb) {

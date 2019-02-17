@@ -1,0 +1,29 @@
+.categories {
+  padding: rem(68 0 97);
+}
+
+.categories__list {
+  @include flexbox(flex-start, center);
+}
+
+.categories__item {
+  width: 33.333%;
+  text-align: center;
+  &:hover, &:focus {
+    .categories__link {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.categories__img {
+  max-width: rem(156);
+  margin: 0 auto 2px;
+}
+
+.categories__link {
+  display: inline-block;
+  @include font(20, 600);
+  border-bottom: $border-orange;
+  transition: border-bottom 250ms;
+}

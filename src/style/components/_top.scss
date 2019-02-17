@@ -1,0 +1,13 @@
+.top {
+  padding: rem(56 0 100);
+}
+
+.top__title {
+  margin-bottom: rem(54);
+  text-align: center;
+}
+
+.top__container {
+  @include flexbox(stretch, space-between, wrap);
+  margin: 0 rem(-10);
+}

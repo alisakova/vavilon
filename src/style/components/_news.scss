@@ -1,0 +1,18 @@
+.news {
+  padding-bottom: rem(110);
+}
+
+.news__container {
+  @include flexbox(flex-start, flex-start);
+  margin: 0 rem(-10);
+}
+
+.news__title {
+  margin-bottom: rem(48);
+  text-align: center;
+  h2 {
+    display: inline-block;
+    padding-bottom: 1px;
+    border-bottom: $border-orange;
+  }
+}

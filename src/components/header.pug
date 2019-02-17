@@ -20,7 +20,7 @@
     "Доп. оборудование",
     "Новости, акции, полезное",
     "Компания"
-  ]
+  ];
   var headerContacts = [
     {
       "link": "mailto: sale@vavilon-vending.ru",
@@ -53,13 +53,14 @@ header.header
     .container
       .header__logo
         img(src="img/logo.png", alt="Вавилон Вендинг")
-      .header__site-descr
-        h1 Лучшие торговые автоматы и ингредиенты напрямую от производителя
-      .header__contacts
-        each item in headerContacts
-          .header__contact
-            .header__subtitle= item.subtitle
-            a(href= item.link).header__link(class= item.addClass)= item.text
+      .header__container
+        .header__site-descr
+          h1 Лучшие торговые автоматы и ингредиенты напрямую от производителя
+        .header__contacts
+          each item in headerContacts
+            .header__contact
+              .header__subtitle= item.subtitle
+              a(href= item.link, class= item.addClass).header__link= item.text
   .header__third
     .container
       nav.nav.nav_second

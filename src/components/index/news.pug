@@ -1,0 +1,26 @@
+-
+  var news = [
+    {
+      "title": "Ударим по ценам на MVM!",
+      "date": "09 ноября 2018"
+    },
+    {
+      "title": "Мы продлили акцию! До конца октября ингредиенты за наш счёт.",
+      "date": "09 ноября 2018"
+    },
+    {
+      "title": "Мы продлили акцию! До конца октября ингредиенты за наш счёт.",
+      "date": "09 ноября 2018",
+      "disabled": true
+    }
+  ]
+  
+include ../news-preview
+section.news
+  .container
+    .news__title
+      h2 Новости, акции, полезное
+    .news__container
+      each item, index in news
+        .col.col_3-items
+          +news-preview(item, index)

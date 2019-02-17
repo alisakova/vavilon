@@ -1,0 +1,29 @@
+.reviews-slider {
+  .slick-dots {
+    li {
+      button {
+        background: $orange;
+      }
+    }
+  }
+}
+
+.reviews-slider__text {
+  margin-bottom: rem(30);
+  line-height: 1.73;
+}
+
+.reviews-slider__date {
+  color: $gray;
+  font-size: rem(16);
+  margin-bottom: rem(5);
+}
+
+.reviews-slider__author {
+  @include font(16, 600);
+  margin-bottom: rem(16);
+}
+
+.reviews-slider__img {
+  margin-bottom: rem(15);
+}
