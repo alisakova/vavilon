@@ -1,0 +1,25 @@
+.nav {
+  &_second {
+    width: 100%;
+    font-weight: 600;
+    padding-bottom: rem(15);
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.nav__list {
+  @include flexbox(center, flex-start);
+  &_space-between {
+    justify-content: space-between;
+  }
+}
+
+.nav__item {
+  &:not(:last-child) {
+    margin-right: rem(45);
+  }
+}

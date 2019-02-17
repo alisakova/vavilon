@@ -1,13 +1,12 @@
-$main-font: 'OpenSans', sans-serif;
+$main-font: 'Montserrat', sans-serif;
 $main-fz: 15px;
 
-$main-color: #4a4a4a;
-$gray: #9b9b9b;
-$blue: #00b6f3;
-$light-blue: #eef8ff;
-$dark-blue: #012648;
-$light-gray: rgba(74, 74, 74, 0.75);
-$bg-gray: #f7f7f7;
-$border-gray: #cfcfcf;
-$arrow-gray: #b1b6bb;
-$red: #d0021b;
+$main-color: #44220F;
+$black: #333333;
+$gray: #BDBDBD;
+$second-gray: #828282;
+$orange: #F59E27;
+$gradient: linear-gradient(267.49deg, $orange -0.1%, #FC5829 100.12%);
+
+$border-orange: 1px solid $orange;
+$border-transparent: 1px solid transparent;

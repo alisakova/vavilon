@@ -33,3 +33,9 @@
   width: rem($width);
   height: rem($height);
 }
+
+@mixin flexbox($align: center, $justify: space-between) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}

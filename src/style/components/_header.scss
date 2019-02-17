@@ -1,0 +1,66 @@
+.header {
+
+}
+
+.header__first {
+  color: #fff;
+  background: $gradient;
+  padding: rem(10 0 14);
+  @include font(13, 600);
+  margin-bottom: rem(18);
+  .container {
+    @include flexbox(center, space-between);
+  }
+}
+
+.header__second {
+  font-size: rem(14);
+  margin-bottom: rem(34);
+  .container {
+    @include flexbox(center, space-between);
+  }
+}
+
+.header__logo {
+  max-width: rem(162);
+}
+
+.header__site-descr {
+  max-width: rem(220);
+  h1 {
+    font-size: rem(14);
+    color: $black;
+  }
+}
+
+.header__contacts {
+  @include flexbox(center, space-between);
+}
+
+.header__contact {
+  text-align: right;
+  &:not(:last-child) {
+    margin-right: rem(50);
+  }
+}
+
+.header__subtitle {
+  color: $second-gray;
+  @include font(14, 500);
+  margin-bottom: rem(8);
+}
+
+.header__link {
+  display: block;
+  @include font(17, 600);
+  white-space: nowrap;
+  &_bordered {
+    border-bottom: $border-orange;
+  }
+}
+
+.header__third {
+  .container {
+    @include flexbox(center, space-between);
+  }
+}

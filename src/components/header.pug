@@ -1,0 +1,70 @@
+-
+  var navList = [
+    {
+      "link": "",
+      "text": "Техническая поддержка"
+    },
+    {
+      "link": "",
+      "text": "Закон о ККТ"
+    },
+    {
+      "link": "",
+      "text": "Условия работы"
+    },
+  ];
+  var subNav = [
+    "Торговые автоматы",
+    "Кофе и ингредиенты",
+    "Снеки",
+    "Доп. оборудование",
+    "Новости, акции, полезное",
+    "Компания"
+  ]
+  var headerContacts = [
+    {
+      "link": "mailto: sale@vavilon-vending.ru",
+      "text": "sale@vavilon-vending.ru",
+      "addClass": "header__link_bordered",
+      "subtitle": "E-mail отдела продаж"
+    },
+    {
+      "link": "tel:88007003443",
+      "text": "8 800 700-34-43",
+      "subtitle": "Бесплатные звонки по РФ"
+    },
+    {
+      "link": "tel:89680192212",
+      "text": "8 968 019-22-12",
+      "subtitle": "Для звонков по Москве"
+    },
+  ]
+header.header
+  .header__first
+    .container
+      nav.nav
+        ul.nav__list
+          each item in navList
+            li.nav__item
+              a(href= item.link).nav__link= item.text
+      .header__item Курс € ЦБ РФ: 75.3890
+      .header__item Время работы: ПН. — ПТ.: с 9:00 до 18:00 (мск)
+  .header__second
+    .container
+      .header__logo
+        img(src="img/logo.png", alt="Вавилон Вендинг")
+      .header__site-descr
+        h1 Лучшие торговые автоматы и ингредиенты напрямую от производителя
+      .header__contacts
+        each item in headerContacts
+          .header__contact
+            .header__subtitle= item.subtitle
+            a(href= item.link).header__link(class= item.addClass)= item.text
+  .header__third
+    .container
+      nav.nav.nav_second
+        ul.nav__list.nav__list_space-between
+          each item in subNav
+            li.nav__item
+              a.nav__link= item
+    
