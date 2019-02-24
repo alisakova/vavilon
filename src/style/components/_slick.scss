@@ -18,3 +18,13 @@
     }
   }
 }
+
+.orange-slider {
+  .slick-dots {
+    li {
+      button {
+        background: $orange;
+      }
+    }
+  }
+}

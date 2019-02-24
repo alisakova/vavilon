@@ -1,0 +1,29 @@
+mixin product-section(item)
+  section.product-section
+    .container
+      h2.product-section__title= item.title
+      .product-section__wrapper.wrap-container
+        if item.amount
+          -for(var i=0; i<item.amount; i++)
+            each product in item.products
+              .col.col_3-items.col_padding
+                +product-alt(product)
+        else 
+          each product in item.products
+            .col.col_3-items.col_padding
+              if item.productAlt
+                +product-alt(product)
+              else 
+                +product(product)
+      .product-section__descr
+        .product-section__text
+          for paragraph in item.descr
+            p= paragraph
+        if item.slider
+          .product-section__slider.product-slider._slider.orange-slider
+            -for(var i=0;i<3;i++)
+              div
+                .product-slider__img
+                  include ../img/lock.svg
+                .product-slider__title ЗАЩИТА ОТ ВЗЛОМА
+                p.product-slider__text Корпус кофейных автоматов – сталь толщиной 1.5 мм, три накидных замка на двери, у всех автоматов уникальные ключи.

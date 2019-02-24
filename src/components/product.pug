@@ -4,12 +4,21 @@ mixin product(item)
     .product__container
       .product__img
         img(src= item.img, alt= item.title)
-      .product__characteristics
-        for characteristic in item.characteristics
-          .product__characteristic
-            .product__characteristic-amount= characteristic.amount
-            .product__characteristic-name= characteristic.text
+      if item.characteristics
+        .product__characteristics
+          for characteristic in item.characteristics
+            .product__characteristic
+              .product__characteristic-amount= characteristic.amount
+              .product__characteristic-name= characteristic.text
+      if item.text
+        .product__text= item.text
     .product__footer
-      .product__price= item.price
+      if item.discount
+        .product__price-wrapper
+          .product__discount= item.discount
+          .product__price= item.price
+      else 
+        .product__price= item.price
       a(href="").product__link Подробнее
-    .product__badge.badge(class = "badge_" + item.badge)= item.badgeText
+    if item.badge
+      .product__badge.badge(class = "badge_" + item.badge)= item.badgeText

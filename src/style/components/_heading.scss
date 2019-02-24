@@ -1,0 +1,24 @@
+.heading {
+
+}
+
+.heading__title {
+  margin-bottom: rem(37);
+}
+
+.heading__link {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.heading__links {
+  @include flexbox(center, flex-start);
+  flex-wrap: wrap;
+  margin-bottom: rem(14);
+}
+
+.heading__wrapper {
+  width: 23%;
+  margin-right: rem(46);
+  margin-bottom: rem(8);
+}

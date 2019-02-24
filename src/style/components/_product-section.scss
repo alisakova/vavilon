@@ -1,0 +1,33 @@
+.product-section {
+  background: $light-gray;
+  padding: rem(60 0 24);
+  margin-bottom: rem(20);
+  &_with-title {
+    padding-top: rem(66);
+  }
+}
+
+.product-section__title {
+  font-size: rem(23);
+  margin-bottom: rem(45);
+}
+
+.product-section__wrapper {
+  margin-bottom: rem(45);
+}
+
+.product-section__descr {
+  margin-top: rem(45);
+  @include flexbox(flex-start, flex-start);
+}
+
+.product-section__text {
+  margin-right: rem(119);
+  max-width: 65.8%;
+  p {
+    font-weight: 500;
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+  }
+}

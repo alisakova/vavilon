@@ -69,6 +69,7 @@
 }
 
 .header__third {
+  border-bottom: $border-gray;
   .container {
     @include flexbox(center, space-between);
   }

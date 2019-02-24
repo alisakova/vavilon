@@ -1,0 +1,24 @@
+.breadcrumbs {
+  margin: {
+    top: rem(12);
+    bottom: rem(30);
+  }
+  color: $gray;
+  line-height: 1.33;
+  @include font(12, 500);
+  @include flexbox(center, flex-start);
+}
+
+.breadcrumbs__separator {
+  margin: rem(2) rem(10) 0;
+  border-radius: 50%;
+  background: $gray;
+  @include sizes(4, 4);
+  display: block;
+}
+
+.breadcrumbs__link {
+  &:last-child {
+    pointer-events: none;
+  }
+}

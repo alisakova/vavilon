@@ -1,0 +1,7 @@
+mixin heading(title, links)
+  .heading
+    h1.heading__title= title
+    .heading__links
+      each item, index in links
+        .heading__wrapper
+          a(href= item.link, class= item.addClass).heading__link.link= item.text

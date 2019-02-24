@@ -4,16 +4,29 @@
   background: #fff;
   position: relative;
   padding: rem(28 14 32 27);
+  height: 100%;
+  &_alt {
+    padding: 0;
+    border-radius: rem(3);
+    height: 100%;
+  }
 }
 
 .product__title {
   @include font(16, 600);
   margin-bottom: rem(25);
+  min-height: rem(45);
   padding: {
     left: rem(5);
     right: rem(72);
   }
   line-height: 1.4;
+  &_center {
+    text-align: center;
+    max-width: rem(240);
+    margin: 0 auto rem(26);
+    padding: 0;
+  }
 }
 
 .product__container {
@@ -27,6 +40,24 @@
   margin-right: rem(19);
   img {
     @include img-contain;
+  }
+  &_center {
+    margin: 0 auto rem(21);
+  }
+}
+
+.product__characteristics {
+  &_alt {
+    @include flexbox(flex-start, space-between);
+    padding: rem(12 17 20 28);
+    .product__characteristic-name {
+      color: $black;
+      text-align: center;
+    }
+    .product__characteristic-amount {
+      color: $main-color;
+      text-align: center;
+    }
   }
 }
 
@@ -49,6 +80,14 @@
   &:first-child {
     margin-top: 2px;
   }
+  &_alt {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .product__footer {
@@ -64,6 +103,10 @@
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  &_alt {
+    text-align: center;
+    font-size: rem(33);
+  }
 }
 
 .product__link {
@@ -74,4 +117,32 @@
   &:hover, &:focus {
     border-bottom-color: transparent;
   }
+}
+
+.product__body {
+  border-bottom: 1px solid #DEDEDE;
+  padding: rem(28 12 22);
+  &_no-border {
+    border-bottom: none;
+  }
+}
+
+.product__text {
+  @include font(12, 500);
+  color: #8C8C8C;
+  max-width: rem(127);
+  margin-top: rem(15);
+}
+
+.product__price-wrapper {
+  position: relative;
+}
+
+.product__discount {
+  position: absolute;
+  left: 0;
+  top: rem(-14);
+  color: $gray;
+  @include font(14, 500);
+  text-decoration: line-through;
 }
