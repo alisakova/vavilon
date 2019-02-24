@@ -41,6 +41,9 @@ body {
 main {
 	position: relative;
 	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
 }
 
 a {
@@ -117,6 +120,18 @@ img {
 	@media (max-width: 600px) {
 		min-height: calc(var(--vh,1vh) * 100);
 	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.content {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
 }
 
 @media (max-width: 1080px) {

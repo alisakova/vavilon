@@ -12,20 +12,26 @@ block variables
         "text": "Главная"
       },
       {
-        "link": "",
+        "link": "vending-machines.html",
         "text": "Торговые автоматы"
+      },
+      {
+        "link": "",
+        "text": "Настольные кофейные автоматы"
       }
     ];
-    var title = "Торговые автоматы";
-    var sectionTitle = true;
+    var sectionTitle = false;
+    var productSectionClass = "product-section_without-title";
+    var title = "Настольные кофейные автоматы";
     var links = [
       {
         "text": "Напольные кофейные автоматы",
-        "link": "floor-vending-machines.html"
+        "link": "floor-vending-machines.html",
       },
       {
         "text": "Настольные кофейные автоматы",
-        "link": "table-vending-machines.html"
+        "link": "table-vending-machines.html",
+        "addClass": "heading__link_active"
       },
       {
         "text": "Снековые автоматы",
@@ -49,12 +55,8 @@ block content
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/product-alt
-  include ../components/product
   include ../components/product-section
   .container
     +breadcrumbs(breadcrumbList)
     +heading(title, links)
-  each item in productSections
-    +product-section(item)
-  include ../components/top-btn
-  
+  +product-section(productSections[1])

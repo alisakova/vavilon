@@ -1,7 +1,8 @@
 mixin product-section(item)
-  section.product-section
+  section.product-section(class= productSectionClass)
     .container
-      h2.product-section__title= item.title
+      if sectionTitle
+        h2.product-section__title= item.title
       .product-section__wrapper.wrap-container
         if item.amount
           -for(var i=0; i<item.amount; i++)

@@ -454,8 +454,10 @@ html(lang="ru")
   block variables
     
   body
-    include ../components/header
-    main
-      block content
-    include ../components/footer
+    .wrapper
+      .content
+        include ../components/header
+        main
+          block content
+      include ../components/footer
     script(src="js/main.min.js")    

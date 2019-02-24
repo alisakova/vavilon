@@ -12,49 +12,51 @@ block variables
         "text": "Главная"
       },
       {
-        "link": "",
+        "link": "vending-machines.html",
         "text": "Торговые автоматы"
+      },
+      {
+        "link": "",
+        "text": "Автоматы для продуктов"
       }
     ];
-    var title = "Торговые автоматы";
-    var sectionTitle = true;
+    var sectionTitle = false;
+    var productSectionClass = "product-section_without-title";
+    var title = "Автоматы для продуктов";
     var links = [
       {
         "text": "Напольные кофейные автоматы",
-        "link": "floor-vending-machines.html"
+        "link": "floor-vending-machines.html",
       },
       {
         "text": "Настольные кофейные автоматы",
-        "link": "table-vending-machines.html"
+        "link": "table-vending-machines.html",
       },
       {
         "text": "Снековые автоматы",
-        "link": "snack-machines.html"
+        "link": "snack-machines.html",
       },
       {
         "text": "Автоматы для напитков",
-        "link": "machines-for-beverages.html"
+        "link": "machines-for-beverages.html",
       },
       {
         "text": "Автоматы для мелкой продукции",
-        "link": "machines-for-small-products.html"
+        "link": "machines-for-small-products.html",
       },
       {
         "text": "Автоматы для продуктов",
-        "link": "machines-for-products.html"
+        "link": "machines-for-products.html",
+        "addClass": "heading__link_active"
       }
     ];
     
 block content
   include ../components/breadcrumbs
   include ../components/heading
-  include ../components/product-alt
   include ../components/product
   include ../components/product-section
   .container
     +breadcrumbs(breadcrumbList)
     +heading(title, links)
-  each item in productSections
-    +product-section(item)
-  include ../components/top-btn
-  
+  +product-section(productSections[5])

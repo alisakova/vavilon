@@ -9,6 +9,11 @@
 .heading__link {
   font-weight: 500;
   white-space: nowrap;
+  &_active {
+    pointer-events: none;
+    color: $gray;
+    border-bottom: none;
+  }
 }
 
 .heading__links {

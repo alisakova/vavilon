@@ -2,6 +2,7 @@
   padding: rem(43 0 49);
   @include font(13, 500);
   background: $light-gray;
+  flex: 0 0 auto;
   .container {
     @include flexbox(stretch, flex-start);
   }

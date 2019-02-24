@@ -1,9 +1,13 @@
 .product-section {
   background: $light-gray;
-  padding: rem(60 0 24);
+  padding: rem(66 0 24);
   margin-bottom: rem(20);
-  &_with-title {
-    padding-top: rem(66);
+  flex: 1 0 auto;
+  &_without-title {
+    padding: {
+      top: rem(60);
+      bottom: rem(45);
+    }
   }
 }
 
