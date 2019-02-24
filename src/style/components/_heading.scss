@@ -11,7 +11,7 @@
   white-space: nowrap;
   &_active {
     pointer-events: none;
-    color: $gray;
+    color: #8C8C8C;
     border-bottom: none;
   }
 }
@@ -23,7 +23,17 @@
 }
 
 .heading__wrapper {
-  width: 23%;
+  width: 27%;
   margin-right: rem(46);
   margin-bottom: rem(8);
+  height: rem(30);
+  &_auto {
+    width: auto;
+  }
+}
+
+.heading__container {
+  &_flex {
+    @include flexbox(flex-start, space-between);
+  }
 }

@@ -4,10 +4,13 @@ mixin product-alt(item)
       .product__title.product__title_center= item.title
       .product__img.product__img_center
         img(src= item.img, alt= item.title)
-      .product__price.product__price_alt= item.price
+      if item.price
+        .product__price.product__price_alt= item.price
     if item.characteristics
       .product__characteristics.product__characteristics_alt
         for characteristic in item.characteristics
           .product__characteristic.product__characteristic_alt
             .product__characteristic-amount= characteristic.amount
             .product__characteristic-name= characteristic.text
+    if item.descrText
+      p.product__descr-text= item.descrText

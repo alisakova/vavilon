@@ -10,6 +10,7 @@
   bottom: rem(20);
   @include font(16, normal);
   display: none;
+  z-index: 100;
   &.active {
     display: block;
   }

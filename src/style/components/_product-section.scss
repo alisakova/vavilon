@@ -9,11 +9,33 @@
       bottom: rem(45);
     }
   }
+  &_margin-bottom-0 {
+    padding-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &:last-child {
+      padding-bottom: rem(161);
+    }
+  }
+  &_padding-bottom {
+    padding-bottom: rem(66);
+  }
 }
 
 .product-section__title {
   font-size: rem(23);
   margin-bottom: rem(45);
+  &_with-descr {
+    margin-bottom: rem(40);
+  }
+}
+
+.product-section__add-text {
+  margin-bottom: rem(40);
+  color: #8C8C8C;
+  @include font(16, 500);
+  line-height: normal;
 }
 
 .product-section__wrapper {

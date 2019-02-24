@@ -2,7 +2,9 @@ mixin product-section(item)
   section.product-section(class= productSectionClass)
     .container
       if sectionTitle
-        h2.product-section__title= item.title
+        h2.product-section__title(class= item.addText ? "product-section__title_with-descr" : "")= item.title
+      if item.addText
+        p.product-section__add-text!= item.addText
       .product-section__wrapper.wrap-container
         if item.amount
           -for(var i=0; i<item.amount; i++)
@@ -16,10 +18,11 @@ mixin product-section(item)
                 +product-alt(product)
               else 
                 +product(product)
-      .product-section__descr
-        .product-section__text
-          for paragraph in item.descr
-            p= paragraph
+      if item.descr
+        .product-section__descr
+          .product-section__text
+            for paragraph in item.descr
+              p= paragraph
         if item.slider
           .product-section__slider.product-slider._slider.orange-slider
             -for(var i=0;i<3;i++)

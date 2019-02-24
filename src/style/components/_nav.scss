@@ -45,6 +45,19 @@
   &_margin-top-auto {
     margin-top: auto;
   }
+  &_arrow {
+    position: relative;
+    padding-right: rem(17);
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 40%;
+      background: url("../img/arrow.svg") no-repeat center center;
+      background-size: contain;
+      @include sizes(10, 6);
+    }
+  }
 }
 
 .nav__copyright {

@@ -14,12 +14,30 @@
     },
   ];
   var subNav = [
-    "Торговые автоматы",
-    "Кофе и ингредиенты",
-    "Снеки",
-    "Доп. оборудование",
-    "Новости, акции, полезное",
-    "Компания"
+    {
+      "link": "vending-machines.html",
+      "text": "Торговые автоматы"
+    },
+    {
+      "link": "",
+      "text": "Кофе и ингредиенты"
+    },
+    {
+      "link": "",
+      "text": "Снеки"
+    },
+    {
+      "link": "optional-equipment.html",
+      "text": "Доп. оборудование"
+    },
+    {
+      "link": "",
+      "text": "Новости, акции, полезное"
+    },
+    {
+      "link": "",
+      "text": "Компания"
+    }
   ];
   var headerContacts = [
     {
@@ -67,5 +85,5 @@ header.header
         ul.nav__list.nav__list_space-between
           each item in subNav
             li.nav__item
-              a.nav__link= item
+              a(href= item.link).nav__link.nav__link_arrow= item.text
     

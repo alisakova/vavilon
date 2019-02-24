@@ -1,7 +1,18 @@
 mixin heading(title, links)
   .heading
     h1.heading__title= title
-    .heading__links
-      each item in links
-        .heading__wrapper
-          a(href= item.link, class= item.addClass).heading__link.link= item.text
+    .heading__container(class= filters ? "heading__container_flex" : "")
+      .heading__links
+        each item in links
+          .heading__wrapper(class= headingWrapper)
+            a(href= item.link, class= item.addClass).heading__link.link= item.text
+      if filters
+        .heading__filters
+          .filter
+            select.filter__select(style="width: auto")
+              option По возрастанию цены
+              option По убыванию цены
+          .filter
+            select.filter__select(style="width: auto")
+              option Все производители
+              option Производитель
