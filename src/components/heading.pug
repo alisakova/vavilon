@@ -2,7 +2,7 @@ mixin heading(title, links)
   .heading
     h1.heading__title= title
     .heading__container(class= filters ? "heading__container_flex" : "")
-      .heading__links
+      .heading__links(class= headingLinksAltClass)
         each item in links
           .heading__wrapper(class= headingWrapper)
             a(href= item.link, class= item.addClass).heading__link.link= item.text

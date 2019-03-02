@@ -20,6 +20,13 @@
   @include flexbox(center, flex-start);
   flex-wrap: wrap;
   margin-bottom: rem(14);
+  &_alt {
+    width: 80%;
+    .heading__wrapper {
+      width: auto;
+      min-width: rem(145);
+    }
+  }
 }
 
 .heading__wrapper {

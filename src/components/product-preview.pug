@@ -1,0 +1,23 @@
+mixin product-preview(item)
+  .product-preview
+    .product-preview__img
+      img(src= item.img, alt= item.title)
+      if item.badge
+        .product-preview__badge.badge.badge_alt(class = "badge_" + item.badge)= item.badgeText
+    .product-preview__info
+      .product-preview__container
+        h2.product-preview__title!= item.title
+        .product-preview__descr= item.descrText
+        a(href="").product-preview__link Подробнее
+    .product-preview__amount 1 кг / 6 шт.
+    .product-preview__price
+      if item.discount 
+        .product-preview__discount= item.discount
+      .product-preview__price-num= item.price
+    .product-preview__counter
+      .counter
+        button.counter__btn.counter__btn_dicrease –
+        input(type="number", value = "1").counter__input
+        button.counter__btn.counter__btn_increase + 
+    .product-preview__action
+      button.product-preview__btn В корзину
