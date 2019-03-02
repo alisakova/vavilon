@@ -1,0 +1,70 @@
+.block {
+  border: 1px solid #f0f0f0;
+  box-shadow: rem(0 4 4) rgba(0, 0, 0, 0.07);
+  border-radius: rem(3);
+  padding: rem(33 26 42 31);
+  &:first-child {
+    margin-bottom: rem(30);
+  }
+}
+
+.block__title {
+  @include font(16, 600);
+  line-height: normal;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: rem(28);
+}
+
+.block__text {
+  font-weight: 500;
+  margin-bottom: rem(13);
+  line-height: 1.733;
+}
+
+.block__subtitle {
+  color: $main-color;
+  margin-bottom: rem(8);
+  line-height: normal;
+  @include font(16, 600);
+}
+
+.block__link {
+  color: $black;
+  @include font(15, 500);
+  line-height: 1.733;
+  display: block;
+  &_margin-bottom {
+    margin-bottom: rem(21);
+  }
+}
+
+.block__link-to-map {
+  margin-top: rem(14);
+  @include flexbox(center, flex-start);
+}
+
+.block__icon {
+  margin-right: rem(16);
+}
+
+.block__link-text {
+  color: $orange;
+  @include font(16, 600);
+  position: relative;
+  padding-right: rem(13);
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: rem(7 4 0 4);
+    border-color: $orange transparent transparent transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-top: rem(2);
+  }
+}
