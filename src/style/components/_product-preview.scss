@@ -31,6 +31,9 @@
   @include font(16, 600);
   line-height: normal;
   margin-bottom: rem(8);
+  &_margin-bottom {
+    margin-bottom: rem(28);
+  }
 }
 
 .product-preview__descr {

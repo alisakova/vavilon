@@ -6,7 +6,7 @@ mixin product-preview(item)
         .product-preview__badge.badge.badge_alt(class = "badge_" + item.badge)= item.badgeText
     .product-preview__info
       .product-preview__container
-        h2.product-preview__title!= item.title
+        h2.product-preview__title(class= !item.descrText ? "product-preview__title_margin-bottom" : "")!= item.title
         .product-preview__descr= item.descrText
         a(href="").product-preview__link Подробнее
     .product-preview__amount 1 кг / 6 шт.

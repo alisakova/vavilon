@@ -1,0 +1,53 @@
+extends ../templates/base
+
+block links
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+  
+block variables
+  -
+    var breadcrumbList = [
+      {
+        "link": "index.html",
+        "text": "Главная"
+      },
+      {
+        "link": "",
+        "text": "Снеки"
+      }
+    ];
+    var title = "Снеки";
+    var sectionTitle = true;
+    var headingWrapper = "heading__wrapper_auto";
+    var links = [
+      {
+        "text": "Напитки",
+        "link": "drinks.html"
+      },
+      {
+        "text": "Батончики",
+        "link": "candy-bars.html"
+      },
+      {
+        "text": "Орехи",
+        "link": "nuts.html"
+      },
+      {
+        "text": "Десерты",
+        "link": "desserts.html"
+      },
+    ];
+    
+block content
+  include ../components/breadcrumbs
+  include ../components/heading
+  include ../components/coffee-section
+  include ../components/product-preview
+  .container
+    +breadcrumbs(breadcrumbList)
+    +heading(title, links)
+  each item in snacksSections
+    +coffee-section(item)
+  include ../components/coffee-descr
+  include ../components/top-btn
+  
