@@ -9,6 +9,7 @@
 .equipment-card__img {
   @include sizes(362, 329);
   margin-bottom: rem(36);
+  border: $product-img-border;
   img {
     @include img-contain;
   }

@@ -4,6 +4,10 @@
 
 .heading__title {
   margin-bottom: rem(37);
+  &_internal {
+    @include font(23, 600);
+    margin-bottom: rem(52);
+  }
 }
 
 .heading__link {

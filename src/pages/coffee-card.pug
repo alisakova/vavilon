@@ -1,0 +1,102 @@
+extends ../templates/base
+
+block links
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+  
+block variables
+  -
+    var breadcrumbList = [
+      {
+        "link": "index.html",
+        "text": "Главная"
+      },
+      {
+        "link": "coffee-and-ingredients.html",
+        "text": "Кофе и ингредиенты"
+      },
+      {
+        "link": "coffee-beans.html",
+        "text": "Кофе зерновой"
+      },
+      {
+        "link": "",
+        "text": "Кофе в зернах Caffé Veloce Lusso"
+      }
+    ];
+    var title = "Кофе зерновой";
+    var sectionTitle = true;
+    var headingLinksAltClass = "heading__links_alt";
+    var internalHeading = true;
+    var links = [
+      {
+        "text": "Кофе зерновой",
+        "link": "coffee-beans.html"
+      },
+      {
+        "text": "Мокка и капучино",
+        "link": "mocha-and-cappuccino.html"
+      },
+      {
+        "text": "Горячий шоколад",
+        "link": "hot-chocolate.html"
+      },
+      {
+        "text": "Стаканчики и размешиватели",
+        "link": "glasses-and-stirrers.html"
+      },
+      {
+        "text": "Кисель",
+        "link": "jelly.html"
+      },
+      {
+        "text": "Чай",
+        "link": "tea.html"
+      },
+      {
+        "text": "Сливки и топпинги",
+        "link": "cream-and-toppings.html"
+      }
+    ];
+    
+block content
+  include ../components/breadcrumbs
+  include ../components/heading
+  include ../components/coffee-section
+  include ../components/product-preview
+  .container
+    +breadcrumbs(breadcrumbList)
+    +heading(title, links)
+    .coffee-card 
+      h1.coffee-card__title Кофе в зернах Caffé Veloce Lusso 
+      .coffee-card__container
+        .coffee-card__left-col
+          .coffee-card__img
+            img(src="img/coffee-card-img.jpg", alt="")
+            .badge.badge_left.badge_hit Хит!
+          .coffee-card__charachteristics
+            .coffee-card__charachteristic
+              include ../img/coffee-icon.svg
+              .coffee-card__charachteristic-text ~125 порций / кг
+            .coffee-card__charachteristic
+              include ../img/portion-icon.svg
+              .coffee-card__charachteristic-text 9г. на порцию
+        .coffee-card__right-col
+          p.coffee-card__text Смесь кофе для  эспрессо состоит из зерен, собранных на  самых знаменитых в мире кофейных плантациях. Маленькой чашечкой кофе Lusso можно наслаждаться даже без сахара.
+          p.coffee-card__subtitile Состав:
+          p.coffee-card__text натуральный кофе (85% Арабика, 15% Робуста)
+          p.coffee-card__subtitile Упаковка:
+          p.coffee-card__text.coffee-card__text_no-margin-bottom пакет 1 кг
+          p.coffee-card__text.coffee-card__text_no-margin-bottom 1 коробка = 6 пакетов (0,4 х 0,25 х 0,28 м)
+          p.coffee-card__text 1 паллета = 84 коробки
+          p.coffee-card__subtitile.coffee-card__subtitile_margin-bottom Себестоимость порции 17.6 ₽
+          .coffee-card__price
+            .coffee-card__price-left-col
+              .coffee-card__price-name Стоимость
+              .coffee-card__price-amount 10 500 ₽
+            .coffee-card__price-right-col  
+              a(hreg="").coffee-card__link К покупкам
+
+
+
+  

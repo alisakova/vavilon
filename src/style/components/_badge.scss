@@ -50,4 +50,21 @@
       text-transform: none;
     }
   }
+  &_left {
+    left: -6px;
+    right: auto;
+    top: rem(25);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: rem(5);
+    border-bottom-right-radius: rem(5);
+    &:after {
+      left: 0;
+      border: {
+        style: solid;
+        width: 0 6px 3px 0;
+        color: transparent $main-color transparent transparent;
+      }
+    }
+  }
 }
