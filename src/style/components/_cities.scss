@@ -1,0 +1,28 @@
+.cities {
+  padding: rem(72 0 40);
+}
+
+.cities__list {
+  column-count: 4;
+  margin-bottom: rem(53);
+}
+
+.cities__item {
+  font-weight: 500;
+  margin-bottom: rem(18);
+  a {
+    border-bottom: 1px dotted $orange;
+    &:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.cities__title {
+  @include font(23, 600);
+  margin-bottom: rem(64);
+}
+
+.cities__map {
+  max-width: rem(1016);
+}
