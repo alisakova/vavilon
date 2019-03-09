@@ -1,5 +1,5 @@
 mixin product-alt(item)
-  .product.product_alt
+  a(href= productLink).product.product_alt
     .product__body(class= item.addBodyClass)
       .product__title.product__title_center= item.title
       .product__img.product__img_center

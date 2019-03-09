@@ -1,0 +1,42 @@
+extends ../templates/base
+
+block links
+  
+block variables
+  -
+    var breadcrumbList = [
+      {
+        "link": "index.html",
+        "text": "Главная"
+      },
+      {
+        "link": "optional-equipment.html",
+        "text": "Дополнительное оборудование"
+      },
+      {
+        "link": "",
+        "text": "Комплект оборудования Ingenico"
+      }
+    ];
+  
+    
+block content
+  include ../components/breadcrumbs
+  .container
+    +breadcrumbs(breadcrumbList)
+    .equipment-card
+      h1.equipment-card__title Комплект оборудования Ingenico
+      .equipment-card__container
+        .equipment-card__left-col
+          .equipment-card__img
+            img(src="img/equipment-card.jpg", alt="Комплект оборудования Ingenico")
+          .equipment-card__docs
+            include ../img/pdf.svg
+            a(href="").equipment-card__doc-link.link iSelf Комплект iUP250 Описание
+        .equipment-card__right-col
+          .equipment-card__info 
+            | ПОДРОБНОСТИ УТОЧНЯЙТЕ В ДЕПАРТАМЕНТЕ СЕРВИСНОГО ОБСЛУЖИВАНИЯ. ТЕЛЕФОН: 8 800 700-34-43 (ДОБ. 4)
+          p.equipment-card__text Комплект встраиваемого Эквайрингового оборудования Ingenico серии iSelf предназначен для организации безналичных оплат в вендинговом оборудовании (кофейных, снековых автоматах) всеми видами кредитных карт. Благодаря прочному исполнению, и высочайшей степени защиты оборудование успешно работает на открытом пространстве в самых широких климатических диапазонах.
+          p.equipment-card__text Оборудование поддерживается всеми банками РФ и может быть установлено на весь актуальный модельный ряд вендинговых автоматов Jofemar. Процесс установки требует выполнения механических работ по встраиванию в корпус автомата. Для подключения используется стандартная платежная шина MDB. Обмен данными осуществляется по каналу internet.
+          p.equipment-card__text.equipment-card__text_bold.equipment-card__text_margin-top Бесплатная установка эквайрингового оборудования на новые торговые аппараты.
+          p.equipment-card__text.equipment-card__text_bold Установка эквайрингового оборудования на ранее приобретенные торговые аппараты со скидкой 50 % (только для Москвы).
