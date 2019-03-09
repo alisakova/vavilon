@@ -1,0 +1,18 @@
+mixin shop-info(item)
+  .shop-info
+    .shop-info__img
+      img(src="img/" + item.img, alt="ВАВИЛОН-ВЕНДИНГ")
+    .shop-info__info
+      .shop-info__title ВАВИЛОН-ВЕНДИНГ
+      .shop-info__text= item.text
+      .shop-info__contacts
+        .shop-info__contact
+          span.shop-info__name-contact Телефон
+          a(href="tel:" + item.tel).shop-info__contact-text= item.telText
+        .shop-info__contact
+          span.shop-info__name-contact E-mail
+          a(href="mailto:" + item.mail).shop-info__contact-text= item.mail
+        if item.site
+          .shop-info__contact
+            span.shop-info__name-contact Веб-сайт
+            a(href= item.site).shop-info__contact-text= item.site

@@ -1,0 +1,41 @@
+.shop-info {
+  @include flexbox(flex-start, flex-start);
+  width: 50%;
+  margin-bottom: rem(60);
+}
+
+.shop-info__img {
+  @include sizes(115, 115);
+  min-width: rem(115);
+  margin-right: rem(33);
+  @include flexbox(center, center);
+}
+
+.shop-info__title {
+  @include font(16, 600);
+  margin-bottom: rem(7);
+}
+
+.shop-info__text {
+  font-weight: 500;
+  margin-bottom: rem(14);
+}
+
+.shop-info__contact {
+  font-weight: 500;
+  &:not(:last-child) {
+    margin-bottom: rem(7);
+  }
+}
+
+.shop-info__name-contact {
+  @include font(16, 600);
+  margin-right: rem(15);
+  min-width: rem(80);
+  display: inline-block;
+}
+
+.shop-infos-container {
+  @include flexbox(flex-start, space-between, wrap);
+  margin: rem(57 0 30);
+}
