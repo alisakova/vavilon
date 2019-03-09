@@ -1,0 +1,16 @@
+mixin person-card(item, index)
+  .col.col_padding.col_4-items
+    .person-card
+      .person-card__img
+        img(src="img/team/team-" + index + ".jpg", alt= item.name)
+      .person-card__name= item.name
+      .person-card__descr= item.descr
+      .person-card__contact
+        include ../img/tel.svg
+        span.person-card__text= item.tel
+      .person-card__contact
+        include ../img/email.svg
+        span.person-card__text= item.mail
+      .person-card__contact
+        include ../img/skype.svg
+        span.person-card__text= item.skype

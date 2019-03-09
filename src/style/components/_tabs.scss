@@ -1,0 +1,33 @@
+.tabs {
+  margin: rem(81 0 88);
+}
+
+.tabs__container {
+  @include flexbox(stretch, space-between);
+  @include font(14, 500);
+  border-bottom: 1px solid $gray;
+  margin-bottom: rem(33);
+}
+
+.tabs__tab {
+  @include font(14, 500);
+  color: $alt-gray;
+  position: relative;
+  padding-bottom: rem(6);
+  transition: all 250ms;
+  &.active {
+    color: $main-color;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: $main-color;
+    }
+  }
+  &:hover, &:focus {
+    color: $main-color;
+  }
+}

@@ -1,0 +1,41 @@
+.person-card {
+
+}
+
+.person-card__img {
+  margin-bottom: rem(20);
+  @include sizes(180, 221);
+  img {
+    @include img-contain;
+  }
+}
+
+.person-card__name {
+  @include font(16, 600);
+  margin-bottom: rem(8);
+}
+
+.person-card__descr {
+  color: $alt-gray;
+  font-weight: 500;
+  line-height: 1.733;
+
+  margin-bottom: rem(6);
+}
+
+.person-card__contact {
+  @include flexbox(center, flex-start);
+  svg {
+    margin-right: rem(8);
+    min-width: rem(18);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+}
+
+.person-card__text {
+  color: $black;
+  font-weight: 500;
+  line-height: 1.733;
+}

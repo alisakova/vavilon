@@ -129,7 +129,7 @@
 
 .product__text {
   @include font(12, 500);
-  color: #8C8C8C;
+  color: $alt-gray;
   max-width: rem(127);
   margin-top: rem(15);
 }

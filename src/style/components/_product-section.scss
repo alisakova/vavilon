@@ -33,7 +33,7 @@
 
 .product-section__add-text {
   margin-bottom: rem(40);
-  color: #8C8C8C;
+  color: $alt-gray;
   @include font(16, 500);
   line-height: normal;
 }

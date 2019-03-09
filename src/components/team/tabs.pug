@@ -1,0 +1,54 @@
+-
+  var teamMembers = [
+    {
+      "name": "Максим Кошлев",
+      "descr": "Директор по продажам торговых аппаратов",
+      "tel": "+7 (962) 250-60-93",
+      "mail": "kld2@vavilon-vending.ru",
+      "skype": "maxim_kaliningrad"
+    },
+    {
+      "name": "Андрей Хвостов",
+      "descr": "Начальник отдела продаж торговых аппаратов",
+      "tel": "+7 (963) 292-52-19",
+      "mail": "sale@vavilon-vending.ru",
+      "skype": "vv_regiont"
+    },
+    {
+      "name": "Николай Шаталин",
+      "descr": "Директор по продажам, регион г. Москва и Московская обл.",
+      "tel": "+7 (968) 019-22-12",
+      "mail": "dir-moscow@vavilonvending.ru",
+      "skype": "nshatalin"
+    },
+    {
+      "name": "Евгений Храмов",
+      "descr": "Менеджер по продажам, регион г. Москва и Московская обл.",
+      "tel": "+7 (968) 534-16-46",
+      "mail": "moscow@vavilonvending.ru",
+      "skype": "evgenvekt"
+    }
+  ]
+
+include ../person-card
+.tabs
+  .tabs__container
+    button.tabs__tab._default(onclick="openTab(event, 'team-1')") Отдел продаж торговых<br />автоматов
+    button.tabs__tab(onclick="openTab(event, 'team-2')") Отдел продаж ингредиентов<br />и сопутствующих товаров
+    button.tabs__tab(onclick="openTab(event, 'team-3')") Служба сервисного<br />обслуживания
+    button.tabs__tab(onclick="openTab(event, 'team-4')") Отдел маркетинга
+    button.tabs__tab(onclick="openTab(event, 'team-5')") Отдел поставок
+    button.tabs__tab(onclick="openTab(event, 'team-6')") Отдел логистики
+  .tabs__content._team-1#team-1
+    .wrap-container
+      each item, index in teamMembers
+        +person-card(item, index)
+  .tabs__content._team-2#team-2
+  .tabs__content._team-3#team-3
+  .tabs__content._team-1#team-4
+  .tabs__content._team-2#team-5
+  .tabs__content._team-3#team-6
+
+    
+
+    

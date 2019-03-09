@@ -11,7 +11,7 @@
   white-space: nowrap;
   &_active {
     pointer-events: none;
-    color: #8C8C8C;
+    color: $alt-gray;
     border-bottom: none;
   }
 }

@@ -38,7 +38,7 @@
 
 .product-preview__descr {
   @include font(15, 500);
-  color: #8C8C8C;
+  color: $alt-gray;
   margin-bottom: rem(14);
 }
 
@@ -49,7 +49,7 @@
 }
 
 .product-preview__amount {
-  color: #8C8C8C;
+  color: $alt-gray;
   @include font(15, 500);
   width: 13.4%;
   margin-right: rem(52);
@@ -70,7 +70,7 @@
   @include font(16, 500);
   line-height: normal;
   white-space: nowrap;
-  color: #8C8C8C;
+  color: $alt-gray;
   text-decoration: line-through;
   margin-bottom: rem(5);
 }

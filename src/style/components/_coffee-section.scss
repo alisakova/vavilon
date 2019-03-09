@@ -16,7 +16,7 @@
 .coffee-section__titles {
   @include font(12, 500);
   line-height: 1.33;
-  color: #8C8C8C;
+  color: $alt-gray;
   margin-bottom: rem(18);
   @include flexbox(center, flex-start);
 }
