@@ -12,11 +12,15 @@ block variables
         "text": "Главная"
       },
       {
-        "link": "",
+        "link": "service-centres.html",
         "text": "Сервисные центры"
+      },
+      {
+        "link": "",
+        "text": "Архангельск"
       }
     ];
-    var title = "Сервисные центры";
+    var title = "Сервисные центры / Архангельск";
     var headingWrapper = "heading__wrapper_auto";
     var links = [
       {
@@ -33,8 +37,7 @@ block variables
       },
       {
         "text": "Сервисные центры",
-        "link": "service-centres.html",
-        "addClass": "heading__link_active"
+        "link": "service-centres.html"
       },
       {
         "text": "Условия работы",
@@ -49,29 +52,26 @@ block variables
         "link": "team.html"
       },
     ];
-    var citiesAddClass = "cities_serivce-centres";
-    var cityLink = "city-service.html";
-    var cities = [
-      "Белгород",
-      "Владикавказ",
-      "Волгоград",
-      "Воронеж",
-      "Екатеринбург",
-      "Ижевск",
-      "Белгород",
-      "Владикавказ",
-      "Волгоград",
-      "Воронеж",
-      "Екатеринбург",
-      "Ижевск",
-    ]
+    var shopTitle = "Уан-Сервис ИП Ульянова А.Н.";
+    var shopInfos = {
+      "img": "logo-shop-info-2.png",
+      "text": "Обслуживание настольных кофемашин",
+      "tel": "8182276912",
+      "telText": "(8182) 27-69-12",
+      "mail": "uanservice@yandex.ru",
+      "address": "г. Архангельск, ул. Суворова, 12"
+    };
     
 block content
   include ../components/breadcrumbs
   include ../components/heading
+  include ../components/shop-info
   .container
     +breadcrumbs(breadcrumbList)
     +heading(title, links)
-    include ../components/dealers/cities
+    .shop-infos-container.shop-infos-container_service-centres
+      +shop-info(shopInfos)
+    
+    
   
   

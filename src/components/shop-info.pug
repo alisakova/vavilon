@@ -3,9 +3,13 @@ mixin shop-info(item)
     .shop-info__img
       img(src="img/" + item.img, alt="ВАВИЛОН-ВЕНДИНГ")
     .shop-info__info
-      .shop-info__title ВАВИЛОН-ВЕНДИНГ
+      .shop-info__title= shopTitle
       .shop-info__text= item.text
       .shop-info__contacts
+        if item.address
+          .shop-info__contact
+            span.shop-info__name-contact Адрес
+            span.shop-info__contact-text= item.address
         .shop-info__contact
           span.shop-info__name-contact Телефон
           a(href="tel:" + item.tel).shop-info__contact-text= item.telText

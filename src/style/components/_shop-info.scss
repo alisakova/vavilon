@@ -38,4 +38,7 @@
 .shop-infos-container {
   @include flexbox(flex-start, space-between, wrap);
   margin: rem(57 0 30);
+  &_service-centres {
+    margin-bottom: rem(114);
+  }
 }
