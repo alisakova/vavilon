@@ -4,12 +4,18 @@ mixin news-preview(item, index)
       img(src="img/news/news-" + index + ".jpg", alt= item.title)
       .news-preview__info(class= item.disabled ? "news-preview__info_disabled" : "")
         if item.disabled
-          | Закончилась
+          if item.endText
+            span= item.endText
+          else
+            | Закончилась
         else 
           | Закончится 20 ноября 2018
-    h3.news-preview__title= item.title
+    a(href="news-page.html").news-preview__title= item.title
     .news-preview__date= item.date
     .news-preview__footer
-      a(href="").news-preview__link Акции
-      a(href="").news-preview__link Новости  
+      if item.links
+        a(href="").news-preview__link= item.links
+      else 
+        a(href="").news-preview__link Акции
+        a(href="").news-preview__link Новости  
   

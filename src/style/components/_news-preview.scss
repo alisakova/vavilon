@@ -4,6 +4,8 @@
 
 .news-preview__title {
   margin-bottom: rem(14);
+  @include font(16, 600);
+  display: block;
 }
 
 .news-preview__date {

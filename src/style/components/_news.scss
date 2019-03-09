@@ -1,5 +1,13 @@
 .news {
   padding-bottom: rem(110);
+  &_page {
+    margin-bottom: rem(30);
+    padding-bottom: 0;
+    .news__title {
+      margin-bottom: rem(40);
+      text-align: left;
+    }
+  }
 }
 
 .news__container {
@@ -15,4 +23,17 @@
     padding-bottom: 1px;
     border-bottom: $border-orange;
   }
+}
+
+.news__loading {
+  @include flexbox(center, flex-start);
+  @include font(16, 500);
+  margin-top: rem(40);
+  svg {
+    margin-right: rem(13);
+  }
+}
+
+.news__loading-wrapper {
+  @include flexbox(center, center);
 }

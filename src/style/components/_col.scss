@@ -10,4 +10,10 @@
   &_padding {
     padding: rem(10);
   }
+  &_top-bottom-paddings-25 {
+    padding: {
+      top: rem(25);
+      bottom: rem(25);
+    }
+  }
 }
