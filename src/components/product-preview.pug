@@ -8,7 +8,7 @@ mixin product-preview(item)
       .product-preview__container
         h2.product-preview__title(class= !item.descrText ? "product-preview__title_margin-bottom" : "")!= item.title
         .product-preview__descr= item.descrText
-        a(href="").product-preview__link Подробнее
+        a(href= productLink).product-preview__link Подробнее
     .product-preview__amount 1 кг / 6 шт.
     .product-preview__price
       if item.discount 
