@@ -2,7 +2,7 @@ mixin news-preview(item, index)
   article.news-preview
     .news-preview__img
       img(src="img/news/news-" + index + ".jpg", alt= item.title)
-      .news-preview__info(class= item.disabled ? "news-preview__info_disabled" : "")
+      .news-badge(class= item.disabled ? "news-badge_disabled" : "")
         if item.disabled
           if item.endText
             span= item.endText

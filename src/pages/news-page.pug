@@ -1,0 +1,48 @@
+extends ../templates/base
+
+block links
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+  
+block variables
+  -
+    var breadcrumbList = [
+      {
+        "link": "index.html",
+        "text": "Главная"
+      },
+      {
+        "link": "news.html",
+        "text": "Новости, акции, полезное"
+      },
+      {
+        "link": "",
+        "text": "Скидка на товар"
+      }
+    ];
+    var title = "Новости, акции, полезное";
+  
+block content
+  include ../components/breadcrumbs
+  include ../components/heading
+  .container
+    +breadcrumbs(breadcrumbList)
+    article.news.news_news-page
+      .news__title.news__title_flex
+        .news__left-col
+          h1 Скидка на товар!
+          .news__date 09 ноября 2018
+        .news__right-col
+          .news-badge.news-badge_static Закончится 20 ноября 2018
+      .news__body
+        .news__img
+          img(src="img/news-page-img.jpg", alt="Скидка на товар!")
+        .news__links
+          a(href="").news__link Акции
+          a(href="").news__link Новости
+        p.news__text Дорогие друзья! С 12 ноября по 30 ноября 2018 года вы можете приобрести наш снековый аппарат MVM с платежными системами Jofemar на особых условиях.
+        p.news__text Специальная цена составит всего 2200 евро.
+        p.news__text Оптимальные по функционалу автоматы доработаны специально под потребности российских вендоров. Аппараты линейки MVM идеально подходят для представления ассортимента шоколадных батончиков, чипсов, кондитерских изделий и других продуктов в индивидуальной упаковке.
+        p.news__text Акция продлится с 12.11 по 30.11 2018 года включительно и не суммируется с другими специальными предложениями. Количество акционного товара ограничено. Специальная цена действует только при 100% предоплате.
+        p.news__text Подробности уточняйте по телефону 8 800 700-34-43, доб. 1. Звонки по России бесплатны.
+        p.news__text Номер для клиентов из Москвы: +7 (968) 534-16-46

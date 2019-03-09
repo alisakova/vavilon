@@ -31,17 +31,3 @@
   margin-bottom: rem(21);
   position: relative;
 }
-
-.news-preview__info {
-  position: absolute;
-  bottom: rem(10);
-  right: rem(10);
-  border-radius: 3px;
-  background: $orange;
-  @include font(13, 500);
-  padding: rem(3 10);
-  &_disabled {
-    background: $gray;
-    color: #fff;
-  }
-}
