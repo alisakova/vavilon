@@ -1,5 +1,15 @@
 .cities {
   padding: rem(72 0 40);
+  &_serivce-centres {
+    padding-bottom: rem(111);
+    .cities__list {
+      width: 40%;
+      column-count: 2;
+    }
+    .cities__item {
+      margin-bottom: rem(25);
+    }
+  }
 }
 
 .cities__list {
@@ -20,7 +30,9 @@
 
 .cities__title {
   @include font(23, 600);
-  margin-bottom: rem(64);
+  &_margin-bottom {
+    margin-bottom: rem(64);
+  }
 }
 
 .cities__map {
