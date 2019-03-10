@@ -10,6 +10,9 @@
   &_alt {
     margin-top: rem(50);
   }
+  @media (max-width: 640px) {
+    margin: 21px 0 0;
+  }
 }
 
 .product-card__title {
@@ -32,11 +35,17 @@
   &_flex-start {
     justify-content: flex-start;
   }
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
 }
 
 .product-card__right-col {
   &_max-width {
     max-width: rem(580);
+    @media (max-width: 640px) {
+      max-width: none;
+    }
   }
 }
 
@@ -44,6 +53,9 @@
   margin-right: rem(20);
   &_margin-right-big {
     margin-right: rem(40);
+  }
+  @media (max-width: 640px) {
+    margin-right: 0;
   }
 }
 
@@ -58,6 +70,24 @@
   &_alt {
     @include sizes(362, 580);
     margin-bottom: rem(14);
+  }
+  @media (max-width: 640px) {
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.product-card__charachteristics {
+  @media (max-width: 640px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -74,6 +104,9 @@
 
 .product-card__charachteristic-text {
   @include font(16, 600);
+  @media (max-width: 640px) {
+    font-size: 13px;
+  }
 }
 
 .product-card__text {
@@ -90,6 +123,10 @@
   margin-bottom: rem(10);
   line-height: normal;
   color: $main-color;
+  @media (max-width: 640px) {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
 }
 
 .product-card__price {
@@ -102,10 +139,24 @@
     margin-top: 0;
     margin-bottom: rem(54);
   }
+  @media (max-width: 640px) {
+    margin-top: 23px;
+  }
+  @media (max-width: 600px) {
+    padding: 18px 20px 17px;
+    border-radius: 0;
+    margin: {
+      left: -20px;
+      right: -20px;
+    }
+  }
 }
 
 .product-card__price-left-col {
   @include flexbox(center, flex-start);
+  @media (max-width: 375px) {
+    display: block;
+  }
 }
 
 .product-card__price-name {
@@ -116,11 +167,21 @@
   &_margin-right {
     margin-right: rem(30);
   }
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    margin-bottom: 6px;
+    margin-right: 0;
+  }
 }
 
 .product-card__price-amount {
   @include font(33, 600);
   line-height: normal;
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
 }
 
 .product-card__link {
@@ -134,6 +195,9 @@
     color: $main-color;
     border-bottom: 1px dashed $orange;
     margin-right: rem(36);
+  }
+  @media (max-width: 640px) {
+    font-size: 15px;
   }
 }
 

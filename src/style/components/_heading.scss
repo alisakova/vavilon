@@ -9,6 +9,9 @@
   &_internal {
     @include font(23, 600);
     margin-bottom: rem(52);
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   @media (max-width: 600px) {
     font-size: 24px;
@@ -35,6 +38,13 @@
     .heading__wrapper {
       width: auto;
       min-width: rem(160);
+      @media (max-width: 992px) {
+        min-width: 0;
+        width: 33%;
+      }
+    }
+    @media (max-width: 992px) {
+      width: 100%;
     }
   }
   @media (max-width: 600px) {
@@ -93,5 +103,16 @@
     height: 7px;
     background: url("../img/arrow.svg") no-repeat center center;
     background-size: contain;
+  }
+  &.back {
+    padding: {
+      left: 22px;
+      right: 0;
+    }
+    &:after {
+      right: auto;
+      left: 0;
+      transform: translateY(-45%) rotate(90deg);
+    }
   }
 }
