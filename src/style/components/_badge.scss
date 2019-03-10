@@ -65,6 +65,23 @@
         width: 0 6px 3px 0;
         color: transparent $main-color transparent transparent;
       }
+      @media (max-width: 640px) {
+        right: 0;
+        left: auto;
+        border: {
+          style: solid;
+          width: 3px 6px 0 0;
+          color: $main-color transparent transparent transparent;
+        }
+      }
+    }
+    @media (max-width: 640px) {
+      border-top-left-radius: rem(5);
+      border-bottom-left-radius: rem(5);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      left: auto;
+      right: -6px;
     }
   }
 

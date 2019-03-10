@@ -1,5 +1,8 @@
 .company {
   margin: rem(36 0 27);
+  @media (max-width: 600px) {
+    margin-top: 0;
+  }
 }
 
 .company__text {
@@ -14,4 +17,8 @@
 .company__title {
   @include font(23, 600);
   margin-bottom: rem(27);
+  @media (max-width: 600px) {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
 }

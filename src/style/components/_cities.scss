@@ -10,11 +10,18 @@
       margin-bottom: rem(25);
     }
   }
+  @media (max-width: 600px) {
+    padding: 33px 0 0;
+  }
 }
 
 .cities__list {
   column-count: 4;
   margin-bottom: rem(56);
+  @media (max-width: 600px) {
+    column-count: 1;
+    margin-bottom: 24px;
+  }
 }
 
 .cities__item {
@@ -26,6 +33,9 @@
       border-bottom-color: transparent;
     }
   }
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
 }
 
 .cities__title {
@@ -33,8 +43,15 @@
   &_margin-bottom {
     margin-bottom: rem(64);
   }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
 
 .cities__map {
   max-width: rem(1016);
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
