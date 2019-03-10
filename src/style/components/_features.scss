@@ -2,11 +2,17 @@
   background: $light-gray;
   box-shadow: inset rem(0 0 34) rgba(0, 0, 0, 0.05);
   padding: rem(71 0 50);
+  @media (max-width: 600px) {
+    padding: 56px 0 71px;
+  }
 }
 
 .features__title {
   margin-bottom: rem(86);
   text-align: center;
+  @media (max-width: 600px) {
+    margin-bottom: 23px;
+  }
 }
 
 .features__container {
@@ -22,15 +28,36 @@
   // max-width: rem(520);
   @include flexbox(center, flex-start);
   margin-bottom: rem(45);
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding: 0;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .features__icon {
   max-width: rem(70);
   min-width: rem(70);
   margin-right: rem(35);
+  @media (max-width: 600px) {
+    max-width: 68px;
+    min-width: 68px;
+    margin: {
+      right: 0;
+      bottom: 11px;
+    }
+  }
 }
 
 .features__text {
   @include font(16, 600);
   line-height: 1.43;
+  @media (max-width: 600px) {
+    text-align: center;
+    font-size: 14px;
+  }
 }

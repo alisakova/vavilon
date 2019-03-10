@@ -9,12 +9,20 @@
   &_font-size-14 {
     font-size: rem(14);
   }
+  @media (max-width: 600px) {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
 }
 
 .news-preview__date {
   @include font(15, 500);
   color: $gray;
   margin-bottom: rem(14);
+  @media (max-width: 600px) {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
 }
 
 .news-preview__link {
@@ -28,9 +36,18 @@
   &:hover, &:focus {
     border-bottom-color: transparent;
   }
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 }
 
 .news-preview__img {
   margin-bottom: rem(21);
   position: relative;
+  img {
+    @include img-contain;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 10px;
+  }
 }

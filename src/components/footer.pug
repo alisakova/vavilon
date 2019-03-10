@@ -122,27 +122,17 @@ footer.footer
     each item in footerLinks
       .footer__col(class= item.addClass)
         .footer__title= item.title
-        if item.container
-          .footer__container
-            nav.nav.nav_footer
-              ul.nav__list.nav__list_block
-                each link, index in item.links
-                  if index !== 4
-                    li.nav__item
-                      a(href= link.link).nav__link.link= link.text
-            nav.nav.nav_footer
-              ul.nav__list.nav__list_block
-                li.nav__item
-                  a(href= item.links[4].link).nav__link.link= item.links[4].text
-        else
+        .footer__container
           nav.nav.nav_footer
             ul.nav__list.nav__list_block
-              for link in item.links
-                li.nav__item
-                  if link.copyright
-                    .nav__copyright= link.text
-                  else
+              each link, index in item.links
+                if index !== item.links.length - 1
+                  li.nav__item
                     a(href= link.link).nav__link.link= link.text
+          nav.nav.nav_footer
+            ul.nav__list.nav__list_block
+              li.nav__item
+                a(href= item.links[item.links.length - 1].link, class= item.links[item.links.length - 1].copyright ? "nav__copyright" : "nav__link link")= item.links[item.links.length - 1].text
     .footer__col
       .footer__info
         .footer__logo
@@ -160,3 +150,6 @@ footer.footer
         each item in networks
           a(href= item.link).footer__social-link
             img(src="img/networks/" + item.icon + ".svg", alt= item.alt)
+      .footer__mobile
+        a(href="").nav__link.link Политика конфиденциальности
+        .nav__copyright Разработано в Cody Art, 2019

@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  if ($('._slider').length) {
-    $('._slider').slick({
+$(document).ready(function() {
+  if ($("._slider").length) {
+    $("._slider").slick({
       infinite: true,
       speed: 500,
       autoplay: true,
@@ -10,10 +10,24 @@ $(document).ready(function(){
       dots: true,
     });
   }
-  if ($('.companies-slider').length) {
-    $('.companies-slider').slick({
+  if ($(".companies-slider").length) {
+    $(".companies-slider").slick({
       slidesToShow: 5,
       infinite: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
       // adaptiveHeight: true
     });
   }

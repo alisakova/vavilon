@@ -1,12 +1,22 @@
 .slick-dots {
   @include flexbox(center, flex-start);
   li {
+    @include sizes(10, 10);
     button {
+      display: block;
       border-radius: 50%;
       @include sizes(10, 10);
       font-size: 0;
       background: $main-color;
       opacity: 0.2;
+      @media (max-width: 600px) {
+        width: 8px;
+        height: 8px;
+      }
+    }
+    @media (max-width: 600px) {
+      width: 8px;
+      height: 8px;
     }
     &:not(:last-child) {
       margin-right: rem(12);
@@ -24,6 +34,14 @@
     li {
       button {
         background: $orange;
+        @media (max-width: 600px) {
+          width: 10px;
+          height: 10px;
+        }
+      }
+      @media (max-width: 600px) {
+        width: 10px;
+        height: 10px;
       }
     }
   }

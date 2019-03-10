@@ -2,25 +2,61 @@
   padding-bottom: rem(76);
   .container {
     @include flexbox(flex-start, flex-start);
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 600px) {
+    padding-bottom: 56px;
   }
 }
 
 .company-descr__title {
   margin-bottom: rem(34);
+  @media (max-width: 600px) {
+    margin-bottom: 23px;
+  }
 }
 
 .company-descr__text {
   line-height: 1.73;
+  font-weight: 500;
   &:not(:last-child) {
     margin-bottom: rem(27);
+    @media (max-width: 600px) {
+      margin-bottom: 25px;
+    }
   }
 }
 
 .company-descr__main {
   width: 66%;
   margin-right: rem(99);
+  @media (max-width: 600px) {
+    width: auto;
+    margin: {
+      right: 0;
+      bottom: 78px;
+    }
+  }
 }
 
 .company-descr__aside {
   width: 24.5%;
+  @media (max-width: 600px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.company-descr__show-more {
+  font: {
+    size: 12px;
+    weight: 500;
+  }
+  border-bottom: 1px dashed $orange;
+  background: transparent;
+  @media (min-width: 601px) {
+    display: none;
+  }
 }

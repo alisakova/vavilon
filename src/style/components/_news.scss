@@ -15,11 +15,23 @@
       text-align: left;
     }
   }
+  &_index {
+    @media (max-width: 600px) {
+      .col {
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .news__container {
   @include flexbox(flex-start, flex-start);
   margin: 0 rem(-10);
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 }
 
 .news__right-col {

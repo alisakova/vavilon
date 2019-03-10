@@ -1,3 +1,11 @@
 .intro-slider {
 
 }
+
+@media (max-width: 600px) {
+  .intro-slider__slide {
+    display: flex !important;
+    @include flexbox(center, flex-start);
+    flex-direction: column;
+  }
+}

@@ -1,9 +1,16 @@
 .categories {
   padding: rem(68 0 97);
+  @media (max-width: 600px) {
+    padding: 34px 0 36px;
+  }
 }
 
 .categories__list {
   @include flexbox(flex-start, center);
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .categories__item {
@@ -14,11 +21,20 @@
       border-bottom-color: transparent;
     }
   }
+  @media (max-width: 600px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .categories__img {
   max-width: rem(156);
   margin: 0 auto 2px;
+  @media (max-width: 600px) {
+    width: 107px;
+  }
 }
 
 .categories__link {
@@ -26,4 +42,7 @@
   @include font(20, 600);
   border-bottom: $border-orange;
   transition: border-bottom 250ms;
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
 }
