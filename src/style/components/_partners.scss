@@ -1,11 +1,21 @@
 .partners {
   margin: rem(40 0 90);
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 }
 
 .partners__item {
   @include flexbox(flex-start, flex-start);
   &:not(:last-child) {
     margin-bottom: rem(30);
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -14,10 +24,17 @@
   min-width: rem(164);
   margin-right: rem(38);
   @include flexbox(center, center);
+  @media (max-width: 600px) {
+    min-width: 0;
+    margin: 0 auto 15px;
+  }
 }
 
 .partners__text {
   font-weight: 500;
   max-width: rem(782);
   line-height: 1.733;
+  @media (max-width: 600px) {
+    max-width: none;
+  }
 }
