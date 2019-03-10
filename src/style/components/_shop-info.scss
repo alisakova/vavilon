@@ -1,7 +1,7 @@
 .shop-info {
   @include flexbox(flex-start, flex-start);
   width: 50%;
-  margin-bottom: rem(60);
+  margin-bottom: rem(55);
 }
 
 .shop-info__img {
@@ -13,12 +13,12 @@
 
 .shop-info__title {
   @include font(16, 600);
-  margin-bottom: rem(7);
+  margin-bottom: rem(5);
 }
 
 .shop-info__text {
   font-weight: 500;
-  margin-bottom: rem(14);
+  margin-bottom: rem(20);
 }
 
 .shop-info__contact {

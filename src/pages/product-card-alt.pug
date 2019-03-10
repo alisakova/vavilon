@@ -65,9 +65,9 @@ block content
   .container
     +breadcrumbs(breadcrumbList)
     +heading(title, links)
-    .product-card 
-      h1.product-card__title Кофе в зернах Caffé Veloce Lusso 
-      .product-card__container
+    .product-card.product-card_alt
+      h1.product-card__title.product-card__title_font-size-33 Кофе в зернах Caffé Veloce Lusso 
+      .product-card__container.product-card__container_flex-start
         .product-card__left-col
           .product-card__img
             img(src="img/coffee-card-img.jpg", alt="")
@@ -79,8 +79,8 @@ block content
             .product-card__charachteristic
               include ../img/portion-icon.svg
               .product-card__charachteristic-text 9г. на порцию
-        .product-card__right-col
-          p.product-card__text Смесь кофе для  эспрессо состоит из зерен, собранных на  самых знаменитых в мире кофейных плантациях. Маленькой чашечкой кофе Lusso можно наслаждаться даже без сахара.
+        .product-card__right-col.product-card__right-col_max-width
+          p.product-card__text.product-card__text_max-width Смесь кофе для  эспрессо состоит из зерен, собранных на  самых знаменитых в мире кофейных плантациях. Маленькой чашечкой кофе Lusso можно наслаждаться даже без сахара.
           p.product-card__subtitile Состав:
           p.product-card__text натуральный кофе (85% Арабика, 15% Робуста)
           p.product-card__subtitile Упаковка:

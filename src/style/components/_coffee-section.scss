@@ -1,17 +1,23 @@
 .coffee-section {
   background: $light-gray;
-  padding: rem(50 0 40);
+  padding: rem(60 0 35);
   flex: 1 0 auto;
   &_similiar {
     padding: 0;
     background: #fff;
     margin-bottom: rem(80);
   }
+  &:not(:first-of-type) {
+    padding-bottom: rem(26);
+  }
+  &_without-title {
+    padding-top: rem(75);
+  }
 }
 
 .coffee-section__title {
   font-size: rem(23);
-  margin-bottom: rem(37);
+  margin-bottom: rem(34);
 }
 
 
@@ -31,12 +37,12 @@
     margin-right: rem(35);
   }
   &_second {
-    max-width: 20%;
-    width: 20%;
+    max-width: 22.5%;
+    width: 22.5%;
     margin-right: rem(55);
   }
   &_third {
-    width: 13.4%;
+    width: 15%;
     margin-right: rem(17);
   }
   &_fourth {
@@ -55,7 +61,7 @@
   margin-bottom: rem(20);
   .container_flex {
     @include flexbox(flex-start, flex-start);
-    margin-bottom: rem(116);
+    margin-bottom: rem(100);
   }
   .companies {
     padding-bottom: rem(116);
@@ -63,8 +69,8 @@
 }
 
 .coffee-section__text {
-  margin-right: rem(99);
-  max-width: 65.8%;
+  margin-right: rem(98);
+  width: 65.8%;
   p {
     font-weight: 500;
     &:not(:last-child) {
@@ -74,5 +80,5 @@
 }
 
 .coffee-section__slider {
-  max-width: 23.7%;
+  width: 24.8%;
 }

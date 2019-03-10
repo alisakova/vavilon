@@ -1,6 +1,5 @@
 .working-conditions {
   margin: rem(23 0 64);
-  max-width: rem(980);
 }
 
 .working-conditions__link {
@@ -31,18 +30,23 @@
 }
 
 .working-conditions__text {
+  max-width: rem(980);
   font-weight: 500;
-  line-height: 1.733;
+  line-height: 1.75;
   &:not(:last-child) {
-    margin-bottom: rem(20);
+    margin-bottom: rem(25);
   }
   &_bold {
     @include font(16, 600);
   }
   &_margin-top {
-    margin-top: rem(26);
+    margin-top: rem(16);
   }
   &_big-margin-top {
     margin-top: rem(45);
+  }
+  & + .working-conditions__title {
+    margin-top: rem(65);
+    margin-bottom: rem(30);
   }
 }

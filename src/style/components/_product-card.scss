@@ -2,6 +2,13 @@
   margin: rem(32 0 88);
   .btn {
     border-radius: rem(50);
+    padding: {
+      left: rem(21);
+      right: rem(21);
+    }
+  }
+  &_alt {
+    margin-top: rem(50);
   }
 }
 
@@ -11,6 +18,10 @@
     @include font(33, 600);
     margin-bottom: rem(30);
   }
+  &_font-size-33 {
+    font-size: rem(33);
+    letter-spacing: 0;
+  }
 }
 
 .product-card__container {
@@ -18,10 +29,22 @@
   &_margin-bottom {
     margin-bottom: rem(80);
   }
+  &_flex-start {
+    justify-content: flex-start;
+  }
+}
+
+.product-card__right-col {
+  &_max-width {
+    max-width: rem(580);
+  }
 }
 
 .product-card__left-col {
   margin-right: rem(20);
+  &_margin-right-big {
+    margin-right: rem(40);
+  }
 }
 
 .product-card__img {
@@ -34,7 +57,7 @@
   }
   &_alt {
     @include sizes(362, 580);
-    margin-bottom: rem(10);
+    margin-bottom: rem(14);
   }
 }
 
@@ -55,7 +78,7 @@
 
 .product-card__text {
   margin-bottom: rem(22);
-  line-height: 1.733;
+  line-height: 1.75;
   font-weight: 500;
   &_no-margin-bottom {
     margin-bottom: 0;
@@ -74,10 +97,10 @@
   padding: rem(20 28 20 18);
   border-radius: rem(5);
   @include flexbox(center, space-between);
-  margin-top: rem(66);
+  margin-top: rem(76);
   &_margin-top-0 {
     margin-top: 0;
-    margin-bottom: rem(56);
+    margin-bottom: rem(54);
   }
 }
 
@@ -90,6 +113,9 @@
   @include font(16, 600);
   line-height: normal;
   margin-right: rem(26);
+  &_margin-right {
+    margin-right: rem(30);
+  }
 }
 
 .product-card__price-amount {
@@ -114,7 +140,7 @@
 .product-card__infos {
   & + .product-card__infos {
     margin-top: rem(70);
-    margin-left: rem(10);
+    margin-left: rem(5);
   }
 }
 
@@ -127,12 +153,16 @@
     margin-right: rem(12);
   }
   &_alt {
+    &:not(:last-child) {
+      margin-bottom: rem(35);
+    }
     .product-card__infos-link {
-      font-weight: 500;
       line-height: 1.733;
+      @include font(15, 500);
     }
     svg {
       min-width: rem(40);
+      margin-right: rem(10);
     }
   }
 }
@@ -170,7 +200,7 @@
 .product-card__add-info {
   @include flexbox(flex-start, flex-start);
   padding-bottom: rem(24);
-  margin-bottom: rem(30);
+  margin-bottom: rem(28);
   border-bottom: 1px solid $gray;
 }
 
@@ -179,7 +209,7 @@
     margin-right: rem(70);
   }
   &:nth-child(2) {
-    margin-right: rem(50);
+    margin-right: rem(45);
   }
 }
 
@@ -187,6 +217,7 @@
   @include font(16, 500);
   color: $gray;
   @include flexbox(center, flex-start);
+  margin-bottom: rem(2);
   svg {
     margin-left: rem(4);
   }
@@ -205,7 +236,8 @@
 .product-card__data {
   @include flexbox(center, flex-start);
   @include font(16, 500);
-  margin-bottom: rem(32);
+  margin-bottom: rem(30);
+  margin-top: rem(30);
 }
 
 .product-card__data-item {

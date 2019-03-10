@@ -1,11 +1,14 @@
 .company {
-  margin: rem(33 0 27);
+  margin: rem(36 0 27);
 }
 
 .company__text {
   font-weight: 500;
   line-height: 1.733;
-  margin-bottom: rem(30);
+  margin-bottom: rem(28);
+  & + .company__title {
+    margin-top: rem(35);
+  }
 }
 
 .company__title {

@@ -2,9 +2,12 @@
   border: 1px solid #f0f0f0;
   box-shadow: rem(0 4 4) rgba(0, 0, 0, 0.07);
   border-radius: rem(3);
-  padding: rem(33 26 42 31);
+  padding: rem(33 26 42 33);
   &:first-child {
     margin-bottom: rem(30);
+  }
+  &_padding-bottom {
+    padding-bottom: rem(20);
   }
 }
 
@@ -19,8 +22,11 @@
 
 .block__text {
   font-weight: 500;
-  margin-bottom: rem(13);
+  margin-bottom: rem(17);
   line-height: 1.733;
+  &_margin-bottom {
+    margin-bottom: rem(25);
+  }
 }
 
 .block__subtitle {

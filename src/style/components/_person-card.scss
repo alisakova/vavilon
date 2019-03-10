@@ -3,7 +3,7 @@
 }
 
 .person-card__img {
-  margin-bottom: rem(20);
+  margin-bottom: rem(16);
   @include sizes(180, 221);
   img {
     @include img-contain;
@@ -12,7 +12,7 @@
 
 .person-card__name {
   @include font(16, 600);
-  margin-bottom: rem(8);
+  margin-bottom: rem(5);
 }
 
 .person-card__descr {
@@ -26,11 +26,11 @@
 .person-card__contact {
   @include flexbox(center, flex-start);
   svg {
-    margin-right: rem(8);
+    margin-right: rem(5);
     min-width: rem(18);
   }
   &:not(:last-child) {
-    margin-bottom: rem(10);
+    margin-bottom: rem(2);
   }
 }
 

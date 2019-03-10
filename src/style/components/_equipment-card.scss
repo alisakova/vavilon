@@ -8,7 +8,7 @@
 
 .equipment-card__img {
   @include sizes(362, 329);
-  margin-bottom: rem(36);
+  margin-bottom: rem(30);
   border: $product-img-border;
   img {
     @include img-contain;
@@ -27,22 +27,26 @@
   @include font(23, 600);
   line-height: normal;
   padding-bottom: rem(27);
-  margin-bottom: rem(30);
+  margin-bottom: rem(26);
   border-bottom: 1px solid $gray;
 }
 
 .equipment-card__text {
   font-weight: 500;
-  line-height: 1.733;
+  line-height: 1.75;
   &:not(:last-child) {
     margin-bottom: rem(25);
   }
   &_bold {
     font-weight: 600;
+    line-height: 1.56;
     color: $main-color;
+    &:not(:last-child) {
+      margin-bottom: rem(18);
+    }
   }
   &_margin-top {
-    margin-top: rem(41);
+    margin-top: rem(38);
   }
 }
 

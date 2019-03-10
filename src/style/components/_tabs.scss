@@ -1,5 +1,5 @@
 .tabs {
-  margin: rem(81 0 88);
+  margin: rem(82 0 96);
 }
 
 .tabs__container {
@@ -13,8 +13,9 @@
   @include font(14, 500);
   color: $alt-gray;
   position: relative;
-  padding-bottom: rem(6);
+  padding: rem(0 5 10);
   transition: all 250ms;
+  background: transparent;
   &.active {
     color: $main-color;
     font-weight: 600;

@@ -1,5 +1,5 @@
 .cities {
-  padding: rem(72 0 40);
+  padding: rem(58 0 40);
   &_serivce-centres {
     padding-bottom: rem(111);
     .cities__list {
@@ -14,12 +14,12 @@
 
 .cities__list {
   column-count: 4;
-  margin-bottom: rem(53);
+  margin-bottom: rem(56);
 }
 
 .cities__item {
   font-weight: 500;
-  margin-bottom: rem(18);
+  margin-bottom: rem(22);
   a {
     border-bottom: 1px dotted $orange;
     &:hover {

@@ -1,12 +1,12 @@
 .product-section {
   background: $light-gray;
-  padding: rem(66 0 24);
-  margin-bottom: rem(20);
+  padding: rem(60 0 24);
+  margin-bottom: rem(28);
   flex: 1 0 auto;
   &_without-title {
     padding: {
-      top: rem(60);
-      bottom: rem(45);
+      top: rem(75);
+      bottom: rem(104);
     }
   }
   &_margin-bottom-0 {
@@ -21,6 +21,10 @@
   &_padding-bottom {
     padding-bottom: rem(66);
   }
+  &_padding-top {
+    padding-top: rem(88);
+    padding-bottom: rem(40);
+  }
 }
 
 .product-section__title {
@@ -32,7 +36,7 @@
 }
 
 .product-section__add-text {
-  margin-bottom: rem(40);
+  margin-bottom: rem(44);
   color: $alt-gray;
   @include font(16, 500);
   line-height: normal;
@@ -43,15 +47,16 @@
 }
 
 .product-section__descr {
-  margin-top: rem(45);
+  margin-top: rem(50);
   @include flexbox(flex-start, flex-start);
 }
 
 .product-section__text {
-  margin-right: rem(119);
+  margin-right: rem(122);
   max-width: 65.8%;
   p {
     font-weight: 500;
+    line-height: 1.75;
     &:not(:last-child) {
       margin-bottom: rem(25);
     }

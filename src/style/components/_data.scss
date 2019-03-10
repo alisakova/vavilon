@@ -5,12 +5,12 @@
 .data__name {
   @include font(16, 600);
   background: #F9F9F9;
-  padding: rem(10 17);
+  padding: rem(9 17 8);
 }
 
 .data__row {
   @include flexbox(center, space-between);
   font-weight: 500;
-  line-height: 1.733;
-  padding: rem(10 80 10 17);
+  line-height: 1.72;
+  padding: rem(8 80 7 17);
 }
