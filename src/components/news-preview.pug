@@ -1,21 +1,26 @@
 mixin news-preview(item, index)
   article.news-preview
     .news-preview__img
-      img(src="img/news/news-" + index + ".jpg", alt= item.title)
-      .news-badge(class= item.disabled ? "news-badge_disabled" : "")
-        if item.disabled
-          if item.endText
-            span= item.endText
-          else
-            | Закончилась
-        else 
-          | Закончится 20 ноября 2018
-    a(href="news-page.html").news-preview__title= item.title
-    .news-preview__date= item.date
-    .news-preview__footer
-      if item.links
-        a(href="").news-preview__link= item.links
+      if kkt 
+        img(src="img/kkt/" + item.img, alt= item.title)
       else 
-        a(href="").news-preview__link Акции
-        a(href="").news-preview__link Новости  
+        img(src="img/news/news-" + index + ".jpg", alt= item.title)
+      if !kkt
+        .news-badge(class= item.disabled ? "news-badge_disabled" : "")
+          if item.disabled
+            if item.endText
+              span= item.endText
+            else
+              | Закончилась
+          else 
+            | Закончится 20 ноября 2018
+    a(href="news-page.html", class= kkt ? "news-preview__title_font-size-14" : "").news-preview__title= item.title
+    .news-preview__date= item.date
+    if !kkt
+      .news-preview__footer
+        if item.links
+          a(href="").news-preview__link= item.links
+        else 
+          a(href="").news-preview__link Акции
+          a(href="").news-preview__link Новости  
   

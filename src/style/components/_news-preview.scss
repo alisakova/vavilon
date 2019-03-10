@@ -6,6 +6,9 @@
   margin-bottom: rem(14);
   @include font(16, 600);
   display: block;
+  &_font-size-14 {
+    font-size: rem(14);
+  }
 }
 
 .news-preview__date {

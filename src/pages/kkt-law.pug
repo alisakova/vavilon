@@ -1,0 +1,85 @@
+extends ../templates/base
+
+block links
+  link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+  
+block variables
+  -
+    var breadcrumbList = [
+      {
+        "link": "index.html",
+        "text": "Главная"
+      },
+      {
+        "link": "",
+        "text": "Закон о ККТ"
+      }
+    ];
+    var title = "Закон о ККТ";
+    var kkt = true;
+    var news = [
+      {
+        "title": "Вендоры получили право отражать расходы по приобретению ККТ в налоговой декларации",
+        "date": "09 ноября 2018",
+        "img": "kkt.jpg",
+      },
+      {
+        "title": "Государственная Дума приняла законопроект о ККТ в третьем чтении",
+        "date": "09 ноября 2018",
+        "img": "kkt-1.jpg",
+      },
+      {
+        "title": "Поправки к 54 ФЗ о ККТ",
+        "date": "09 ноября 2018",
+        "img": "kkt-2.jpg",
+      },
+      {
+        "title": "Важная информация",
+        "date": "09 ноября 2018",
+        "img": "kkt-3.jpg",
+      },
+      {
+        "title": "Вендоры получили право отражать расходы по приобретению ККТ в налоговой декларации",
+        "date": "09 ноября 2018",
+        "img": "kkt-4.jpg",
+      },
+      {
+        "title": "Вендоры получили право отражать расходы по приобретению ККТ в налоговой декларации",
+        "date": "09 ноября 2018",
+        "img": "kkt.jpg",
+      },
+      {
+        "title": "15 ноября 2017 Одобрен законопроект о ККТ. Внесены поправки.",
+        "date": "09 ноября 2018",
+        "img": "kkt-1.jpg",
+      },
+      {
+        "title": "Вендоры получили право отражать расходы по приобретению ККТ в налоговой декларации",
+        "date": "09 ноября 2018",
+        "img": "kkt-5.jpg",
+      },
+      {
+        "title": "Вендинговый бизнес-форум 2017",
+        "date": "09 ноября 2018",
+        "img": "kkt-2.jpg",
+      }
+    ]
+  
+block content
+  include ../components/breadcrumbs
+  include ../components/heading
+  include ../components/news-preview
+  .container
+    +breadcrumbs(breadcrumbList)
+    section.news.news_page
+      h1.news__title Закон о ККТ
+      .wrap-container.wrap-container_top-bottom-25
+        each item, index in news
+          .col.col_3-items.col_top-bottom-paddings-25
+            +news-preview(item, index)
+      .news__loading-wrapper
+        .news__loading
+          include ../img/time.svg
+          | Loading...
+  
