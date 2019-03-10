@@ -1,5 +1,7 @@
 .heading {
-
+  @media (max-width: 600px) {
+    padding: 27px 0 18px;
+  }
 }
 
 .heading__title {
@@ -7,6 +9,10 @@
   &_internal {
     @include font(23, 600);
     margin-bottom: rem(52);
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+    margin-bottom: 23px;
   }
 }
 
@@ -31,6 +37,9 @@
       min-width: rem(160);
     }
   }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .heading__wrapper {
@@ -48,6 +57,9 @@
     width: auto;
     margin-right: rem(52);
   }
+  @media (max-width: 750px) {
+    width: 30%;
+  }
 }
 
 .heading__container {
@@ -57,5 +69,29 @@
       width: 27%;
       margin-right: rem(45);
     }
+  }
+}
+
+.heading__mobile-link {
+  display: inline-block;
+  font: {
+    size: 16px;
+    weight: 500;
+  }
+  position: relative;
+  padding-right: 22px;
+  @media (min-width: 601px) {
+    display: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-45%) rotate(-90deg);
+    width: 10px;
+    height: 7px;
+    background: url("../img/arrow.svg") no-repeat center center;
+    background-size: contain;
   }
 }

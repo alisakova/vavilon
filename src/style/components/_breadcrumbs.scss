@@ -7,6 +7,9 @@
   line-height: 1.33;
   @include font(12, 500);
   @include flexbox(center, flex-start);
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .breadcrumbs__separator {

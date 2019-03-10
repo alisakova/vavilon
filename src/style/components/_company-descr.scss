@@ -48,15 +48,3 @@
     width: 100%;
   }
 }
-
-.company-descr__show-more {
-  font: {
-    size: 12px;
-    weight: 500;
-  }
-  border-bottom: 1px dashed $orange;
-  background: transparent;
-  @media (min-width: 601px) {
-    display: none;
-  }
-}

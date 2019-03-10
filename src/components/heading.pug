@@ -4,6 +4,7 @@ mixin heading(title, links)
       .heading__title.heading__title_internal= title
     else
       h1.heading__title= title
+    .heading__mobile-link Виды автоматов
     .heading__container(class= filters ? "heading__container_flex" : "")
       .heading__links(class= headingLinksAltClass)
         each item in links

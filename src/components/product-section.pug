@@ -21,8 +21,15 @@ mixin product-section(item)
       if item.descr
         .product-section__descr
           .product-section__text
-            for paragraph in item.descr
-              p= paragraph
+            each paragraph, index in item.descr
+              if item.descr.length > 2
+                if index === 1
+                  a.mobile-show-btn Показать полностью
+                  p= paragraph
+                else 
+                  p= paragraph
+              else
+                p= paragraph
           if item.slider
             .product-section__slider.product-slider._slider.orange-slider
               -for(var i=0;i<3;i++)
