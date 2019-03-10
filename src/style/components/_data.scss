@@ -1,0 +1,16 @@
+.data {
+  max-width: rem(452);
+}
+
+.data__name {
+  @include font(16, 600);
+  background: #F9F9F9;
+  padding: rem(10 17);
+}
+
+.data__row {
+  @include flexbox(center, space-between);
+  font-weight: 500;
+  line-height: 1.733;
+  padding: rem(10 80 10 17);
+}

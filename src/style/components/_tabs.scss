@@ -17,6 +17,7 @@
   transition: all 250ms;
   &.active {
     color: $main-color;
+    font-weight: 600;
     &:after {
       content: "";
       position: absolute;

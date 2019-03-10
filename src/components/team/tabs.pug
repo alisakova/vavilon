@@ -33,21 +33,21 @@
 include ../person-card
 .tabs
   .tabs__container
-    button.tabs__tab._default(onclick="openTab(event, 'team-1')") Отдел продаж торговых<br />автоматов
-    button.tabs__tab(onclick="openTab(event, 'team-2')") Отдел продаж ингредиентов<br />и сопутствующих товаров
-    button.tabs__tab(onclick="openTab(event, 'team-3')") Служба сервисного<br />обслуживания
-    button.tabs__tab(onclick="openTab(event, 'team-4')") Отдел маркетинга
-    button.tabs__tab(onclick="openTab(event, 'team-5')") Отдел поставок
-    button.tabs__tab(onclick="openTab(event, 'team-6')") Отдел логистики
+    button.tabs__tab._tabs-tab._default(onclick="openTab(event, 'team-1')") Отдел продаж торговых<br />автоматов
+    button.tabs__tab._tabs-tab(onclick="openTab(event, 'team-2')") Отдел продаж ингредиентов<br />и сопутствующих товаров
+    button.tabs__tab._tabs-tab(onclick="openTab(event, 'team-3')") Служба сервисного<br />обслуживания
+    button.tabs__tab._tabs-tab(onclick="openTab(event, 'team-4')") Отдел маркетинга
+    button.tabs__tab._tabs-tab(onclick="openTab(event, 'team-5')") Отдел поставок
+    button.tabs__tab._tabs-tab(onclick="openTab(event, 'team-6')") Отдел логистики
   .tabs__content._team-1#team-1
     .wrap-container
       each item, index in teamMembers
         +person-card(item, index)
-  .tabs__content._team-2#team-2
-  .tabs__content._team-3#team-3
-  .tabs__content._team-1#team-4
-  .tabs__content._team-2#team-5
-  .tabs__content._team-3#team-6
+  .tabs__content._tabs-content._team-2#team-2
+  .tabs__content._tabs-content._team-3#team-3
+  .tabs__content._tabs-content._team-1#team-4
+  .tabs__content._tabs-content._team-2#team-5
+  .tabs__content._tabs-content._team-3#team-6
 
     
 

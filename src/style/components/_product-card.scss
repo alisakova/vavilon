@@ -1,0 +1,224 @@
+.product-card {
+  margin: rem(32 0 88);
+  .btn {
+    border-radius: rem(50);
+  }
+}
+
+.product-card__title {
+  margin-bottom: rem(35);
+  &_h2 {
+    @include font(33, 600);
+    margin-bottom: rem(30);
+  }
+}
+
+.product-card__container {
+  @include flexbox(flex-start, space-between);
+  &_margin-bottom {
+    margin-bottom: rem(80);
+  }
+}
+
+.product-card__left-col {
+  margin-right: rem(20);
+}
+
+.product-card__img {
+  border: $product-img-border;
+  @include sizes(480, 480);
+  margin-bottom: rem(25);
+  position: relative;
+  img {
+    @include img-contain;
+  }
+  &_alt {
+    @include sizes(362, 580);
+    margin-bottom: rem(10);
+  }
+}
+
+.product-card__charachteristic {
+  @include flexbox(center, flex-start);
+  svg {
+    margin-right: rem(16);
+    min-width: rem(30);
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(18);
+  }
+}
+
+.product-card__charachteristic-text {
+  @include font(16, 600);
+}
+
+.product-card__text {
+  margin-bottom: rem(22);
+  line-height: 1.733;
+  font-weight: 500;
+  &_no-margin-bottom {
+    margin-bottom: 0;
+  }
+}
+
+.product-card__subtitile {
+  @include font(16, 600);
+  margin-bottom: rem(10);
+  line-height: normal;
+  color: $main-color;
+}
+
+.product-card__price {
+  background: #F9F9F9;
+  padding: rem(20 28 20 18);
+  border-radius: rem(5);
+  @include flexbox(center, space-between);
+  margin-top: rem(66);
+  &_margin-top-0 {
+    margin-top: 0;
+    margin-bottom: rem(56);
+  }
+}
+
+.product-card__price-left-col {
+  @include flexbox(center, flex-start);
+}
+
+.product-card__price-name {
+  color: $gray;
+  @include font(16, 600);
+  line-height: normal;
+  margin-right: rem(26);
+}
+
+.product-card__price-amount {
+  @include font(33, 600);
+  line-height: normal;
+}
+
+.product-card__link {
+  font-weight: 500;
+  color: $gray;
+  border-bottom: 1px solid $gray;
+  &:hover, &:focus {
+    border-bottom-color: transparent;
+  }
+  &_orange {
+    color: $main-color;
+    border-bottom: 1px dashed $orange;
+    margin-right: rem(36);
+  }
+}
+
+.product-card__infos {
+  & + .product-card__infos {
+    margin-top: rem(70);
+    margin-left: rem(10);
+  }
+}
+
+.product-card__info {
+  @include flexbox(center, flex-start);
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+  svg {
+    margin-right: rem(12);
+  }
+  &_alt {
+    .product-card__infos-link {
+      font-weight: 500;
+      line-height: 1.733;
+    }
+    svg {
+      min-width: rem(40);
+    }
+  }
+}
+
+.product-card__infos-link {
+  @include font(13, 500);
+  color: $black;
+  &_dotted {
+    border-bottom: 1px dashed $orange;
+    &:hover, &:focus {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.product-card__img-previews {
+  @include flexbox(stretch, flex-start);
+  margin-bottom: rem(87);
+}
+
+.product-card__img-preview {
+  border: $product-img-border;
+  @include sizes(83, 84);
+  img {
+    @include img-contain;
+  }
+  &_transform {
+    transform: scaleX(-1);
+  }
+  &:not(:last-child) {
+    margin-right: rem(10);
+  }
+}
+
+.product-card__add-info {
+  @include flexbox(flex-start, flex-start);
+  padding-bottom: rem(24);
+  margin-bottom: rem(30);
+  border-bottom: 1px solid $gray;
+}
+
+.product-card__add-info-item {
+  &:first-child {
+    margin-right: rem(70);
+  }
+  &:nth-child(2) {
+    margin-right: rem(50);
+  }
+}
+
+.product-card__add-info-name {
+  @include font(16, 500);
+  color: $gray;
+  @include flexbox(center, flex-start);
+  svg {
+    margin-left: rem(4);
+  }
+}
+
+.product-card__add-info-amount {
+  @include font(36, 600);
+  letter-spacing: 0.02em;
+  line-height: normal;
+}
+
+.product-card__add-info-num {
+  @include font(16, 500);
+}
+
+.product-card__data {
+  @include flexbox(center, flex-start);
+  @include font(16, 500);
+  margin-bottom: rem(32);
+}
+
+.product-card__data-item {
+  &:not(:last-child) {
+    margin-right: rem(50);
+  }
+}
+
+.product-card__data-num {
+  @include font(36, 600);
+  letter-spacing: 0.02em;
+  line-height: normal;
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

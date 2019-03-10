@@ -2,6 +2,11 @@
   background: $light-gray;
   padding: rem(50 0 40);
   flex: 1 0 auto;
+  &_similiar {
+    padding: 0;
+    background: #fff;
+    margin-bottom: rem(80);
+  }
 }
 
 .coffee-section__title {

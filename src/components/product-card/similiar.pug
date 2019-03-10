@@ -1,0 +1,120 @@
+-
+  var similiarProducts = [
+    {
+      "title": "Кофе зерновой",
+      "img": "img/products/coffee-1.jpg",
+      "descrText": "Caffé Veloce Lusso",
+      "price": "1 9000 / 11 400 р.",
+      "discount": "2 100 / 13 700 р.",
+      "badge": "action",
+      "badgeText": "Акция"
+    },
+    {
+      "title": "Мока Ирландские сливки",
+      "img": "img/products/mocha-2.jpg",
+      "descrText": "Caffé Veloce Lusso",
+      "price": "1 900 / 11 400 р.",
+    },
+    {
+      "title": "Кисель Натуральный<br />Клюква",
+      "img": "img/products/jelly-1.jpg",
+      "descrText": "Caffé Veloce Lusso",
+      "price": "1 9000 / 11 400 р.",
+      "discount": "2 100 / 13 700 р.",
+      "badge": "action",
+      "badgeText": "Акция"
+    },
+    {
+      "title": "Стаканчик бумажный 250 ml.",
+      "img": "img/products/cups-3.jpg",
+      "descrText": "Caffé Veloce Lusso",
+      "price": "1 900 / 11 400 р.",
+    },
+    {
+      "title": "Стаканчик бумажный 200 ml.",
+      "img": "img/products/cups-2.jpg",
+      "descrText": "Caffé Veloce Lusso",
+      "price": "1 900 / 11 400 р.",
+    }
+  ];
+  var similiarMachines = [
+    {
+      "title": "Coffeemar G250",
+      "price": "248 784 ₽",
+      "img": "img/products/coffeemar.jpg",
+      "characteristics": [
+        {
+          "amount": "400",
+          "text": "порций"
+        },
+        {
+          "amount": "15",
+          "text": "видов напитков"
+        },
+        {
+          "amount": "5",
+          "text": "ингредиентов"
+        }
+      ]
+    },
+    {
+      "title": "Комплект Coffeemar G546 + MVM D-720",
+      "price": "248 784 ₽",
+      "img": "img/top-product.png",
+      "characteristics": [
+        {
+          "amount": "700",
+          "text": "порций"
+        },
+        {
+          "amount": "20",
+          "text": "видов напитков"
+        },
+        {
+          "amount": "6",
+          "text": "ингредиентов"
+        }
+      ]
+    },
+    {
+      "title": "Автомат для продажи продуктов Gourmet",
+      "price": "248 784 ₽",
+      "img": "img/products/gourmet.jpg",
+      "characteristics": [
+        {
+          "amount": "400",
+          "text": "порций"
+        },
+        {
+          "amount": "15",
+          "text": "видов напитков"
+        },
+        {
+          "amount": "5",
+          "text": "ингредиентов"
+        }
+      ]
+    }
+  ]
+
+include ../product-preview
+include ../product-alt
+section.product-card__section
+  h2.product-card__title.product-card__title_h2 К этому автомату подойдёт
+  .coffee-section.coffee-section_similiar
+    .coffee-section__wrapper
+      .coffee-section__titles
+        .coffee-section__name.coffee-section__name_first Наименование
+        .coffee-section__name.coffee-section__name_second
+        .coffee-section__name.coffee-section__name_third Вес упаковки /<br />Количество в коробке
+        .coffee-section__name.coffee-section__name_fourth Цена одной упаковки /<br />Цена коробки
+        .coffee-section__name.coffee-section__name_fifth Кол-во коробок
+      each product in similiarProducts
+        +product-preview(product)
+section.product-card__section
+  h2.product-card__title.product-card__title_h2 Похожие автоматы
+  .wrap-container
+    each item in similiarMachines
+      .col.col_3-items.col_padding
+        +product-alt(item)
+      

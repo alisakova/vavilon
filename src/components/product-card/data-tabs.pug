@@ -1,0 +1,44 @@
+.data-tabs
+  .data-tabs__container
+    button.data-tabs__tab._tabs-tab(onclick="openTab(event, 'data-1')") Особенности модели
+    button.data-tabs__tab._tabs-tab(onclick="openTab(event, 'data-2')") Комплектация
+    button.data-tabs__tab._tabs-tab._default(onclick="openTab(event, 'data-3')") Параметры
+    button.data-tabs__tab._tabs-tab(onclick="openTab(event, 'data-4')") Дополнительно
+  .data-tabs__content._tabs-content._data-1#data-1
+  .data-tabs__content._tabs-content._data-2#data-2
+  .data-tabs__content._tabs-content._data-3#data-3
+    .data
+      .data__name Размеры
+      .data__row
+        .data__param-name Ширина
+        .data__param 500 мм
+      .data__row
+        .data__param-name Глубина
+        .data__param 561 мм
+      .data__row
+        .data__param-name Высота
+        .data__param 1500 мм
+      .data__row
+        .data__param-name Вес
+        .data__param 100 кг
+      .data__name Емкости
+      .data__row
+        .data__param-name Зерновой кофе
+        .data__param 2300 г
+      .data__row
+        .data__param-name Сливки
+        .data__param 1700 г
+      .data__row
+        .data__param-name Кофе без кофеина
+        .data__param 700 г
+      .data__name Прочее
+      .data__row
+        .data__param-name Стаканчики
+        .data__param 400 шт
+      .data__row
+        .data__param-name Палочки для размешивания
+        .data__param 250 шт
+      .data__row
+        .data__param-name Бойлер
+        .data__param 370 мл
+  .data-tabs__content._tabs-content._data-4#data-4

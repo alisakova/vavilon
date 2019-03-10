@@ -1,0 +1,37 @@
+.data-tabs {
+
+}
+
+.data-tabs__container {
+  @include flexbox(center, flex-start);
+}
+
+.data-tabs__tab {
+  color: $alt-gray;
+  @include font(16, 500);
+  padding-bottom: rem(7);
+  position: relative;
+  &.active {
+    color: $main-color;
+    font-weight: 600;
+    &:after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background: $orange;
+      border-radius: 0 0 rem(5 5);
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+    }
+  }
+  &:not(:last-child) {
+    margin-right: rem(50);
+  }
+}
+
+.data-tabs__content {
+  border: 1px solid #DCDCDC;
+  border-radius: 0 0 rem(5 5);
+  padding: rem(26 23 27);
+}
