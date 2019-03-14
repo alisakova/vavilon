@@ -5,6 +5,10 @@
     .cities__list {
       width: 40%;
       column-count: 2;
+      @media (max-width: 600px) {
+        column-count: 1;
+        margin-bottom: 24px;
+      }
     }
     .cities__item {
       margin-bottom: rem(25);

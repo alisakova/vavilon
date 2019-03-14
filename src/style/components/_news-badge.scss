@@ -1,16 +1,19 @@
 .news-badge {
   position: absolute;
-  bottom: rem(10);
-  right: rem(10);
+  bottom: 10px;
+  right: 10px;
   border-radius: 3px;
   background: $orange;
   @include font(13, 500);
-  padding: rem(3 10);
+  padding: 3px 10px;
   &_disabled {
     background: $gray;
     color: #fff;
   }
   &_static {
     position: static;
+  }
+  @media (max-width: 600px) {
+    font-size: 13px;
   }
 }

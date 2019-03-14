@@ -21,23 +21,30 @@ block variables
       }
     ];
     var title = "Новости, акции, полезное";
+    var mobileLinkClass = "back";
+    var mobileLink = "Назад в раздел";
   
 block content
   include ../components/breadcrumbs
-  include ../components/heading
+  include ../components/mobile-heading
   .container
     +breadcrumbs(breadcrumbList)
+    +mobile-heading(mobileLink)
     article.news.news_news-page
       .news__title.news__title_flex
         .news__left-col
           h1 Скидка на товар!
-          .news__date 09 ноября 2018
+          .news__date.news__date_desktop 09 ноября 2018
         .news__right-col
           .news-badge.news-badge_static Закончится 20 ноября 2018
+          .news__links.news__links_mobile
+            a(href="").news__link Акции
+            a(href="").news__link Новости
       .news__body
         .news__img
           img(src="img/news-page-img.jpg", alt="Скидка на товар!")
-        .news__links
+        .news__date.news__date_mobile 09 ноября 2018
+        .news__links.news__links_desktop
           a(href="").news__link Акции
           a(href="").news__link Новости
         p.news__text Дорогие друзья! С 12 ноября по 30 ноября 2018 года вы можете приобрести наш снековый аппарат MVM с платежными системами Jofemar на особых условиях.

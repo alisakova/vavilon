@@ -4,6 +4,10 @@
 
 .equipment-card__title {
   margin-bottom: rem(44);
+  @media (max-width: 600px) {
+    margin-bottom: 21px;
+    font-size: 24px;
+  }
 }
 
 .equipment-card__img {
@@ -13,10 +17,18 @@
   img {
     @include img-contain;
   }
+  @media (max-width: 600px) {
+    width: 280px;
+    height: 254px;
+    margin-bottom: 34px;
+  }
 }
 
 .equipment-card__container {
   @include flexbox(flex-start, flex-start);
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .equipment-card__left-col {
@@ -29,6 +41,11 @@
   padding-bottom: rem(27);
   margin-bottom: rem(26);
   border-bottom: 1px solid $gray;
+  @media (max-width: 600px) {
+    font-size: 16px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
 }
 
 .equipment-card__text {
@@ -36,6 +53,9 @@
   line-height: 1.75;
   &:not(:last-child) {
     margin-bottom: rem(25);
+    @media (max-width: 600px) {
+      margin-bottom: 25px;
+    }
   }
   &_bold {
     font-weight: 600;
@@ -54,10 +74,26 @@
   @include flexbox(center, flex-start);
   svg {
     margin-right: rem(12);
+    @media (max-width: 600px) {
+      margin-right: 12px;
+    }
+  }
+  &_mobile {
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+  &_desktop {
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
 .equipment-card__doc-link {
   @include font(13, 500);
   color: $black;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 }

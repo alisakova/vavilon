@@ -18,19 +18,23 @@ block variables
         "text": "Комплект оборудования Ingenico"
       }
     ];
+    var mobileLinkClass = "back";
+    var mobileLink = "Назад в раздел";
   
     
 block content
   include ../components/breadcrumbs
+  include ../components/mobile-heading
   .container
     +breadcrumbs(breadcrumbList)
+    +mobile-heading(mobileLink)
     .equipment-card
       h1.equipment-card__title Комплект оборудования Ingenico
       .equipment-card__container
         .equipment-card__left-col
           .equipment-card__img
             img(src="img/equipment-card.jpg", alt="Комплект оборудования Ingenico")
-          .equipment-card__docs
+          .equipment-card__docs.equipment-card__docs_desktop
             include ../img/pdf.svg
             a(href="").equipment-card__doc-link.link iSelf Комплект iUP250 Описание
         .equipment-card__right-col
@@ -40,3 +44,6 @@ block content
           p.equipment-card__text Оборудование поддерживается всеми банками РФ и может быть установлено на весь актуальный модельный ряд вендинговых автоматов Jofemar. Процесс установки требует выполнения механических работ по встраиванию в корпус автомата. Для подключения используется стандартная платежная шина MDB. Обмен данными осуществляется по каналу internet.
           p.equipment-card__text.equipment-card__text_bold.equipment-card__text_margin-top Бесплатная установка эквайрингового оборудования на новые торговые аппараты.
           p.equipment-card__text.equipment-card__text_bold Установка эквайрингового оборудования на ранее приобретенные торговые аппараты со скидкой 50 % (только для Москвы).
+          .equipment-card__docs.equipment-card__docs_mobile
+            include ../img/pdf.svg
+            a(href="").equipment-card__doc-link.link iSelf Комплект iUP250 Описание
