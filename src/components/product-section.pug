@@ -21,14 +21,13 @@ mixin product-section(item)
       if item.descr
         .product-section__descr
           .product-section__text
-            each paragraph, index in item.descr
-              if item.descr.length > 2
-                if index === 1
-                  a.mobile-show-btn Показать полностью
+            if item.descr.length > 2
+              .wrap-text.descr-text
+                each paragraph, index in item.descr
                   p= paragraph
-                else 
-                  p= paragraph
-              else
+              a.mobile-show-btn Показать полностью
+            else 
+              each paragraph, index in item.descr
                 p= paragraph
           if item.slider
             .product-section__slider.product-slider._slider.orange-slider

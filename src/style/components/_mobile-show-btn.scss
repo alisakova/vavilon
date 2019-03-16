@@ -5,7 +5,8 @@
   }
   border-bottom: 1px dashed $orange;
   background: transparent;
-  @media (min-width: 601px) {
+  display: inline-block;
+  @media (min-width: 376px) {
     display: none;
   }
 }

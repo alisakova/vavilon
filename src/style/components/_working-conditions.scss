@@ -1,5 +1,8 @@
 .working-conditions {
   margin: rem(23 0 64);
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 }
 
 .working-conditions__link {
@@ -9,15 +12,24 @@
   &:hover {
     border-bottom-color: transparent;
   }
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 }
 
 .working-conditions__links {
   margin-bottom: rem(45);
+  @media (max-width: 600px) {
+    margin-bottom: 41px;
+  }
 }
 
 .working-conditions__link-wrapper {
   &:not(:last-child) {
     margin-bottom: rem(15);
+    @media (max-width: 600px) {
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -26,6 +38,10 @@
   margin-bottom: rem(34);
   &_margin-top {
     margin-top: rem(64);
+  }
+  @media (max-width: 600px) {
+    font-size: 16px;
+    margin-bottom: 14px;
   }
 }
 
@@ -48,5 +64,9 @@
   & + .working-conditions__title {
     margin-top: rem(65);
     margin-bottom: rem(30);
+  }
+  @media (max-width: 600px) {
+    max-width: none;
+    line-height: 22px;
   }
 }

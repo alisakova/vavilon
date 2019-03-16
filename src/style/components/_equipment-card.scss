@@ -1,5 +1,8 @@
 .equipment-card {
   margin-bottom: rem(93);
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
 }
 
 .equipment-card__title {

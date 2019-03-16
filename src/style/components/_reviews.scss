@@ -1,9 +1,17 @@
 .reviews {
   margin: rem(40 0 110);
   max-width: rem(980);
+  @media (max-width: 600px) {
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .reviews__text {
   margin-bottom: rem(30);
   font-weight: 500;
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
 }
