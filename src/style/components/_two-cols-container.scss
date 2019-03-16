@@ -9,6 +9,13 @@
   max-width: 64%;
   margin-right: rem(32);
   flex-grow: 2;
+  &_margin-right-20 {
+    max-width: 65.9%;
+    margin-right: rem(20);
+    @media (max-width: 600px) {
+      margin-bottom: 68px;
+    }
+  }
   @media (max-width: 600px) {
     max-width: 100%;
   }

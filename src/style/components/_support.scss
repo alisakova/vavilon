@@ -1,0 +1,35 @@
+.support {
+  padding-bottom: rem(94);
+  @media (max-width: 600px) {
+    padding: rem(24 0 10);
+  }
+}
+
+.support__title {
+  margin-bottom: rem(53);
+  @media (max-width: 600px) {
+    margin-bottom: 31px;
+    font-size: 24px;
+  }
+}
+
+.support__text {
+  font-weight: 500;
+  line-height: 1.733;
+  &:not(:last-child) {
+    margin-bottom: rem(28);
+  }
+}
+
+.support__link {
+  font-weight: 500;
+  &:not(:last-child) {
+    margin-bottom: rem(17);
+  }
+  @media (max-width: 600px) {
+    font-size: 12px;
+    &:not(:last-child) {
+      margin-bottom: rem(9);
+    }
+  }
+}

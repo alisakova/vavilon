@@ -1,0 +1,58 @@
+.contact {
+  @include flexbox(flex-start, flex-start);
+  &_margin-bottom-22 {
+    margin-bottom: rem(22);
+  }
+  &_margin-bottom-32 {
+    margin-bottom: rem(32);
+  }
+  &_margin-bottom-9 {
+    margin-bottom: rem(9);
+  }
+  &_margin-bottom-37 {
+    margin-bottom: rem(37);
+  }
+  &_margin-bottom-41 {
+    margin-bottom: rem(41);
+  }
+  &_margin-bottom-4 {
+    margin-bottom: rem(4);
+  }
+  &_margin-bottom-28 {
+    margin-bottom: rem(28);
+  }
+  &_margin-bottom-14 {
+    margin-bottom: rem(14);
+  }
+}
+
+.contact__icon {
+  margin-right: rem(11);
+  min-width: rem(22);
+  width: rem(22);
+  svg {
+    width: 100%;
+  }
+  &_without {
+    min-width: rem(22);
+  }
+  &_margin-top {
+    margin-top: rem(5);
+  }
+}
+
+.contact__text {
+  @include font(16, 600);
+  line-height: normal;
+  @media (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.contact__subtext {
+  @include font(13, 500);
+  color: $alt-gray;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
+}

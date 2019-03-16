@@ -16,6 +16,9 @@
     }
     &:last-child {
       padding-bottom: rem(161);
+      @media (max-width: 600px) {
+        padding-bottom: 86px;
+      }
     }
   }
   &_padding-bottom {
@@ -49,6 +52,10 @@
   color: $alt-gray;
   @include font(16, 500);
   line-height: normal;
+  @media (max-width: 600px) {
+    font-size: 13px;
+    margin-bottom: 27px;
+  }
 }
 
 .product-section__wrapper {

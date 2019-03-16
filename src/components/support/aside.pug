@@ -1,0 +1,80 @@
+.simple-tabs
+  .simple-tabs__container
+    button.simple-tabs__tab._tabs-tab._default(onclick="openTab(event, 'city-1')") Калининград
+    button.simple-tabs__tab._tabs-tab(onclick="openTab(event, 'city-2')") Москва
+  .simple-tabs__content._city-1#city-1
+    .simple-tabs__text.simple-tabs__text_margin-bottom Сервисный центр при заводе-изготовителе
+    .contact.contact_margin-bottom-22
+      .contact__icon
+        include ../../img/support/skype.svg
+      .contact__descr
+        .contact__text service_kaliningrad
+        .contact__subtext (сервисная служба)
+    .contact.contact_margin-bottom-32
+      .contact__icon.contact__icon_without
+      .contact__descr
+        .contact__text skypesclerose
+        .contact__subtext (запчасти и комплектующие)
+    .contact.contact_margin-bottom-4
+      .contact__icon.contact__icon_margin-top
+        include ../../img/support/tel.svg
+      .contact__descr
+        a(href="tel:88007003443").contact__text 8 800 700 34 43
+    .contact.contact_margin-bottom-28
+      .contact__icon.contact__icon_without
+      .contact__descr
+        a(href="tel:+79637379769").contact__text +7 963 737 97 69
+        .contact__subtext (звонки из других стран)
+    .contact.contact_margin-bottom-14
+      .contact__icon.contact__icon_margin-top
+        include ../../img/support/mail.svg
+      .contact__descr
+        a(href="mailto:service@vavilon-vending.ru").contact__text service@vavilon-vending.ru
+        .contact__subtext (сервисная служба)
+    .contact.contact_margin-bottom-41
+      .contact__icon.contact__icon_without
+      .contact__descr
+        a(href="mailto:zip@vavilon-vending.ru").contact__text zip@vavilon-vending.ru
+        .contact__subtext (запчасти и комплектующие)
+    .contact.contact_margin-bottom-14
+      .contact__icon
+        include ../../img/support/tel-2.svg
+      .contact__descr
+        a(href="tel:+79632962336").contact__text +7 963 296 2336
+        .contact__subtext (запчасти и комплектующие)
+    .contact.contact_margin-bottom-41
+      .contact__icon
+        include ../../img/support/tel-3.svg
+      .contact__descr
+        a(href="tel:++79632962336").contact__text +7 963 296 2336
+        .contact__subtext (запчасти и комплектующие)
+  .simple-tabs__content._city-1#city-2
+form.form
+  .form__title Вопрос техподдержке
+  .form__item
+    label.form__label
+      input(type="email", class="form__input")
+      span.form__label-text Email
+  .form__item
+    select.form__select
+      option Сервисная служба
+  .form__item
+    label.form__label
+      input(type="text", class="form__input")
+      span.form__label-text Город
+  .form__item
+    label.form__label
+      textarea(type="email", class="form__textarea")
+      span.form__label-text Email
+  .form__btn-container
+    button.btn.form__btn Задать вопрос
+  label(for="checkbox", class="checkbox")
+    | Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
+    input(id="checkbox", type="checkbox")
+    span.checkbox__checkmark
+.support__link
+  a(href="").link Инструкции по использованию автоматов
+.support__link
+  a(href="").link Разное
+
+  

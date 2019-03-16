@@ -3,4 +3,8 @@ $(document).ready(function() {
       minimumResultsForSearch: Infinity,
       width: 'resolve'
     });
+    $('.form__select').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownParent: $('.form')
+    });
 });

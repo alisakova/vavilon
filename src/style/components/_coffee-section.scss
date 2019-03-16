@@ -38,19 +38,22 @@
   }
   &_second {
     max-width: 22.5%;
-    width: 22.5%;
-    margin-right: rem(55);
+    width: 23.5%;
+    margin-right: rem(52);
   }
   &_third {
     width: 15%;
-    margin-right: rem(17);
+    min-width: 15%;
+    margin-right: rem(15);
   }
   &_fourth {
     width: 14%;
+    min-width: 14%;
     margin-right: rem(30);
   }
   &_fifth {
     width: 16%;
+    min-width: 16%;
     margin-right: rem(40);
   }
 }
