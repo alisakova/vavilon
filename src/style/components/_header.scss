@@ -40,7 +40,7 @@
   min-width: rem(73);
   margin-right: rem(43);
   @media (max-width: 600px) {
-    margin-right: 21px;
+    margin: 0 21px;
     max-width: 73px;
     min-width: 71px;
   }
@@ -65,6 +65,10 @@
 
 .header__container {
   @include flexbox(flex-start, space-between);
+  @media (max-width: 600px) {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
 }
 
 .header__contact {
@@ -77,6 +81,9 @@
     &:not(:nth-child(2)) {
       display: none;
     }
+    &:not(:last-child) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -85,6 +92,9 @@
   @include font(14, 500);
   line-height: normal;
   margin-bottom: rem(4);
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
 }
 
 .header__link {
@@ -93,6 +103,9 @@
   white-space: nowrap;
   &_bordered {
     border-bottom: $border-orange;
+  }
+  @media (max-width: 600px) {
+    font-size: 15px;
   }
 }
 

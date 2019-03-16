@@ -20,6 +20,7 @@ block variables
     var sectionTitle = true;
     var productLink = "product-card.html";
     var mobileLink = "Виды автоматов";
+    var subMenuTitle = "Торговые автоматы";
     var links = [
       {
         "text": "Напольные кофейные автоматы",
@@ -48,6 +49,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/product-alt

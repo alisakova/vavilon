@@ -24,6 +24,8 @@ block variables
     var sectionTitle = false;
     var productSectionClass = "product-section_without-title";
     var title = "Напольные кофейные автоматы";
+    var mobileLink = "Виды автоматов";
+    var subMenuTitle = "Торговые автоматы";
     var productLink = "product-card.html";
     var links = [
       {
@@ -54,6 +56,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/product-alt

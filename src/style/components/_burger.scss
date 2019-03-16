@@ -1,0 +1,10 @@
+.burger {
+  width: 19px;
+  height: 14px;
+  background: url('../img/burger.svg') no-repeat;
+  background-size: contain;
+  display: none;
+  @media (max-width: 600px) {
+    display: block;
+  }
+}

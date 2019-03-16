@@ -20,6 +20,8 @@ block variables
     var sectionTitle = true;
     var headingWrapper = "heading__wrapper_auto";
     var productLink = "product-card-alt.html";
+    var mobileLink = "Содержание раздела";
+    var subMenuTitle = "Снеки";
     var links = [
       {
         "text": "Напитки",
@@ -40,6 +42,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/coffee-section

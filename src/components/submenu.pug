@@ -1,0 +1,10 @@
+.menu._submenu
+  .menu__header
+    .menu__title= subMenuTitle
+    button.menu__close._close-submenu
+  nav.nav.nav_mobile
+    ul.nav__list.nav__list_block.nav__list_simple
+      for navLink in links
+        li.nav__item
+          if navLink.link
+            a(href= navLink.link).nav__link= navLink.text

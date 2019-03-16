@@ -19,6 +19,7 @@ block variables
     var title = "Дилеры";
     var headingWrapper = "heading__wrapper_company";
     var mobileLink = "Компания";
+    var subMenuTitle = "Компания";
     var links = [
       {
         "text": "Компания",
@@ -102,6 +103,7 @@ block variables
     ]
   
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   .container

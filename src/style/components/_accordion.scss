@@ -1,0 +1,14 @@
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding-left: 10px;
+  margin-top: -4px;
+  // min-height: 0;
+}
+
+.accordion {
+  &:after {
+    content: '';
+  }
+}

@@ -1,0 +1,219 @@
+-
+  var menuTitle = "Меню";
+  var accordion = true;
+  var navLinksMobile = [
+    {
+      "text": "Торговые автоматы",
+      "links": [
+        {
+          "text": "Все торговые автоматы",
+          "link": "vending-machines.html"
+        },
+        {
+          "text": "Напольные кофейные автоматы",
+          "link": "floor-vending-machines.html"
+        },
+        {
+          "text": "Настольные кофейные автоматы",
+          "link": "table-vending-machines.html"
+        },
+        {
+          "text": "Снековые автоматы",
+          "link": "snack-machines.html"
+        },
+        {
+          "text": "Автоматы для напитков",
+          "link": "machines-for-beverages.html"
+        },
+        {
+          "text": "Автоматы для мелкой продукции",
+          "link": "machines-for-small-products.html"
+        },
+        {
+          "text": "Автоматы для продуктов",
+          "link": "machines-for-products.html"
+        }
+      ]
+    },
+    {
+      "text": "Кофе и ингредиенты",
+      "links": [
+        {
+          "text": "Все кофе и ингредиенты",
+          "link": "coffee-and-ingredients.html"
+        },
+        {
+          "text": "Кофе зерновой",
+          "link": "coffee-beans.html"
+        },
+        {
+          "text": "Мокка и капучино",
+          "link": "mocha-and-cappuccino.html"
+        },
+        {
+          "text": "Горячий шоколад",
+          "link": "hot-chocolate.html"
+        },
+        {
+          "text": "Стаканчики и размешиватели",
+          "link": "glasses-and-stirrers.html"
+        },
+        {
+          "text": "Кисель",
+          "link": "jelly.html"
+        },
+        {
+          "text": "Чай",
+          "link": "tea.html"
+        },
+        {
+          "text": "Сливки и топпинги",
+          "link": "cream-and-toppings.html"
+        }
+      ]
+    },
+    {
+      "text": "Снеки",
+      "links": [
+        {
+          "text": "Все снеки",
+          "link": "snacks.html"
+        },
+        {
+          "text": "Напитки",
+          "link": "drinks.html"
+        },
+        {
+          "text": "Батончики",
+          "link": "candy-bars.html"
+        },
+        {
+          "text": "Орехи",
+          "link": "nuts.html"
+        },
+        {
+          "text": "Десерты",
+          "link": "desserts.html"
+        },
+      ]
+    },
+    {
+      "text": "Доп. оборудование",
+      "links": [
+        {
+          "text": "Все доп. оборудование",
+          "link": "optional-equipment.html"
+        },
+        {
+          "text": "КТТ и телеметрия",
+          "link": "ktt.html"
+        },
+        {
+          "text": "Платёжные системы",
+          "link": "payment-systems.html"
+        },
+      ]
+    },
+    {
+      "link": "news.html",
+      "text": "Новости, акции, полезное"
+    },
+    {
+      "text": "Компания",
+      "links": [
+        {
+          "text": "Все о компании",
+          "link": "company.html",
+          "addClass": "heading__link_active"
+        },
+        {
+          "text": "Дилеры",
+          "link": "dealers.html"
+        },
+        {
+          "text": "Партнеры",
+          "link": "partners.html"
+        },
+        {
+          "text": "Сервисные центры",
+          "link": "service-centres.html"
+        },
+        {
+          "text": "Условия работы",
+          "link": "working-conditions.html"
+        },
+        {
+          "text": "Отзывы",
+          "link": "reviews.html"
+        },
+        {
+          "text": "Команда",
+          "link": "team.html"
+        },
+      ]
+    }
+  ];
+  var menuContacts = [
+    {
+      "link": "tel:88007003443",
+      "text": "8 800 700-34-43",
+      "subtitle": "Бесплатные звонки по РФ"
+    },
+    {
+      "link": "tel:89680192212",
+      "text": "8 968 019-22-12",
+      "subtitle": "Для звонков по Москве"
+    },
+    {
+      "link": "mailto: sale@vavilon-vending.ru",
+      "text": "sale@vavilon-vending.ru",
+      "addClass": "menu__link_bordered",
+      "subtitle": "E-mail отдела продаж"
+    },
+  ];
+  var navList = [
+    {
+      "link": "support.html",
+      "text": "Техническая поддержка"
+    },
+    {
+      "link": "kkt-law.html",
+      "text": "Закон о ККТ"
+    },
+    {
+      "link": "working-conditions.html",
+      "text": "Условия работы"
+    },
+  ];
+  
+.menu._menu
+  .menu__header
+    .menu__title= menuTitle
+    button.menu__close._close-menu
+  nav.nav.nav_mobile
+    ul.nav__list.nav__list_block
+      for navLink in navLinksMobile
+        li.nav__item(class= navLink.link ? "" : "accordion")
+          if navLink.link
+            a(href= navLink.link).nav__link.nav__link_arrow= navLink.text
+          else 
+            .nav__link.nav__link_arrow= navLink.text
+        .menu__links.panel
+          if navLink.links
+            each item in navLink.links
+              a(href= item.link)= item.text
+  .menu__course Курс € ЦБ РФ: 75.3890
+  .menu__contacts
+    each item in menuContacts
+      .menu__contact
+        .menu__subtitle= item.subtitle
+        a(href= item.link, class= item.addClass).menu__link= item.text
+  nav.nav.nav_alt
+    ul.nav__list.nav__list_block
+      each item in navList
+        li.nav__item
+          a(href= item.link).nav__link= item.text
+  .menu__text 
+    | Лучшие торговые автоматы<br />
+    | и ингредиенты напрямую<br />
+    | от производителя

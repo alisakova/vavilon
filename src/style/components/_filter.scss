@@ -36,6 +36,9 @@ $select-radius: rem(50);
   &:not(:last-child) {
     margin-bottom: rem(8);
   }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .select2-container--default {

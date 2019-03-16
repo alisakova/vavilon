@@ -24,6 +24,8 @@ block variables
     var headingWrapper = "heading__wrapper_auto";
     var productSectionClass = "product-section_without-title product-section_padding-bottom";
     var title = "Платёжные системы";
+    var mobileLink = "Содержание раздела";
+    var subMenuTitle = "Дополнительное оборудование";
     var links = [
       {
         "text": "КТТ и телеметрия",
@@ -37,6 +39,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/product-alt

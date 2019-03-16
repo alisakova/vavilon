@@ -22,6 +22,7 @@ block variables
     var productSectionClass = "product-section_margin-bottom-0";
     var productLink = "equipment-card.html";
     var mobileLink = "Содержание раздела";
+    var subMenuTitle = "Дополнительное оборудование";
     var links = [
       {
         "text": "КТТ и телеметрия",
@@ -34,6 +35,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/product-alt

@@ -25,6 +25,8 @@ block variables
     var headingLinksAltClass = "heading__links_alt";
     var productLink = "product-card-alt.html";
     var addCoffeSectionClass = "coffee-section_without-title";
+    var mobileLink = "Содержание раздела";
+    var subMenuTitle = "Кофе и ингредиенты";
     var links = [
       {
         "text": "Кофе зерновой",
@@ -58,6 +60,7 @@ block variables
     ];
     
 block content
+  include ../components/submenu
   include ../components/breadcrumbs
   include ../components/heading
   include ../components/coffee-section
