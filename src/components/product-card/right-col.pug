@@ -20,11 +20,13 @@
         include ../../img/tooltip.svg
       .product-card__add-info-num
         | от
-        span.product-card__add-info-amount &nbsp;100 000 ₽&nbsp;
+        span.product-card__add-info-amount &nbsp;100 000 ₽ 
         | часов в месяц
-  p.product-card__text Coffeemar G250 — один из немногих аппаратов на рынке, который контролирует давление, что гарантирует наилучшее приготовление зернового кофе при давлении 15 бар, с первой до последней капли напитка.
-  p.product-card__text Качество напитка напрямую влияет на количество продаж: довольные покупатели визуально узнают автоматы Jofemar и с радостью покупают напитки повторно, даже если рядом стоят автоматы других производителей.
-  p.product-card__text Покупая автомат Coffeemar G250, вы приобретаете современный и доступный источник дополнительного, а иногда и основного дохода. В среднем, каждый такой автомат приносит около 10.000 рублей чистой прибыли ежемесячно
+  .wrap-text.product-text
+    p.product-card__text Coffeemar G250 — один из немногих аппаратов на рынке, который контролирует давление, что гарантирует наилучшее приготовление зернового кофе при давлении 15 бар, с первой до последней капли напитка.
+    p.product-card__text Качество напитка напрямую влияет на количество продаж: довольные покупатели визуально узнают автоматы Jofemar и с радостью покупают напитки повторно, даже если рядом стоят автоматы других производителей.
+    p.product-card__text Покупая автомат Coffeemar G250, вы приобретаете современный и доступный источник дополнительного, а иногда и основного дохода. В среднем, каждый такой автомат приносит около 10.000 рублей чистой прибыли ежемесячно
+  a.mobile-show-btn Показать полностью
   .product-card__data
     .product-card__data-item
       span.product-card__data-num 400&nbsp;
@@ -38,8 +40,25 @@
   .product-card__price.product-card__price_margin-top-0
     .product-card__price-left-col
       .product-card__price-name.product-card__price-name_margin-right Стоимость
-      .product-card__price-amount 248 784 ₽
-    .product-card__price-right-col
+      .product-card__price-amount.product-card__price-amount_alt 248 784 ₽
+    .product-card__price-right-col.product-card__price-right-col_flex
       a(data-fancybox, data-options='{"src": "#leasing", "touch": false}', href="javascript:;").product-card__link.product-card__link_orange Купить в лизинг
       a(data-fancybox, data-options='{"src": "#basket", "touch": false}', href="javascript:;").btn Оформить заявку
   include ./data-tabs
+  .product-card__infos.product-card__infos_mobile
+    .product-card__info
+      include ../../img/pdf.svg
+      a(href="").product-card__infos-link.link Руководство по эксплуатации Coffemar G250
+    .product-card__info
+      include ../../img/basket.svg
+      a(href="").product-card__infos-link.link Рекомендуемые товары для Coffemar G250
+  .product-card__infos.product-card__infos_mobile
+    .product-card__info.product-card__info_alt
+      include ../../img/garant-icon.svg
+      a(href="").product-card__infos-link.link Гарантия и обслуживание
+    .product-card__info.product-card__info_alt
+      include ../../img/calc-icon.svg
+      a(href="").product-card__infos-link.product-card__infos-link_dotted Калькулятор окупаемости
+    .product-card__info.product-card__info_alt
+      include ../../img/delivery-icon.svg
+      a(href="").product-card__infos-link.link Доставка и оплата

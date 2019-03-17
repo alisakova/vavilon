@@ -103,14 +103,8 @@ section.product-card__section
   h2.product-card__title.product-card__title_h2 К этому автомату подойдёт
   .coffee-section.coffee-section_similiar
     .coffee-section__wrapper
-      .coffee-section__titles
-        .coffee-section__name.coffee-section__name_first Наименование
-        .coffee-section__name.coffee-section__name_second
-        .coffee-section__name.coffee-section__name_third Вес упаковки /<br />Количество в коробке
-        .coffee-section__name.coffee-section__name_fourth Цена одной упаковки /<br />Цена коробки
-        .coffee-section__name.coffee-section__name_fifth Кол-во коробок
-      each product in similiarProducts
-        +product-preview(product)
+      each product, index in similiarProducts
+        +product-preview(product, index)
 section.product-card__section
   h2.product-card__title.product-card__title_h2 Похожие автоматы
   .wrap-container

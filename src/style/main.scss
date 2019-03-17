@@ -168,6 +168,12 @@ input[type='number'] {
 		// &_main {
 		// 	max-height: 333px;
 		// }
+		&.product-text {
+			max-height: 134px;
+			& + .mobile-show-btn {
+				margin-top: 8px;
+			}
+		}
 		&.descr-text {
 			max-height: 178px;
 			& + .mobile-show-btn {

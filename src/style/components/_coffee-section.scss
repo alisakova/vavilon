@@ -24,40 +24,6 @@
 .coffee-section__wrapper {
 }
 
-.coffee-section__titles {
-  @include font(12, 500);
-  line-height: 1.33;
-  color: $alt-gray;
-  margin-bottom: rem(18);
-  @include flexbox(center, flex-start);
-}
-
-.coffee-section__name {
-  &_first {
-    margin-right: rem(35);
-  }
-  &_second {
-    max-width: 22.5%;
-    width: 23.5%;
-    margin-right: rem(52);
-  }
-  &_third {
-    width: 15%;
-    min-width: 15%;
-    margin-right: rem(15);
-  }
-  &_fourth {
-    width: 14%;
-    min-width: 14%;
-    margin-right: rem(30);
-  }
-  &_fifth {
-    width: 16%;
-    min-width: 16%;
-    margin-right: rem(40);
-  }
-}
-
 .coffee-section__descr {
   background: $light-gray;
   padding-top: rem(20);

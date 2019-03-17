@@ -4,24 +4,5 @@ mixin coffee-section(item)
       if sectionTitle
         h2.coffee-section__title= item.title
       .coffee-section__wrapper
-        .coffee-section__titles
-          .coffee-section__name.coffee-section__name_first Наименование
-          .coffee-section__name.coffee-section__name_second
-          .coffee-section__name.coffee-section__name_third Вес упаковки /<br />Количество в коробке
-          .coffee-section__name.coffee-section__name_fourth Цена одной упаковки /<br />Цена коробки
-          .coffee-section__name.coffee-section__name_fifth Кол-во коробок
-        each product in item.products
-          +product-preview(product)
-      //- if item.descr
-      //-   .coffee-section__descr
-      //-     .coffee-section__text
-      //-       for paragraph in item.descr
-      //-         p= paragraph
-      //-   if item.slider
-      //-     .coffee-section__slider.product-slider._slider.orange-slider
-      //-       -for(var i=0;i<3;i++)
-      //-         div
-      //-           .product-slider__img
-      //-             include ../img/lock.svg
-      //-           .product-slider__title ЗАЩИТА ОТ ВЗЛОМА
-      //-           p.product-slider__text Корпус кофейных автоматов – сталь толщиной 1.5 мм, три накидных замка на двери, у всех автоматов уникальные ключи.
+        each product, index in item.products
+          +product-preview(product, index)

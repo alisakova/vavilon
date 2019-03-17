@@ -25,17 +25,21 @@ block variables
       }
     ];
     var productLink = "product-card.html";
+    var mobileLinkClass = "back";
+    var mobileLink = "Назад в раздел";
     
 block content
   include ../components/modals/leasing
   include ../components/modals/basket
   include ../components/modals/success-modal
   include ../components/breadcrumbs
+  include ../components/mobile-heading
   .container
     +breadcrumbs(breadcrumbList)
+    +mobile-heading(mobileLink)
     .product-card 
       h1.product-card__title Coffemar G250
-      .product-card__container.product-card__container_margin-bottom
+      .product-card__container.product-card__container_alt.product-card__container_margin-bottom
         include ../components/product-card/left-col
         include ../components/product-card/right-col
       include ../components/product-card/similiar

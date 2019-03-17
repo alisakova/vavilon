@@ -8,6 +8,7 @@ var wrapTextSizes = {
   "wrap-text company-text": "444px",
   "wrap-text working-text": "378px",
   "wrap-text reviews-text": "466px",
+  "wrap-text product-text": "134px",
 }
 
 mobileShowBtn.forEach(function(btn) {

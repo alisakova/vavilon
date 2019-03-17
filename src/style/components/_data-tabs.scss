@@ -12,6 +12,7 @@
   padding-bottom: rem(7);
   position: relative;
   background: #fff;
+  height: 100%;
   &.active {
     color: $main-color;
     font-weight: 600;
@@ -28,6 +29,9 @@
   }
   &:not(:last-child) {
     margin-right: rem(50);
+  }
+  @media (max-width: 900px) {
+    font-size: 10px;
   }
 }
 
