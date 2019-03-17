@@ -1,0 +1,22 @@
+.modal.modal_small(style="display: none;", id="leasing")
+  .modal__wrapper
+    .modal__title Быстрый заказ
+    .modal__product-preview
+      .modal__img
+        img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+      .modal__product-name Coffemar G250
+    form.modal__form.form
+      .form__item
+        label.form__label
+          input(type="email", class="form__input")
+          span.form__label-text Email
+      .form__item.form__item_margin-bottom-27
+        label.form__label
+          input(type="tel", class="form__input")
+          span.form__label-text Телефон
+      label(for="checkbox", class="checkbox")
+        | Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
+        input(id="checkbox", type="checkbox")
+        span.checkbox__checkmark
+      .form__btn-container
+        a(data-fancybox, data-options='{"src": "#success-modal", "touch": false}', href="javascript:;").btn.form__btn Отправить заявку

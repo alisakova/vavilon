@@ -21,11 +21,12 @@
 }
 
 .form__item {
-  &:not(:last-child) {
-    margin-bottom: rem(20);
-    @media (max-width: 600px) {
-      margin-bottom: 20px;
-    }
+  margin-bottom: rem(20);
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
+  &_margin-bottom-27 {
+    margin-bottom: rem(27);
   }
 }
 
@@ -82,8 +83,14 @@
   resize: none;
   min-height: rem(114);
   max-height: rem(114);
+  @include font(15, 500);
+  font-family: $main-font;
+  color: $main-color;
   &:focus {
     border: 2px solid $orange;
+    @include input-placeholder {
+      opacity: 0;
+    }
   }
   &:focus,
   &.not-empty {
@@ -97,6 +104,13 @@
   & + .form__label-text {
     top: rem(10);
     transform: none;
+  }
+  @include input-placeholder {
+    @include font(15, 500);
+    font-family: $main-font;
+    color: $alt-gray;
+    opacity: 1;
+    transition: all 250ms;
   }
 }
 

@@ -1,0 +1,121 @@
+.modal {
+  width: 100%;
+  padding: 0;
+  box-shadow: rem(0 4 24) rgba(0, 0, 0, 0.15);
+  max-width: rem(1200);
+  &_small {
+    max-width: rem(506);
+  }
+}
+
+.modal__wrapper {
+  padding: rem(34 40 50 45);
+  &_padding-0 {
+    padding: 0;
+  }
+  &_flex {
+    @include flexbox(stretch, flex-start);
+  }
+}
+
+.modal__btn {
+  .btn {
+    font-weight: 600;
+    border-radius: rem(50);
+    padding: {
+      left: rem(24);
+      right: rem(24);
+    }
+  }
+}
+
+.modal__col {
+  &_right {
+    padding: rem(24 33 36 35);
+    width: 40.75%;
+  }
+  &_left {
+    width: 59.25%;
+    background-color: #F9F9F9;
+    .modal__title {
+      padding: rem(24 30 0);
+    }
+  }
+}
+
+.modal__title {
+  @include font(23, 600);
+  margin-bottom: rem(28);
+  &_margin-bottom-23 {
+    margin-bottom: rem(23);
+  }
+  &_margin-bottom-40 {
+    margin-bottom: rem(40);
+  }
+}
+
+.modal__form {
+  padding-right: 0;
+  margin-bottom: 0;
+  .form__btn-container {
+    margin-right: 0;
+  }
+  .checkbox {
+    margin-bottom: rem(20);
+  }
+  .btn {
+    padding: {
+      left: rem(24);
+      right: rem(24);
+    }
+  }
+}
+
+.fancybox-button {
+  background: url("../img/modal-close.svg") no-repeat center center;
+  background-size: contain;
+  opacity: 1;
+  width: rem(15);
+  height: rem(15);
+  padding: 0;
+  svg {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  padding: 0;
+  top: rem(20);
+  right: rem(18);
+}
+
+.modal__product-preview {
+  border-radius: $global-radius;
+  padding: rem(15);
+  border: 1px solid #F2F2F2;
+  @include flexbox(center, flex-start);
+  margin-bottom: rem(18);
+}
+
+.modal__product-name {
+  @include font(16, 500);
+}
+
+.modal__img {
+  min-width: rem(49);
+  width: rem(49);
+  height: rem(49);
+  margin-right: rem(9);
+  img {
+    @include img-contain;
+  }
+}
+
+.modal__text {
+  @include font(16, 500);
+  margin-bottom: rem(31);
+}

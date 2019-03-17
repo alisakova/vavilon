@@ -1,0 +1,151 @@
+.modal(style="display: none;", id="basket")
+  .modal__wrapper.modal__wrapper_padding-0.modal__wrapper_flex
+    .modal__col.modal__col_left
+      .modal__title.modal__title_margin-bottom-23 Корзина
+      .basket
+        .basket__container
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__top Наименование
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__top Кол-во
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__top Сумма
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__top
+              .basket__bottom
+                include ../../img/basket-icon.svg
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__bottom
+                include ../../img/basket-icon.svg
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__bottom
+                include ../../img/basket-icon.svg
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__bottom
+                include ../../img/basket-icon.svg
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__bottom
+                include ../../img/basket-icon.svg
+          .basket__item
+            .basket__col.basket__col_first
+              .basket__bottom
+                .basket__img 
+                  img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
+                .basket__product-name Coffemar G250
+            .basket__col.basket__col_second
+              .basket__bottom
+                .basket__counter
+                  .counter.counter_small
+                    button.counter__btn.counter__btn_dicrease –
+                    input(type="number", value = "1").counter__input
+                    button.counter__btn.counter__btn_increase + 
+            .basket__col.basket__col_third
+              .basket__bottom
+                .basket__sum 248 784 р.
+            .basket__col.basket__col_fourth
+              .basket__bottom
+                include ../../img/basket-icon.svg
+        .basket__total
+          .basket__text 
+          | Всего <span class="orange">1 </span>наименование<br />
+          | На сумму <span class="orange">248 784 ₽</span>
+    .modal__col.modal__col_right
+      .modal__title.modal__title_margin-bottom-40 Оформление заявки
+      form.modal__form.form
+        .form__item
+          label.form__label
+            input(type="city", class="form__input")
+            span.form__label-text Город
+        .form__item
+          label.form__label
+            input(type="email", class="form__input")
+            span.form__label-text Email
+        .form__item
+          label.form__label
+            input(type="tel", class="form__input")
+            span.form__label-text Телефон
+        .form__item
+          textarea(placeholder="Комментарий к заказу (необязательно)").form__textarea
+        label(for="checkbox", class="checkbox")
+          | Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
+          input(id="checkbox", type="checkbox")
+          span.checkbox__checkmark
+        .form__btn-container
+          a(data-fancybox, data-options='{"src": "#success-modal", "touch": false}', href="javascript:;").btn.form__btn Отправить заявку

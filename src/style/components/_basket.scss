@@ -1,0 +1,110 @@
+.basket__container {
+  overflow-y: auto;
+  padding: rem(24 27 23 32);
+  max-height: rem(382);
+}
+
+.basket__total {
+  background: #f9f9f9;
+  box-shadow: rem(-5 -2 10) rgba(0, 0, 0, 0.15);
+  padding: rem(22 30 23);
+  @include font(16, 600);
+  position: relative;
+  z-index: 5;
+  .orange {
+    color: $orange;
+  }
+}
+
+.basket__item {
+  @include flexbox(stretch, flex-start);
+  margin-bottom: rem(10);
+}
+
+.basket__col {
+  @include flexbox(flex-start, flex-start);
+  flex-direction: column;
+  &_first {
+    width: 52.15%;
+    .basket__bottom {
+      @include flexbox(center, flex-start);
+      border-top-left-radius: $global-radius;
+      border-bottom-left-radius: $global-radius;
+      border: {
+        top: 1px solid #f2f2f2;
+        left: 1px solid #f2f2f2;
+        bottom: 1px solid #f2f2f2;
+      }
+    }
+  }
+  &_second {
+    .basket__top {
+      text-align: center;
+    }
+    .basket__bottom {
+      border: {
+        top: 1px solid #f2f2f2;
+        bottom: 1px solid #f2f2f2;
+      }
+    }
+
+  }
+  &_third {
+    .basket__top {
+      padding-left: rem(15);
+    }
+    .basket__bottom {
+      border: {
+        top: 1px solid #f2f2f2;
+        bottom: 1px solid #f2f2f2;
+      }
+    }
+  }
+  &_fourth {
+    .basket__bottom {
+      border-top-right-radius: $global-radius;
+      border-bottom-right-radius: $global-radius;
+      padding-right: rem(30);
+      border: {
+        top: 1px solid #f2f2f2;
+        right: 1px solid #f2f2f2;
+        bottom: 1px solid #f2f2f2;
+      }
+    }
+  }
+}
+
+.basket__top {
+  width: 100%;
+  @include font(12, 500);
+  color: $alt-gray;
+  margin-bottom: rem(9);
+  line-height: 1.66;
+  min-height: rem(21);
+}
+
+.basket__bottom {
+  width: 100%;
+  flex: 1 0 auto;
+  background: #fff;
+  padding: rem(15);
+  @include flexbox(center, flex-start);
+}
+
+.basket__sum {
+  @include font(16, 600);
+}
+
+.basket__img {
+  min-width: rem(49);
+  width: rem(49);
+  height: rem(49);
+  margin-right: rem(9);
+  img {
+    @include img-contain;
+  }
+}
+
+.basket__product-name {
+  @include font(16, 500);
+}
