@@ -6,18 +6,32 @@
     padding: 0;
     background: #fff;
     margin-bottom: rem(80);
+    @media (max-width: 600px) {
+      margin-bottom: 53px;
+    }
   }
   &:not(:first-of-type) {
     padding-bottom: rem(26);
+    @media (max-width: 600px) {
+      padding-bottom: 0;
+      padding-top: 61px;
+    }
   }
   &_without-title {
     padding-top: rem(75);
+  }
+  @media (max-width: 600px) {
+    padding: 24px 0 0;
   }
 }
 
 .coffee-section__title {
   font-size: rem(23);
   margin-bottom: rem(34);
+  @media (max-width: 600px) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 
@@ -31,9 +45,16 @@
   .container_flex {
     @include flexbox(flex-start, flex-start);
     margin-bottom: rem(100);
+    @media (max-width: 600px) {
+      flex-direction: column;
+      margin-bottom: 52px;
+    }
   }
   .companies {
     padding-bottom: rem(116);
+    @media (max-width: 600px) {
+      padding-bottom: 74px;
+    }
   }
 }
 
@@ -46,8 +67,22 @@
       margin-bottom: rem(25);
     }
   }
+  @media (max-width: 900px) {
+    margin-right: rem(40);
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 116px;
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 .coffee-section__slider {
   width: 24.8%;
+  @media (max-width: 900px) {
+    width: 30%;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }

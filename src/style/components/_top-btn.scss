@@ -14,12 +14,16 @@
   &.active {
     display: block;
   }
-  // @media (max-width: 600px) {
-  //   width: 40px;
-  //   height: 40px;
-  // }
+  @media (max-width: 600px) {
+    width: 117px;
+    height: 34px;
+    font-size: 16px;
+  }
 }
 
 .top-btn__text {
   margin-right: rem(13);
+  @media (max-width: 600px) {
+    margin-right: 14px;
+  }
 }

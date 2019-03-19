@@ -26,6 +26,10 @@
   &_h2 {
     @include font(33, 600);
     margin-bottom: rem(30);
+    @media (max-width: 600px) {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
   }
   &_font-size-33 {
     font-size: rem(33);
@@ -54,6 +58,9 @@
         width: 100%;
         margin-bottom: 35px;
         margin-right: 0;
+      }
+      .product-card__right-col {
+        width: 100%;
       }
       .product-card__text {
         font-size: 13px;
@@ -290,6 +297,10 @@
   & + .product-card__infos {
     margin-top: rem(70);
     margin-left: rem(5);
+    @media (max-width: 600px) {
+      margin-left: 0;
+      margin-top: 38px;
+    }
   }
   &_mobile {
     display: none;
@@ -311,18 +322,36 @@
   }
   svg {
     margin-right: rem(12);
+    @media (max-width: 600px) {
+      margin-right: 25px;
+    }
+  }
+  @media (max-width: 600px) {
+    font-size: 13px;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
   &_alt {
     &:not(:last-child) {
       margin-bottom: rem(35);
+      @media (max-width: 600px) {
+        margin-bottom: 38px;
+      }
     }
     .product-card__infos-link {
       line-height: 1.733;
       @include font(15, 500);
+      @media (max-width: 600px) {
+        font-size: 15px;
+      }
     }
     svg {
       min-width: rem(40);
       margin-right: rem(10);
+      @media (max-width: 600px) {
+        margin-right: 25px;
+      }
     }
   }
 }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("._slider").slick({
       infinite: true,
       speed: 500,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 15000,
       fade: true,
       arrows: false,

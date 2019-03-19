@@ -4,6 +4,10 @@
 
 .data-tabs__container {
   @include flexbox(center, flex-start);
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .data-tabs__tab {
@@ -13,25 +17,50 @@
   position: relative;
   background: #fff;
   height: 100%;
-  &.active {
-    color: $main-color;
-    font-weight: 600;
-    &:after {
-      content: "";
-      height: 2px;
-      width: 100%;
-      background: $orange;
-      border-radius: 0 0 rem(5 5);
-      position: absolute;
-      bottom: -2px;
-      left: 0;
+  @media (min-width: 601px) {
+    &.active {
+      color: $main-color;
+      font-weight: 600;
+      &:after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: $orange;
+        border-radius: 0 0 rem(5 5);
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+      }
     }
   }
+
   &:not(:last-child) {
     margin-right: rem(50);
   }
   @media (max-width: 900px) {
     font-size: 10px;
+  }
+  @media (max-width: 600px) {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 18px;
+    }
+    color: $main-color;
+    font: {
+      size: 16px;
+      weight: 600;
+    }
+    padding-right: 15px;
+    &:after {
+      content: "";
+      right: 0;
+      top: 40%;
+      border-radius: 0;
+      background: url("../img/arrow.svg") no-repeat center center;
+      background-size: contain;
+      width: 10px;
+      height: 6px;
+    }
   }
 }
 
@@ -39,4 +68,13 @@
   border: 1px solid #DCDCDC;
   border-radius: 0 0 rem(5 5);
   padding: rem(26 23 14);
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.data-tabs__panel {
+  @media (min-width: 601px) {
+    display: none;
+  }
 }
