@@ -1,5 +1,8 @@
 .tabs {
   margin: rem(82 0 96);
+  @media (max-width: 600px) {
+    margin: 5px 0 0;
+  }
 }
 
 .tabs__container {

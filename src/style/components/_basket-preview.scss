@@ -1,0 +1,97 @@
+.basket-preview {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: rem(50);
+  padding: rem(7 105);
+  @include flexbox(center, space-between);
+  background: $main-color;
+  z-index: 100;
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+  .btn {
+    display: block;
+    border-radius: rem(50);
+    @include font(15, 600);
+    padding: rem(8 26 9);
+    line-height: normal;
+    @media (max-width: 600px) {
+      font-size: 0;
+      padding: 0;
+      width: 26px;
+      height: 26px;
+      @include flexbox(center, center);
+      &:after {
+        content: '';
+        width: 10px;
+        height: 6px;
+        background: url('../img/arrow-white.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    padding: 7px 20px;
+  }
+  @media (max-width: 700px) {
+    padding: 13px 12px 13px 20px;
+  }
+}
+
+.basket-preview__col {
+  &_flex {
+    padding: rem(9 0);
+    @include flexbox(center, flex-start);
+    @media (max-width: 600px) {
+      padding: 2px 0;
+    }
+  }
+}
+
+.basket-preview__icon {
+  margin-right: rem(12);
+  @include flexbox(center, center);
+  @media (max-width: 600px) {
+    margin-right: 12px;
+  }
+}
+
+.basket-preview__text {
+  color: #fff;
+  @include font(15, 600);
+  line-height: normal;
+  margin: {
+    right: rem(16);
+  }
+  .price {
+    margin-left: rem(15);
+    color: $orange;
+    @include font(23, 600);
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin-left: 7px;
+    }
+  }
+  @media (max-width: 600px) {
+    font-size: 15px;
+    .mobile-hide {
+      display: none;
+    }
+  }
+}
+
+.basket-preview__link {
+  font-weight: 500;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  align-self: center;
+  &:hover, &:focus {
+    border-bottom-color: transparent;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}

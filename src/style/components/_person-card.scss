@@ -1,5 +1,7 @@
 .person-card {
-
+  @media (max-width: 600px) {
+    margin-bottom: 43px; 
+  }
 }
 
 .person-card__img {
@@ -8,11 +10,20 @@
   img {
     @include img-contain;
   }
+  @media (max-width: 600px) {
+    width: 180px;
+    height: 221px;
+    margin-bottom: 19px;
+  }
 }
 
 .person-card__name {
   @include font(16, 600);
   margin-bottom: rem(5);
+  @media (max-width: 600px) {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
 }
 
 .person-card__descr {
@@ -21,6 +32,9 @@
   line-height: 1.733;
 
   margin-bottom: rem(6);
+  @media (max-width: 600px) {
+    margin-bottom: 3px;
+  }
 }
 
 .person-card__contact {
@@ -28,9 +42,16 @@
   svg {
     margin-right: rem(5);
     min-width: rem(18);
+    @media (max-width: 600px) {
+      margin-right: 8px;
+      min-width: 13px;
+    }
   }
   &:not(:last-child) {
     margin-bottom: rem(2);
+    @media (max-width: 600px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
