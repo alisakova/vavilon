@@ -5,9 +5,29 @@
   max-width: rem(1200);
   &_small {
     max-width: rem(506);
+  }
+  &_basket,
+  &_make-order,
+  &_leasing {
     @media (max-width: 600px) {
-      max-width: 320px;
+      & + .fancybox-button.fancybox-close-small {
+        top: 36px;
+        right: 25px;
+      }
     }
+  }
+  &_make-order,
+  &_leasing {
+    @media (max-width: 600px) {
+      .modal__title {
+        // padding: 29px 20px 26px;
+        // margin-bottom: 0;
+        text-align: left;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    max-width: 100%;
   }
 }
 
@@ -21,6 +41,19 @@
   }
   &_flex {
     @include flexbox(stretch, flex-start);
+  }
+  &.modal_make-order {
+    @media (max-width: 600px) {
+      padding: 29px 20px 47px;
+      .modal__title {
+        margin-bottom: 73px;
+      }
+    }
+  }
+  &.modal_leasing {
+    @media (max-width: 600px) {
+      padding: 29px 20px 47px;
+    }
   }
 }
 
@@ -51,12 +84,24 @@
   &_right {
     padding: rem(24 33 36 35);
     width: 40.75%;
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   &_left {
     width: 59.25%;
     background-color: #F9F9F9;
     .modal__title {
       padding: rem(24 30 0);
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      padding-bottom: 48px;
+      .modal__title {
+        padding: 29px 20px 26px;
+        margin-bottom: 0;
+        text-align: left;
+      }
     }
   }
 }
@@ -85,11 +130,20 @@
   }
   .checkbox {
     margin-bottom: rem(20);
+    @media (max-width: 600px) {
+      margin-bottom: 33px;
+    }
   }
   .btn {
+    display: inline-block;
+    margin-bottom: 0;
     padding: {
       left: rem(24);
       right: rem(24);
+    }
+    @media (max-width: 600px) {
+      display: block;
+      text-align: center;
     }
   }
 }

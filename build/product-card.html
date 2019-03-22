@@ -90,6 +90,403 @@
       <br />от производителя
     </div>
   </div>
+  <div class="modal" style="display: none;" id="make-order">
+    <div class="modal__wrapper modal_make-order">
+      <div class="modal__title modal__title_margin-bottom-40">Оформление заявки</div>
+      <form class="modal__form form">
+        <div class="form__item">
+          <label class="form__label">
+            <input class="form__input" type="city"><span class="form__label-text">Город</span>
+          </label>
+        </div>
+        <div class="form__item">
+          <label class="form__label">
+            <input class="form__input" type="email"><span class="form__label-text">Email</span>
+          </label>
+        </div>
+        <div class="form__item">
+          <label class="form__label">
+            <input class="form__input" type="tel"><span class="form__label-text">Телефон</span>
+          </label>
+        </div>
+        <div class="form__item">
+          <textarea class="form__textarea" placeholder="Комментарий к заказу (необязательно)"></textarea>
+        </div>
+        <label class="checkbox" for="checkbox">Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
+          <input id="checkbox" type="checkbox"><span class="checkbox__checkmark"></span>
+        </label>
+        <div class="form__btn-container"><a class="btn form__btn _open-success" data-fancybox data-options="{&quot;src&quot;: &quot;#success-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Отправить заявку</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal" style="display: none;" id="basket">
+    <div class="modal__wrapper modal__wrapper_padding-0 modal__wrapper_flex modal_basket">
+      <div class="modal__col modal__col_left">
+        <div class="modal__title modal__title_margin-bottom-23">Корзина</div>
+        <div class="basket">
+          <div class="basket__container">
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__top">Наименование</div>
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__top">Кол-во</div>
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__top">Сумма</div>
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__top"></div>
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__col basket__col_first">
+                <div class="basket__bottom">
+                  <div class="basket__img">
+                    <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                  </div>
+                  <div class="basket__product-name">Coffemar G250</div>
+                  <div class="basket__icon-mobile">
+                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                      <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                      <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                      fill="#BDBDBD" />
+                      <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                    </svg>
+
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_mobile">
+                <div class="basket__img">
+                  <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
+                </div>
+              </div>
+              <div class="basket__col basket__col_second">
+                <div class="basket__bottom">
+                  <div class="basket__counter">
+                    <div class="counter counter_small">
+                      <button class="counter__btn counter__btn_dicrease">–</button>
+                      <input class="counter__input" type="number" value="1">
+                      <button class="counter__btn counter__btn_increase">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_third">
+                <div class="basket__bottom">
+                  <div class="basket__sum">248 784 р.</div>
+                </div>
+              </div>
+              <div class="basket__col basket__col_fourth">
+                <div class="basket__bottom">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                    <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                    <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                    fill="#BDBDBD" />
+                    <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                  </svg>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="basket__total">
+            <div class="basket__text"></div>Всего <span class="orange">1 </span>наименование
+            <br />На сумму <span class="orange">248 784 ₽</span>
+          </div>
+          <div class="basket__mobile-btn"><a class="btn" data-fancybox data-options="{&quot;src&quot;: &quot;#make-order&quot;, &quot;touch&quot;: false}" href="javascript:;">Перейти к оформлению заявки</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal__col modal__col_right">
+        <div class="modal__title modal__title_margin-bottom-40">Оформление заявки</div>
+        <form class="modal__form form">
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="city"><span class="form__label-text">Город</span>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="email"><span class="form__label-text">Email</span>
+            </label>
+          </div>
+          <div class="form__item">
+            <label class="form__label">
+              <input class="form__input" type="tel"><span class="form__label-text">Телефон</span>
+            </label>
+          </div>
+          <div class="form__item">
+            <textarea class="form__textarea" placeholder="Комментарий к заказу (необязательно)"></textarea>
+          </div>
+          <label class="checkbox" for="checkbox">Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
+            <input id="checkbox" type="checkbox"><span class="checkbox__checkmark"></span>
+          </label>
+          <div class="form__btn-container"><a class="btn form__btn" data-fancybox data-options="{&quot;src&quot;: &quot;#success-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Отправить заявку</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <div class="basket-preview">
     <div class="basket-preview__col basket-preview__col_flex">
       <div class="basket-preview__icon">
@@ -176,7 +573,7 @@
       </header>
       <main>
         <div class="modal modal_small" style="display: none;" id="leasing">
-          <div class="modal__wrapper">
+          <div class="modal__wrapper modal_leasing">
             <div class="modal__title">Быстрый заказ</div>
             <div class="modal__product-preview">
               <div class="modal__img">
@@ -198,13 +595,13 @@
               <label class="checkbox" for="checkbox">Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
                 <input id="checkbox" type="checkbox"><span class="checkbox__checkmark"></span>
               </label>
-              <div class="form__btn-container"><a class="btn form__btn" data-fancybox data-options="{&quot;src&quot;: &quot;#success-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Отправить заявку</a>
+              <div class="form__btn-container"><a class="btn form__btn _open-success" data-fancybox data-options="{&quot;src&quot;: &quot;#success-modal&quot;, &quot;touch&quot;: false}" href="javascript:;">Отправить заявку</a>
               </div>
             </form>
           </div>
         </div>
         <div class="modal" style="display: none;" id="basket">
-          <div class="modal__wrapper modal__wrapper_padding-0 modal__wrapper_flex">
+          <div class="modal__wrapper modal__wrapper_padding-0 modal__wrapper_flex modal_basket">
             <div class="modal__col modal__col_left">
               <div class="modal__title modal__title_margin-bottom-23">Корзина</div>
               <div class="basket">
@@ -217,6 +614,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -258,6 +670,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -296,6 +723,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -334,6 +776,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -372,6 +829,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -410,6 +882,21 @@
                           <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                         </div>
                         <div class="basket__product-name">Coffemar G250</div>
+                        <div class="basket__icon-mobile">
+                          <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.4827 9.36029L11.375 8.25256L5.98551 13.6421L7.09324 14.7498L12.4827 9.36029Z" fill="#BDBDBD" />
+                            <path d="M7.03156 8.19135L5.92383 9.29907L11.4361 14.8113L12.5438 13.7036L7.03156 8.19135Z" fill="#BDBDBD" />
+                            <path d="M0 3.00256V4.56913H1.63238L2.92738 19.2853C2.96289 19.6897 3.30156 19.9999 3.70754 19.9999H14.9083C15.3143 19.9999 15.6532 19.6895 15.6885 19.2851L16.9835 4.56913H18.6423V3.00256H0ZM14.1909 18.4334H4.42481L3.20496 4.56913H15.411L14.1909 18.4334Z"
+                            fill="#BDBDBD" />
+                            <path d="M11.88 0H6.7625C6.04266 0 5.45703 0.585625 5.45703 1.30547V3.7859H7.02359V1.56656H11.6189V3.7859H13.1855V1.30547C13.1855 0.585625 12.5998 0 11.88 0Z" fill="#BDBDBD" />
+                          </svg>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket__col basket__col_mobile">
+                      <div class="basket__img">
+                        <img src="img/products/coffeemar.jpg" alt="Coffemar G250">
                       </div>
                     </div>
                     <div class="basket__col basket__col_second">
@@ -445,6 +932,8 @@
                 <div class="basket__total">
                   <div class="basket__text"></div>Всего <span class="orange">1 </span>наименование
                   <br />На сумму <span class="orange">248 784 ₽</span>
+                </div>
+                <div class="basket__mobile-btn"><a class="btn" data-fancybox data-options="{&quot;src&quot;: &quot;#make-order&quot;, &quot;touch&quot;: false}" href="javascript:;">Перейти к оформлению заявки</a>
                 </div>
               </div>
             </div>

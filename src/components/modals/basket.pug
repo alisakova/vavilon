@@ -1,5 +1,5 @@
 .modal(style="display: none;", id="basket")
-  .modal__wrapper.modal__wrapper_padding-0.modal__wrapper_flex
+  .modal__wrapper.modal__wrapper_padding-0.modal__wrapper_flex.modal_basket
     .modal__col.modal__col_left
       .modal__title.modal__title_margin-bottom-23 Корзина
       .basket
@@ -11,6 +11,11 @@
                 .basket__img 
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__top Кол-во
               .basket__bottom
@@ -33,6 +38,11 @@
                 .basket__img 
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__bottom
                 .basket__counter
@@ -52,6 +62,11 @@
                 .basket__img 
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__bottom
                 .basket__counter
@@ -71,6 +86,11 @@
                 .basket__img 
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__bottom
                 .basket__counter
@@ -90,6 +110,11 @@
                 .basket__img 
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__bottom
                 .basket__counter
@@ -106,9 +131,14 @@
           .basket__item
             .basket__col.basket__col_first
               .basket__bottom
-                .basket__img 
+                .basket__img
                   img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
                 .basket__product-name Coffemar G250
+                .basket__icon-mobile
+                  include ../../img/basket-icon.svg
+            .basket__col.basket__col_mobile 
+              .basket__img 
+                img(src="img/products/coffeemar.jpg", alt="Coffemar G250")
             .basket__col.basket__col_second
               .basket__bottom
                 .basket__counter
@@ -126,6 +156,8 @@
           .basket__text 
           | Всего <span class="orange">1 </span>наименование<br />
           | На сумму <span class="orange">248 784 ₽</span>
+        .basket__mobile-btn
+          a(data-fancybox, data-options='{"src": "#make-order", "touch": false}', href="javascript:;").btn Перейти к оформлению заявки
     .modal__col.modal__col_right
       .modal__title.modal__title_margin-bottom-40 Оформление заявки
       form.modal__form.form
