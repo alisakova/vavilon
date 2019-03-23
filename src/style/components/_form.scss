@@ -18,6 +18,10 @@
 .form__title {
   margin-bottom: rem(38);
   @include font(23, 600);
+  @media (max-width: 600px) {
+    font-size: 23px;
+    margin-bottom: 37px;
+  }
 }
 
 .form__item {
@@ -112,6 +116,10 @@
     opacity: 1;
     transition: all 250ms;
   }
+  @media (max-width: 600px) {
+    min-height: 114px;
+    max-height: 114px;
+  }
 }
 
 .form__btn {
@@ -122,6 +130,7 @@
   @media (max-width: 600px) {
     margin-bottom: 24px;
     font-size: 15px;
+    padding: 13px 38px 14px;
   }
 }
 

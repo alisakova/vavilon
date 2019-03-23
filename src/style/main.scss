@@ -78,6 +78,9 @@ ul {
 	margin: 0 auto;
 	@media (max-width: 600px) {
 		padding: 0 20px;
+		&_coffee {
+			padding: 0 19px;
+		}
 	}
 }
 
@@ -168,6 +171,11 @@ input[type='number'] {
 		// &_main {
 		// 	max-height: 333px;
 		// }
+		&.index-text {
+			& + .mobile-show-btn {
+				margin-top: 16px;
+			}
+		}
 		&.product-text {
 			max-height: 134px;
 			& + .mobile-show-btn {
@@ -195,7 +203,7 @@ input[type='number'] {
 		&.news-text {
 			max-height: 178px;
 			& + .mobile-show-btn {
-				margin-top: 0;
+				margin-top: 20px;
 			}
 		}
 		&.company-text {
@@ -209,14 +217,14 @@ input[type='number'] {
 			max-height: 378px;
 			transition: max-height 1s ease;
 			& + .mobile-show-btn {
-				margin-top: 0;
+				margin-top: 8px;
 			}
 		}
 		&.reviews-text {
 			max-height: 466px;
 			& + .mobile-show-btn {
 				margin-top: 4px;
-				margin-bottom: 30px;
+				margin-bottom: 38px;
 			}
 		}
 	  &.expanded {

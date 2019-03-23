@@ -1,7 +1,7 @@
 .support {
   padding-bottom: rem(94);
   @media (max-width: 600px) {
-    padding: rem(24 0 10);
+    padding: 24px 0 30px;
   }
 }
 
@@ -29,7 +29,7 @@
   @media (max-width: 600px) {
     font-size: 12px;
     &:not(:last-child) {
-      margin-bottom: rem(9);
+      margin-bottom: 12px;
     }
   }
 }

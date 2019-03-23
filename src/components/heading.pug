@@ -1,5 +1,5 @@
 mixin heading(title, links)
-  .heading
+  .heading(class= headingMobileClass)
     if mobileLinkClass === 'back'
       .heading__mobile-link(class= mobileLinkClass, onclick="window.history.back();")= mobileLink
     if internalHeading

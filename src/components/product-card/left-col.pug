@@ -4,7 +4,7 @@
     .badge.badge_left.badge_hit Хит!
   .product-card__img-previews
     -for(var i=0;i<4;i++)
-      .product-card__img-preview(class= i % 2 !== 0 ? "product-card__img-preview_transform" : "")
+      .product-card__img-preview(class= i === 0 ? "active" : "")
         img(src="img/product-preview.jpg", alt="Coffemar G250")
   .product-card__infos.product-card__infos_desktop
     .product-card__info

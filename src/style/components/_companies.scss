@@ -1,7 +1,10 @@
 .companies {
   padding-bottom: rem(123);
   @media (max-width: 600px) {
-    padding-bottom: 62px;
+    padding-bottom: 46px;
+    .container {
+      padding: 0 10px;
+    }
   }
 }
 
@@ -11,7 +14,7 @@
     img {
       margin: 0 auto;
       @media (max-width: 600px) {
-        max-width: 130px;
+        max-width: 86px;
       }
     }
   }

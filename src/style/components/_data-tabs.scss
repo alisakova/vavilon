@@ -1,5 +1,9 @@
 .data-tabs {
-
+  .panel {
+    width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+  }
 }
 
 .data-tabs__container {
@@ -43,7 +47,10 @@
   @media (max-width: 600px) {
     &:not(:last-child) {
       margin-right: 0;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
+    }
+    &:last-of-type {
+      margin-bottom: 49px;
     }
     color: $main-color;
     font: {
@@ -53,13 +60,22 @@
     padding-right: 15px;
     &:after {
       content: "";
-      right: 0;
-      top: 40%;
+      right: -8px;
+      top: 30%;
       border-radius: 0;
       background: url("../img/arrow.svg") no-repeat center center;
       background-size: contain;
       width: 10px;
       height: 6px;
+      position: absolute;
+    }
+    &.active {
+      &:after {
+        transform: scale(-1);
+      }
+      & + .panel {
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -69,12 +85,14 @@
   border-radius: 0 0 rem(5 5);
   padding: rem(26 23 14);
   @media (max-width: 600px) {
-    display: none;
+    border-radius: 0;
+    border: none;
+    padding: 0;
   }
 }
-
-.data-tabs__panel {
-  @media (min-width: 601px) {
-    display: none;
-  }
-}
+//
+// .data-tabs__panel {
+//   @media (min-width: 601px) {
+//     display: none;
+//   }
+// }

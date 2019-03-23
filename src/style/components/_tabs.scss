@@ -1,7 +1,14 @@
 .tabs {
   margin: rem(82 0 96);
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     margin: 5px 0 0;
+    .col {
+      width: 100%;
+      padding: 0;
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+    }
   }
 }
 
@@ -10,6 +17,11 @@
   @include font(14, 500);
   border-bottom: 1px solid $gray;
   margin-bottom: rem(33);
+  @media (max-width: 700px) {
+    display: block;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 
 .tabs__tab {
@@ -34,5 +46,27 @@
   }
   &:hover, &:focus {
     color: $main-color;
+  }
+  @media (max-width: 700px) {
+    width: 100%;
+    text-align: left;
+    color: $main-color;
+    font: {
+      size: 18px;
+      weight: 600;
+    }
+    margin-bottom: 19px;
+    padding: 0;
+    br {
+      display: none;
+    }
+    &:hover, &:focus {
+      color: currentColor;
+    }
+    &.active {
+      &:after {
+        display: none;
+      }
+    }
   }
 }

@@ -1,7 +1,7 @@
 .working-conditions {
   margin: rem(23 0 64);
   @media (max-width: 600px) {
-    margin: 0;
+    margin: 0 0 13px;
   }
 }
 
@@ -20,7 +20,8 @@
 .working-conditions__links {
   margin-bottom: rem(45);
   @media (max-width: 600px) {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
+    margin-top: 3px;
   }
 }
 
@@ -28,7 +29,7 @@
   &:not(:last-child) {
     margin-bottom: rem(15);
     @media (max-width: 600px) {
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
   }
 }
@@ -42,6 +43,7 @@
   @media (max-width: 600px) {
     font-size: 16px;
     margin-bottom: 14px;
+    line-height: 1.33;
   }
 }
 
@@ -68,5 +70,8 @@
   @media (max-width: 600px) {
     max-width: none;
     line-height: 22px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 }

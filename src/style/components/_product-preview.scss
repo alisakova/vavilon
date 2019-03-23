@@ -10,6 +10,9 @@ $product-border: 1px solid #F2F2F2;
     .badge {
       min-width: 71px;
     }
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -66,6 +69,7 @@ $product-border: 1px solid #F2F2F2;
         padding-right: rem(14);
       }
       @media (max-width: 600px) {
+        padding-bottom: 23px;
         @include flexbox(center, flex-end);
         border-top-right-radius: 0;
         border: {
@@ -94,6 +98,7 @@ $product-border: 1px solid #F2F2F2;
     @media (max-width: 600px) {
       width: 50%;
       .product-preview__bottom {
+        padding-bottom: 23px;
         border-bottom-left-radius: $global-radius;
         border: {
           top: none;
@@ -161,8 +166,9 @@ $product-border: 1px solid #F2F2F2;
     margin-bottom: rem(28);
   }
   @media (max-width: 600px) {
+    word-break: break-all;
     font-size: 14px;
-    margin-bottom: 0;
+    margin-bottom: 6px;
   }
 }
 
@@ -266,6 +272,12 @@ $product-border: 1px solid #F2F2F2;
 .product-preview__mobile-container {
   @media (max-width: 600px) {
     @include flexbox(flex-start, flex-start);
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.product-preview__action {
+  @media (max-width: 600px) {
+    margin-right: 24px;
   }
 }

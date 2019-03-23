@@ -8,13 +8,14 @@
   }
   @media (max-width: 600px) {
     padding-bottom: 56px;
+    padding-top: 2px;
   }
 }
 
 .company-descr__title {
   margin-bottom: rem(34);
   @media (max-width: 600px) {
-    margin-bottom: 23px;
+    margin-bottom: 21px;
   }
 }
 
@@ -25,6 +26,7 @@
     margin-bottom: rem(27);
     @media (max-width: 600px) {
       margin-bottom: 25px;
+      max-width: 277px;
     }
   }
 }

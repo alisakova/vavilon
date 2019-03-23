@@ -9,14 +9,21 @@
       right: rem(21);
     }
   }
-  &_alt {
-    margin-top: rem(50);
-  }
   @media (max-width: 640px) {
     margin: 0;
     .btn {
       padding: 11px 16px 13px;
       font-size: 13px;
+    }
+  }
+  &_alt {
+    margin-top: rem(50);
+    @media (max-width: 640px) {
+      margin-top: 0;
+      margin-bottom: 50px;
+      .badge {
+        top: 10px;
+      }
     }
   }
 }
@@ -34,6 +41,13 @@
   &_font-size-33 {
     font-size: rem(33);
     letter-spacing: 0;
+    @media (max-width: 600px) {
+      letter-spacing: 0.02em;
+    }
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+    margin-bottom: 23px;
   }
 }
 
@@ -56,7 +70,7 @@
       flex-direction: column;
       .product-card__left-col {
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 33px;
         margin-right: 0;
       }
       .product-card__right-col {
@@ -71,6 +85,8 @@
       .product-card__price {
         flex-direction: row;
         align-items: center;
+        padding: 22px 20px 20px;
+        margin-bottom: 28px;
       }
     }
   }
@@ -104,7 +120,9 @@
   margin-bottom: rem(25);
   position: relative;
   img {
-    @include img-contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   &_alt {
     @include sizes(362, 580);
@@ -136,7 +154,7 @@
 
 .product-card__charachteristics {
   @media (max-width: 640px) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
 
@@ -148,6 +166,12 @@
   }
   &:not(:last-child) {
     margin-bottom: rem(18);
+  }
+  @media (max-width: 600px) {
+    align-items: flex-end;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -164,6 +188,15 @@
   font-weight: 500;
   &_no-margin-bottom {
     margin-bottom: 0;
+  }
+  @media (max-width: 375px) {
+    &_max-width {
+      margin-bottom: 27px;
+      max-width: 99%;
+    }
+    & + .product-card__subtitile {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -196,7 +229,7 @@
     }
   }
   @media (max-width: 600px) {
-    padding: 18px 20px 17px;
+    padding: 22px 20px 17px;
     border-radius: 0;
     margin: {
       left: -20px;
@@ -276,6 +309,7 @@
     border-bottom-color: transparent;
   }
   &_orange {
+    white-space: nowrap;
     color: $main-color;
     border-bottom: 1px dashed $orange;
     margin-right: rem(36);
@@ -311,6 +345,12 @@
     }
     &_mobile {
       display: block;
+      .link {
+        border-bottom: none;
+        span {
+          border-bottom: 1px solid $orange;
+        }
+      }
     }
   }
 }
@@ -324,6 +364,9 @@
     margin-right: rem(12);
     @media (max-width: 600px) {
       margin-right: 25px;
+      min-width: 23px;
+      margin-top: -18px;
+      margin-left: 5px;
     }
   }
   @media (max-width: 600px) {
@@ -365,6 +408,9 @@
       border-bottom-color: transparent;
     }
   }
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 }
 
 .product-card__img-previews {
@@ -381,11 +427,11 @@
   img {
     @include img-contain;
   }
-  &_transform {
-    transform: scaleX(-1);
-  }
   &:not(:last-child) {
     margin-right: rem(10);
+  }
+  &.active {
+    border-color: $second-gray;
   }
   @media (max-width: 700px) {
     width: 64px;
@@ -403,9 +449,9 @@
   margin-bottom: rem(28);
   border-bottom: 1px solid $gray;
   @media (max-width: 700px) {
-    margin-top: -38px;
+    margin-top: 0;
     padding-bottom: 14px;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 }
 
@@ -415,13 +461,18 @@
     margin-right: rem(70);
     @media (max-width: 700px) {
       margin-right: 32px;
+      margin-top: 0;
     }
   }
   &:nth-child(2) {
     margin-right: rem(45);
+    @media (max-width: 700px) {
+      margin-right: 0;
+      margin-top: 0;
+    }
   }
   @media (max-width: 700px) {
-    margin-top: 38px;
+    margin-top: 35px;
     margin-bottom: 0;
   }
 }
@@ -436,7 +487,7 @@
   }
   @media (max-width: 700px) {
     font-size: 13px;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     svg {
       margin-left: 9px;
     }
@@ -468,7 +519,7 @@
   margin-top: rem(30);
   @media (max-width: 700px) {
     margin-bottom: 4px;
-    margin-top: 41px;
+    margin-top: 45px;
   }
   @media (max-width: 375px) {
     flex-direction: column;

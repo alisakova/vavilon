@@ -1,7 +1,7 @@
 .categories {
   padding: rem(68 0 97);
   @media (max-width: 600px) {
-    padding: 34px 0 36px;
+    padding: 35px 0 36px;
   }
 }
 
@@ -24,7 +24,7 @@
   @media (max-width: 600px) {
     width: 100%;
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -34,6 +34,7 @@
   margin: 0 auto 2px;
   @media (max-width: 600px) {
     width: 107px;
+    margin-bottom: 10px;
   }
 }
 

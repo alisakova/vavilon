@@ -3,7 +3,7 @@ section.cities(class= citiesAddClass)
     each item in cities
       li.cities__item
         a(href= cityLink)!= item
-  h2.cities__title(class= cityMap ? "cities__title_margin-bottom" : "") Нет вашего региона? Звоните: 8 800 700-34-43
+  h2.cities__title(class= cityMap ? "cities__title_margin-bottom" : "") Нет вашего региона?<br />Звоните: 8 800 700-34-43
   if cityMap
     .cities__map
       img(src="img/map.jpg", alt="Дилеры")

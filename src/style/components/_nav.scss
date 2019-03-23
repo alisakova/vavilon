@@ -28,7 +28,7 @@
   }
   &_mobile {
     .nav__link {
-      display: block;
+      display: inline-block;
       font: {
         size: 15px;
         weight: 600;
@@ -43,7 +43,7 @@
     }
     .nav__item {
       &:not(:last-child) {
-        margin-bottom: 25px;
+        margin-bottom: 26px;
       }
       &.active {
         .nav__link {

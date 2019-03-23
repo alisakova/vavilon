@@ -2,7 +2,7 @@ mixin product-alt(item)
   a(href= productLink).product.product_alt
     .product__body(class= item.addBodyClass)
       .product__title.product__title_center= item.title
-      .product__img.product__img_center
+      .product__img.product__img_center(class= productImgAddClass)
         img(src= item.img, alt= item.title)
       if item.price
         .product__price.product__price_alt= item.price

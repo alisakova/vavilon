@@ -28,6 +28,17 @@
   }
   @media (max-width: 600px) {
     max-width: 100%;
+    &#basket, &#make-order {
+      height: 100%;
+      & > .modal__wrapper {
+        height: 100%;
+      }
+    }
+    &#success-modal {
+      .modal__title {
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -46,7 +57,11 @@
     @media (max-width: 600px) {
       padding: 29px 20px 47px;
       .modal__title {
-        margin-bottom: 73px;
+        margin-bottom: 68px;
+      }
+      .checkbox {
+        margin-top: 32px;
+        margin-bottom: 35px;
       }
     }
   }
@@ -82,7 +97,7 @@
 
 .modal__col {
   &_right {
-    padding: rem(24 33 36 35);
+    padding: rem(24 33 25 35);
     width: 40.75%;
     @media (max-width: 600px) {
       display: none;
@@ -109,14 +124,15 @@
 .modal__title {
   @include font(23, 600);
   margin-bottom: rem(28);
-  &_margin-bottom-23 {
-    margin-bottom: rem(23);
+  letter-spacing: 0.02em;
+  &_margin-bottom-20 {
+    margin-bottom: rem(20);
   }
   &_margin-bottom-40 {
     margin-bottom: rem(40);
   }
   @media (max-width: 600px) {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 17px;
     text-align: center;
   }
@@ -129,7 +145,7 @@
     margin-right: 0;
   }
   .checkbox {
-    margin-bottom: rem(20);
+    margin-bottom: rem(10);
     @media (max-width: 600px) {
       margin-bottom: 33px;
     }
@@ -144,8 +160,14 @@
     @media (max-width: 600px) {
       display: block;
       text-align: center;
+      padding: 9px 20px;
     }
   }
+  // .form__item {
+  //   &:nth-last-child(3) {
+  //     margin-bottom: rem(13);
+  //   }
+  // }
 }
 
 .fancybox-button {
@@ -164,13 +186,18 @@
   }
 }
 
-.fancybox-slide--html .fancybox-close-small {
-  padding: 0;
-  top: rem(20);
-  right: rem(18);
+.fancybox-slide--html {
+  .fancybox-close-small {
+    padding: 0;
+    top: rem(20);
+    right: rem(18);
+    @media (max-width: 600px) {
+      top: 20px;
+      right: 20px;
+    }
+  }
   @media (max-width: 600px) {
-    top: 20px;
-    right: 20px;
+    padding: 0;
   }
 }
 

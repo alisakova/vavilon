@@ -2,7 +2,7 @@
   @include flexbox(center, flex-start);
   margin-bottom: rem(16);
   @media (max-width: 600px) {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 }
 
@@ -35,6 +35,12 @@
   &_margin-bottom {
     margin-bottom: rem(24);
   }
+  @media (max-width: 600px) {
+    font-size: 12px;
+    &_margin-bottom {
+      margin-bottom: 27px;
+    }
+  }
 }
 
 .simple-tabs {
@@ -45,6 +51,6 @@
     padding-left: 0;
   }
   @media (max-width: 600px) {
-    margin-bottom: 33px;
+    margin-bottom: 28px;
   }
 }

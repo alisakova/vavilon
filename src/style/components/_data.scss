@@ -1,11 +1,18 @@
 .data {
   max-width: rem(452);
+  @media (max-width: 600px) {
+    max-width: none;
+  }
 }
 
 .data__name {
   @include font(16, 600);
   background: #F9F9F9;
   padding: rem(9 17 8);
+  @media (max-width: 600px) {
+    padding: 10px 12px 14px;
+    font-size: 13px;
+  }
 }
 
 .data__row {
@@ -13,4 +20,11 @@
   font-weight: 500;
   line-height: 1.72;
   padding: rem(8 80 7 17);
+  @media (max-width: 600px) {
+    padding: 6px 0 3px 12px;
+    font-size: 13px;
+    & + .data__name {
+      margin-top: 5px;
+    }
+  }
 }
