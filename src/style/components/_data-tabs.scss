@@ -8,7 +8,7 @@
 
 .data-tabs__container {
   @include flexbox(center, flex-start);
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -17,11 +17,11 @@
 .data-tabs__tab {
   color: $alt-gray;
   @include font(16, 500);
-  padding-bottom: rem(7);
   position: relative;
   background: #fff;
   height: 100%;
-  @media (min-width: 601px) {
+  @media (min-width: 701px) {
+    min-height: rem(45);
     &.active {
       color: $main-color;
       font-weight: 600;
@@ -44,7 +44,7 @@
   @media (max-width: 900px) {
     font-size: 10px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     &:not(:last-child) {
       margin-right: 0;
       margin-bottom: 14px;
@@ -84,7 +84,7 @@
   border: 1px solid #DCDCDC;
   border-radius: 0 0 rem(5 5);
   padding: rem(26 23 14);
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     border-radius: 0;
     border: none;
     padding: 0;

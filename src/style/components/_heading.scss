@@ -69,9 +69,6 @@
   margin-right: rem(42);
   margin-bottom: rem(4);
   height: rem(30);
-  &_auto {
-    width: auto;
-  }
   &_margin-bottom-large {
     margin-bottom: rem(38);
   }
@@ -79,8 +76,17 @@
     width: auto;
     margin-right: rem(52);
   }
+  @media (max-width: 1000px) {
+    width: 40%;
+  }
   @media (max-width: 750px) {
     width: 30%;
+  }
+  &_auto {
+    width: auto;
+    @media (max-width: 1000px) {
+      width: auto;
+    }
   }
 }
 
@@ -90,6 +96,9 @@
     .heading__wrapper {
       width: 27%;
       margin-right: rem(45);
+      @media (max-width: 1000px) {
+        width: 40%;
+      }
     }
   }
 }

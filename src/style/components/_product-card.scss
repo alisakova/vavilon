@@ -331,7 +331,7 @@
   & + .product-card__infos {
     margin-top: rem(70);
     margin-left: rem(5);
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       margin-left: 0;
       margin-top: 38px;
     }
@@ -345,11 +345,16 @@
     }
     &_mobile {
       display: block;
-      .link {
-        border-bottom: none;
-        span {
-          border-bottom: 1px solid $orange;
-        }
+    }
+  }
+}
+
+.data-tabs + .product-card__infos_mobile {
+  @media (max-width: 700px) {
+    .link {
+      border-bottom: none;
+      span {
+        border-bottom: 1px solid $orange;
       }
     }
   }
@@ -362,14 +367,14 @@
   }
   svg {
     margin-right: rem(12);
-    @media (max-width: 600px) {
-      margin-right: 25px;
+    @media (max-width: 700px) {
+      margin-right: 26px;
       min-width: 23px;
       margin-top: -18px;
       margin-left: 5px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     font-size: 13px;
     &:not(:last-child) {
       margin-bottom: 14px;
@@ -378,22 +383,44 @@
   &_alt {
     &:not(:last-child) {
       margin-bottom: rem(35);
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
         margin-bottom: 38px;
       }
     }
     .product-card__infos-link {
       line-height: 1.733;
       @include font(15, 500);
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
         font-size: 15px;
       }
     }
-    svg {
+    &:first-child {
+      .product-card__info-icon {
+        background: url('../img/garant-icon.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+    &:nth-child(2) {
+      .product-card__info-icon {
+        background: url('../img/calc-icon.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+    &:nth-child(3){
+      .product-card__info-icon {
+        background: url('../img/delivery-icon.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+
+    .product-card__info-icon {
       min-width: rem(40);
+      min-height: rem(33);
       margin-right: rem(10);
-      @media (max-width: 600px) {
-        margin-right: 25px;
+      @media (max-width: 700px) {
+        margin-right: 20px;
+        min-width: 33px;
+        min-height: 33px;
       }
     }
   }
@@ -408,7 +435,7 @@
       border-bottom-color: transparent;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     font-size: 13px;
   }
 }
@@ -474,6 +501,9 @@
   @media (max-width: 700px) {
     margin-top: 35px;
     margin-bottom: 0;
+    &:last-child {
+      width: 100%;
+    }
   }
 }
 

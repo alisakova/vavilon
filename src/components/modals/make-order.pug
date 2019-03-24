@@ -18,7 +18,7 @@
         textarea(placeholder="Комментарий к заказу (необязательно)").form__textarea
       label(for="checkbox", class="checkbox")
         | Нажимая кнопку «Отправить заявку», вы подтверждаете, что ознакомились с <a href="">Политикой конфиденциальности</a> и принимаете ее.
-        input(id="checkbox", type="checkbox")
+        input(id="checkbox", type="checkbox", checked, required)
         span.checkbox__checkmark
       .form__btn-container
         a(data-fancybox, data-options='{"src": "#success-modal", "touch": false}', href="javascript:;").btn.form__btn._open-success Отправить заявку

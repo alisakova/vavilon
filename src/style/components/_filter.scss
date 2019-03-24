@@ -42,6 +42,13 @@ $select-radius: rem(50);
 }
 
 .select2-container--default {
+  .select2-selection--single {
+    .select2-selection__rendered {
+      @media (max-width: 1080px) {
+        line-height: 22px;
+      }
+    }
+  }
   &.select2-container--open {
     &.select2-container--below {
       .select2-selection--single {

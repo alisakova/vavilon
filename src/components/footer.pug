@@ -97,22 +97,22 @@
   var networks = [
     {
       "link": "",
-      "icon": "instagram",
+      "icon": "instagram.svg",
       "alt": "Instagram"
     },
     {
       "link": "",
-      "icon": "facebook",
+      "icon": "facebook.png",
       "alt": "Facebook"
     },
     {
       "link": "",
-      "icon": "vkontakte",
+      "icon": "vkontakte.png",
       "alt": "Вконтакте"
     },
     {
       "link": "",
-      "icon": "youtube",
+      "icon": "youtube.svg",
       "alt": "Youtube"
     }
   ]
@@ -149,7 +149,7 @@ footer.footer
       .footer__socials
         each item in networks
           a(href= item.link).footer__social-link
-            img(src="img/networks/" + item.icon + ".svg", alt= item.alt)
+            img(src="img/networks/" + item.icon, alt= item.alt)
       .footer__mobile
         a(href="").nav__link.link Политика конфиденциальности
         .nav__copyright Разработано в Cody Art, 2019

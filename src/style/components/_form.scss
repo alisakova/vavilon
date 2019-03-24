@@ -90,6 +90,7 @@
   @include font(15, 500);
   font-family: $main-font;
   color: $main-color;
+  box-shadow: none;
   &:focus {
     border: 2px solid $orange;
     @include input-placeholder {
