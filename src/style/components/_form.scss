@@ -48,6 +48,9 @@
   border-radius: $global-radius;
   padding: rem(10 15 9);
   @include font(15, 500);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &:focus,
   &.not-empty {
     & ~ .form__label-text {
@@ -91,6 +94,9 @@
   font-family: $main-font;
   color: $main-color;
   box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   &:focus {
     border: 2px solid $orange;
     @include input-placeholder {
