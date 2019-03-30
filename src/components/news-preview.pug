@@ -1,5 +1,5 @@
 mixin news-preview(item, index)
-  article.news-preview
+  a(href='news-page.html').news-preview
     .news-preview__img
       if kkt 
         img(src="img/kkt/" + item.img, alt= item.title)
@@ -14,7 +14,7 @@ mixin news-preview(item, index)
               | Закончилась
           else 
             | Закончится 20 ноября 2018
-    a(href="news-page.html", class= kkt ? "news-preview__title_font-size-14" : "").news-preview__title= item.title
+    .news-preview__title(class= kkt ? "news-preview__title_font-size-14" : "")= item.title
     .news-preview__date= item.date
     if !kkt
       .news-preview__footer

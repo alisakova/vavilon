@@ -1,0 +1,35 @@
+.map {
+  width: 959px;
+  height: 507px;
+  position: relative;
+  background: url('../img/map.png') no-repeat center center;
+  background-size: contain;
+  font-size: rem(12);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.map__city {
+  display: block;
+  position: absolute;
+  width: rem(9);
+  height: rem(9);
+  color: #000000;
+  background: $gradient;
+  border: 2px solid $main-color;
+  border-radius: 50%;
+  span {
+    position: absolute;
+    top: -3px;
+  }
+  &.left {
+    span {
+      left:10px;
+    }
+  }
+  &.right {
+    span {
+      right: 10px;
+    }
+  }
+}

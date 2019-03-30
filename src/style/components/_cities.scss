@@ -64,8 +64,9 @@
 }
 
 .cities__map {
-  max-width: rem(1016);
-  @media (max-width: 600px) {
+  max-width: rem(959);
+  margin: 0 auto;
+  @media (max-width: 1100px) {
     display: none;
   }
 }
