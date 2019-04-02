@@ -81,11 +81,11 @@ header.header
             .header__contact
               .header__subtitle= item.subtitle
               a(href= item.link, class= item.addClass).header__link= item.text
-  .header__third
-    .container
-      nav.nav.nav_second
-        ul.nav__list.nav__list_space-between
-          each item in subNav
-            li.nav__item
-              a(href= item.link).nav__link.nav__link_arrow= item.text
+.header__third
+  .container
+    nav.nav.nav_second
+      ul.nav__list.nav__list_space-between
+        each item in subNav
+          li.nav__item
+            a(href= item.link).nav__link.nav__link_arrow= item.text
     

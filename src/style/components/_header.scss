@@ -1,8 +1,11 @@
 .header {
   @media (max-width: 600px) {
-    position: relative;
-    z-index: 20;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+    background: #fff;
   }
 }
 
@@ -22,7 +25,7 @@
 
 .header__second {
   font-size: rem(14);
-  margin-bottom: rem(32);
+  margin-bottom: rem(22);
   .container {
     @include flexbox(center, flex-start);
   }
@@ -116,6 +119,11 @@
 
 .header__third {
   border-bottom: $border-gray;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
   .container {
     @include flexbox(center, space-between);
   }

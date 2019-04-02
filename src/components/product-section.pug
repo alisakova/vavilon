@@ -18,22 +18,23 @@ mixin product-section(item)
                 +product-alt(product)
               else 
                 +product(product)
-      if item.descr
-        .product-section__descr
-          .product-section__text
-            if item.descr.length > 2
-              .wrap-text.descr-text
+      if !vendingMachines
+        if item.descr
+          .product-section__descr
+            .product-section__text
+              if item.descr.length > 2
+                .wrap-text.descr-text
+                  each paragraph, index in item.descr
+                    p= paragraph
+                a.mobile-show-btn Показать полностью
+              else 
                 each paragraph, index in item.descr
                   p= paragraph
-              a.mobile-show-btn Показать полностью
-            else 
-              each paragraph, index in item.descr
-                p= paragraph
-          if item.slider
-            .product-section__slider.product-slider._slider.orange-slider
-              -for(var i=0;i<3;i++)
-                div
-                  .product-slider__img
-                    include ../img/lock.svg
-                  .product-slider__title ЗАЩИТА ОТ ВЗЛОМА
-                  p.product-slider__text Корпус кофейных автоматов – сталь толщиной 1.5 мм, три накидных замка на двери, у всех автоматов уникальные ключи.
+            if item.slider
+              .product-section__slider.product-slider._slider.orange-slider
+                -for(var i=0;i<3;i++)
+                  div
+                    .product-slider__img
+                      include ../img/lock.svg
+                    .product-slider__title ЗАЩИТА ОТ ВЗЛОМА
+                    p.product-slider__text Корпус кофейных автоматов – сталь толщиной 1.5 мм, три накидных замка на двери, у всех автоматов уникальные ключи.
