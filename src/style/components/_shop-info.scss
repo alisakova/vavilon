@@ -22,10 +22,11 @@
   @media (max-width: 600px) {
     width: 115px;
     height: 115px;
-    margin: {
-      right: 0;
-      bottom: 20px;
-    }
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 475px) {
+    margin-right: 0;
   }
 }
 
@@ -76,11 +77,15 @@
 .shop-infos-container {
   @include flexbox(flex-start, space-between, wrap);
   margin: rem(57 0 30);
-  &_service-centres {
-    margin-bottom: rem(114);
+  & + .cities {
+    padding-top: 0;
+    padding-bottom: rem(114);
   }
   @media (max-width: 600px) {
     margin: 6px 0 0;
     flex-direction: column;
+    & + .cities {
+      padding-bottom: rem(20);
+    }
   }
 }

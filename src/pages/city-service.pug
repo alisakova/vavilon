@@ -63,6 +63,20 @@ block variables
       "mail": "uanservice@yandex.ru",
       "address": "г. Архангельск, ул. Суворова, 12"
     };
+    var cities = [
+      "Белгород",
+      "Владикавказ",
+      "Волгоград",
+      "Воронеж",
+      "Екатеринбург",
+      "Ижевск",
+      "Белгород",
+      "Владикавказ",
+      "Волгоград",
+      "Воронеж",
+      "Екатеринбург",
+      "Ижевск",
+    ];
     
 block content
   include ../components/breadcrumbs
@@ -73,6 +87,7 @@ block content
     +heading(title, links)
     .shop-infos-container.shop-infos-container_service-centres
       +shop-info(shopInfos)
+    include ../components/dealers/cities
     
     
   

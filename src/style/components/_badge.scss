@@ -39,6 +39,7 @@
     border-radius: rem(40);
     font-weight: bold;
     min-width: rem(80);
+    min-height: rem(26);
     padding: rem(2 16);
     bottom: rem(-4);
     top: auto;
@@ -48,6 +49,7 @@
       display: none;
     }
     &.badge_hit {
+      font-size: rem(14);
       text-transform: none;
     }
   }
