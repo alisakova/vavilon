@@ -6,6 +6,8 @@
   padding: rem(28 14 32 27);
   height: 100%;
   display: block;
+  transition: box-shadow 250ms;
+  cursor: pointer;
   @media (max-width: 600px) {
     padding: 17px 10px 24px 25px;
     .badge {
@@ -16,6 +18,9 @@
     padding: 0;
     border-radius: rem(3);
     height: 100%;
+  }
+  &:hover {
+    box-shadow: rem(0 7 15) rgba(0, 0, 0, 0.2);
   }
 }
 

@@ -1,5 +1,5 @@
 mixin product(item)
-  .product
+  a(href= productLink).product
     .product__title= item.title
     .product__container
       .product__img
@@ -19,6 +19,6 @@ mixin product(item)
           .product__price= item.price
       else 
         .product__price= item.price
-      a(href= productLink).product__link Подробнее
+      .product__link Подробнее
     if item.badge
       .product__badge.badge(class = "badge_" + item.badge)= item.badgeText
