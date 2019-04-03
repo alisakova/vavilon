@@ -95,10 +95,11 @@
         }
       ]
     }
-  ]
+  ];
+  var productLink = 'product-card.html';
 
 include ../product-preview
-include ../product-alt
+include ../product
 section.product-card__section
   h2.product-card__title.product-card__title_h2 К этому автомату подойдёт
   .coffee-section.coffee-section_similiar
@@ -110,5 +111,5 @@ section.product-card__section
   .wrap-container
     each item in similiarMachines
       .col.col_3-items.col_padding
-        +product-alt(item)
+        +product(item)
       
