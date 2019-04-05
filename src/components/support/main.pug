@@ -5,3 +5,35 @@
   p.support__text 8 800 700 34 43 (доб. 4). В случае необходимости получения расширенной технической консультации рекомендуем заблаговременно отправить нам письмо с детальным описанием вопроса или тех.задания и с указанием своих контактных данных. Специалисты компании незамедлительно свяжутся с Вами.
   p.support__text Сервисная Служба ГК Вавилон-Вендинг работает в соответствии с межгосударственным стандартом Системы технического обслуживания и ремонта техники ГОСТ 18322-2016.
 a.mobile-show-btn Показать полностью
+.support__accordions
+  a.support__link.accordion.link Инструкции по использованию автоматов
+  .panel
+    .product-info-container
+      -for (var i=0; i<6; i++)
+        .product-info
+          .product-info__img
+            img(src="img/products/coffeemar.jpg", alt="Coffeemar G250 \ G30")
+          .product-info__info
+            .product-info__name Coffeemar G250 \ G30
+            a(href="").product-info__link.product-info__link_with-icon Скачать инструкцию
+    .product-info-container
+      -for (var i=0; i<6; i++)
+        .product-info
+          .product-info__img
+            img(src="img/products/argos.jpg", alt="Серия Argos")
+          .product-info__info
+            .product-info__name Серия Argos
+            a(href="").product-info__link.product-info__link_with-icon Скачать инструкцию
+  a.support__link.accordion.link Разное
+  .panel
+    .product-info-text
+      p Материал кнопок:
+      p БЕЛЫЙ PVC Opal 0.3mm
+      p ЦИФРОВАЯ ПЕЧАТЬ - INK DOUBLE ONE WAY PASSED - CMYK.
+    .product-info-container.product-info-container_not-flex
+      -for (var i=0; i<3; i++)
+        .product-info.product-info_align-center
+          .product-info__img
+            img(src="img/products/coffeemar.jpg", alt="Coffeemar G250 \ G30")
+          .product-info__info
+            a(href="").product-info__link.link Макеты кнопок (G250, G546)

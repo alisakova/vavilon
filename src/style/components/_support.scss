@@ -23,8 +23,14 @@
 
 .support__link {
   font-weight: 500;
-  &:not(:last-child) {
-    margin-bottom: rem(17);
+  cursor: pointer;
+  &:first-child {
+    & + .panel {
+      margin-bottom: rem(17);
+    }
+  }
+  & + .panel {
+    padding-left: 0;
   }
   @media (max-width: 600px) {
     font-size: 12px;
@@ -32,4 +38,8 @@
       margin-bottom: 12px;
     }
   }
+}
+
+.support__accordions {
+  margin-top: rem(40);
 }

@@ -2,14 +2,6 @@
   padding: rem(58 0 40);
   &_service-centres {
     padding-bottom: rem(111);
-    .cities__list {
-      width: 40%;
-      column-count: 2;
-      @media (max-width: 600px) {
-        column-count: 1;
-        margin-bottom: 20px;
-      }
-    }
     .cities__item {
       margin-bottom: rem(25);
     }
