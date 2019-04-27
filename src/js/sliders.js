@@ -3,12 +3,13 @@ $(document).ready(function() {
     $("._slider").slick({
       infinite: true,
       speed: 500,
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 15000,
       fade: true,
       arrows: false,
       dots: true,
     });
+    $(".intro-slider .slick-dots").wrap("<div class=\"container\"><div class=\"slick-dots-wrapper\"></div></div>");
   }
   if ($(".companies-slider").length) {
     $(".companies-slider").slick({

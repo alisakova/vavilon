@@ -2,7 +2,7 @@
   .simple-tabs__container
     button.simple-tabs__tab._tabs-tab._default(onclick="openTab(event, 'city-1')") Калининград
     button.simple-tabs__tab._tabs-tab(onclick="openTab(event, 'city-2')") Москва
-  .simple-tabs__content._city-1#city-1
+  .simple-tabs__content._city-1._tabs-content#city-1
     .simple-tabs__text.simple-tabs__text_margin-bottom Сервисный центр при заводе-изготовителе
     .contact.contact_margin-bottom-22
       .contact__icon
@@ -48,7 +48,7 @@
       .contact__descr
         a(href="tel:++79632962336").contact__text +7 963 296 2336
         .contact__subtext (запчасти и комплектующие)
-  .simple-tabs__content._city-1#city-2
+  .simple-tabs__content._city-2._tabs-content#city-2
 form.form
   .form__title Вопрос техподдержке
   .form__item
@@ -58,6 +58,7 @@ form.form
   .form__item
     select.form__select
       option Сервисная служба
+      option Запчасти и комплектующие
   .form__item
     label.form__label
       input(type="text", class="form__input")

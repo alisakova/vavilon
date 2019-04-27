@@ -5,6 +5,7 @@ $(document).ready(function() {
     });
     $('.form__select').select2({
       minimumResultsForSearch: Infinity,
-      // dropdownParent: $('.form')
+      dropdownCssClass: "select_form"
+      // dropdownParent: $('.form__item:nth-child(3)')
     });
 });

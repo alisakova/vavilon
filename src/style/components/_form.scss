@@ -188,9 +188,18 @@
       .select2-selection__arrow {
         transform: scale(-1);
       }
-      &.select2-container--below .select2-selection--single {
-        border-radius: $global-radius;
+      &.select2-container--below {
+        .select2-selection--single {
+          border-radius: $global-radius;
+        }
       }
     }
+  }
+}
+
+.select2-dropdown--below.select_form {
+  margin-top: 1px;
+  .select2-results__option {
+    padding-left: 1rem;
   }
 }
