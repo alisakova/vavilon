@@ -60,7 +60,9 @@
 
 @media (max-width: 600px) {
   .intro-slider__slide {
-    @include flexbox(center, flex-start);
-    flex-direction: column;
+    .container {
+      @include flexbox(center, flex-start);
+      flex-direction: column;
+    }
   }
 }

@@ -1,7 +1,9 @@
 .product-card__left-col.product-card__left-col_margin-right-big
   .product-card__img.product-card__img_alt
     img(src="img/product-card-img.jpg", alt="")
-    .badge.badge_left.badge_hit Хит!
+    .product-card__badges.product-card__badges_left
+      .badge.badge_left.badge_hit Хит!
+      .badge.badge_left.badge_hit Хит!
   .product-card__img-previews
     -for(var i=0;i<4;i++)
       .product-card__img-preview(class= i === 0 ? "active" : "")

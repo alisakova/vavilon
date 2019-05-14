@@ -1,7 +1,5 @@
 .badge {
-  position: absolute;
-  top: rem(30);
-  right: -6px;
+  position: relative;
   color: #fff;
   @include font(14, 600);
   border-top-left-radius: rem(5);
@@ -11,6 +9,9 @@
   min-width: rem(64);
   min-height: rem(41);
   z-index: 10;
+  & + .badge {
+    margin-top: rem(10);
+  }
   &_hit {
     text-transform: uppercase;
     font-size: rem(16);
@@ -41,10 +42,6 @@
     min-width: rem(80);
     min-height: rem(26);
     padding: rem(2 16);
-    bottom: rem(-4);
-    top: auto;
-    right: auto;
-    left: rem(-4);
     &:after {
       display: none;
     }
@@ -54,9 +51,6 @@
     }
   }
   &_left {
-    left: -6px;
-    right: auto;
-    top: rem(30);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: rem(5);

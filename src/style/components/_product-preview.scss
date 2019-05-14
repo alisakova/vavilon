@@ -281,3 +281,14 @@ $product-border: 1px solid #F2F2F2;
     margin-right: 24px;
   }
 }
+
+.product-preview__badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: auto;
+  right: auto;
+  left: rem(-4);
+  bottom: rem(-4);
+}

@@ -9,7 +9,8 @@ mixin product-preview(item, index)
             .product-preview__img
               img(src= item.img, alt= item.title)
               if item.badge
-                .product-preview__badge.badge.badge_alt(class = "badge_" + item.badge)= item.badgeText
+                .product-preview__badges
+                  .product-preview__badge.badge.badge_alt(class = "badge_" + item.badge)= item.badgeText
           .product-preview__mobile-col
             .product-preview__amount.product-preview__amount_mobile 1 кг / 6 шт.
             .product-preview__price.product-preview__price_mobile
